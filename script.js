@@ -15,7 +15,7 @@ const portalDaten = {
       ],
       "S85XC (Teleskop)": [
         {"titel": "📘 Serviceanleitung", "datei": "pdf/Genie/S85XC_Serviceanleitung.pdf"},
-        {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Siemens/Sinamics_G120/Ersatzteile.pdf"}
+        {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Genie/S85XC_Ersatzteilliste.pdf"}
       ]
     }
   },
