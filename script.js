@@ -17,6 +17,36 @@ const portalDaten = {
         {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Genie/S85XC/S85XC_Ersatzteilliste.pdf"}
       ]
     }
+  },
+  "siemens": {
+    "name": "Siemens",
+    "farbe": "#0078d4",
+    "maschinen": {
+      "S7-1200 (SPS)": [
+        {"titel": "📘 Serviceanleitung", "datei": "pdf/Siemens/S7-1200/Serviceanleitung.pdf"}
+      ],
+      "S7-1500 (SPS)": [
+        {"titel": "📘 Serviceanleitung", "datei": "pdf/Siemens/S7-1500/Serviceanleitung.pdf"}
+      ]
+    }
+  },
+  "kuka": {
+    "name": "KUKA",
+    "farbe": "#ff6600",
+    "maschinen": {
+      "KR 16 (Roboter)": [
+        {"titel": "📘 Serviceanleitung", "datei": "pdf/KUKA/KR16/Serviceanleitung.pdf"}
+      ]
+    }
+  },
+  "sew": {
+    "name": "SEW Eurodrive",
+    "farbe": "#d35400",
+    "maschinen": {
+      "Movidrive B": [
+        {"titel": "📘 Betriebsanleitung", "datei": "pdf/SEW/Movidrive_B/Betriebsanleitung.pdf"}
+      ]
+    }
   }
 };
 
