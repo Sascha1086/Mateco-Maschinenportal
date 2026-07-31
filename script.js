@@ -18,33 +18,42 @@ const portalDaten = {
       ]
     }
   },
-  "siemens": {
-    "name": "Siemens",
+  "jlg": {
+    "name": "JLG",
     "farbe": "#0078d4",
     "maschinen": {
-      "S7-1200 (SPS)": [
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Siemens/S7-1200/Serviceanleitung.pdf"}
+      "1932 (Schere)": [
+        {"titel": "📘 Serviceanleitung", "datei": "pdf/JLG/1932/Serviceanleitung.pdf"}
       ],
-      "S7-1500 (SPS)": [
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Siemens/S7-1500/Serviceanleitung.pdf"}
+      "2032 (Schere)": [
+        {"titel": "📘 Serviceanleitung", "datei": "pdf/JLG/2032/Serviceanleitung.pdf"}
       ]
     }
   },
-  "kuka": {
-    "name": "KUKA",
+  "zoomlion": {
+    "name": "Zoomlion",
     "farbe": "#ff6600",
     "maschinen": {
-      "KR 16 (Roboter)": [
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/KUKA/KR16/Serviceanleitung.pdf"}
+      "Z0701 (Schere)": [
+        {"titel": "📘 Serviceanleitung", "datei": "pdf/Zoomlion/Z0701/Serviceanleitung.pdf"}
       ]
     }
   },
-  "sew": {
-    "name": "SEW Eurodrive",
+  "haulotte": {
+    "name": "Haulotte",
+    "farbe": "#ff6600",
+    "maschinen": {
+      "Star 10 (Telekopmast)": [
+        {"titel": "📘 Serviceanleitung", "datei": "pdf/Haulotte/Star10/Serviceanleitung.pdf"}
+      ]
+    }
+  },
+  "dingli": {
+    "name": "Dingli",
     "farbe": "#d35400",
     "maschinen": {
-      "Movidrive B": [
-        {"titel": "📘 Betriebsanleitung", "datei": "pdf/SEW/Movidrive_B/Betriebsanleitung.pdf"}
+      "BA28BERT (Gelenk-Teleskop)": [
+        {"titel": "📘 Betriebsanleitung", "datei": "pdf/Dingli/BA28BERT/Betriebsanleitung.pdf"}
       ]
     }
   }
