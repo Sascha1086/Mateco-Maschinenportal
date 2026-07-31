@@ -1,6 +1,6 @@
 // Hier verwaltest du alle Hersteller, Gerätetypen und Dokumente zentral!
 const portalDaten = {
-  "Genie": {
+  "genie": {
     "name": "Genie",
     "farbe": "#009999",
     "maschinen": {
@@ -19,7 +19,7 @@ const portalDaten = {
       ]
     }
   },
-  "JLG": {
+  "jlg": {
     "name": "JLG",
     "farbe": "#ff6600",
     "maschinen": {
@@ -33,7 +33,7 @@ const portalDaten = {
       ]
     }
   },
-  "Zoomlion": {
+  "zoomlion": {
     "name": "Zoomlion",
     "farbe": "#ff0000",
     "maschinen": {
@@ -46,7 +46,7 @@ const portalDaten = {
       ]
     }
   },
-  "Haulotte": {
+  "haulotte": {
     "name": "Haulotte",
     "farbe": "#d35400",
     "maschinen": {
@@ -56,7 +56,7 @@ const portalDaten = {
       ]
     }
   },
-  "PB-Lifttechnik": {
+  "pb-lifttechnik": {
     "name": "PB-Lifttechnik",
     "farbe": "#2980b9",
     "maschinen": {
