@@ -1,7 +1,7 @@
 const portalDaten = {
   "genie": {
     "name": "Genie",
-    "farbe": "#009999",
+    "farbe": "#0b31ba",
     "maschinen": {
       "GS1532 (Schere)": [
         {"titel": "📘 Serviceanleitung", "datei": "pdf/Genie/GS1532/Serviceanleitung.pdf"},
