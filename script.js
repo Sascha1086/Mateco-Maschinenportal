@@ -1,19 +1,19 @@
 // Hier verwaltest du alle Hersteller, Gerätetypen und Dokumente zentral!
 const portalDaten = {
-  "siemens": {
-    "name": "Siemens",
+  "Genie": {
+    "name": "Genie",
     "farbe": "#009999",
     "maschinen": {
-      "S7-1200 (SPS)": [
+      "GS1532 (Schere)": [
         {"titel": "📘 Serviceanleitung", "datei": "pdf/Siemens/S7-1200/Serviceanleitung.pdf"},
         {"titel": "⚡ Schaltplan", "datei": "pdf/Siemens/S7-1200/Schaltplan.pdf"}
       ],
-      "S7-1500 (SPS)": [
+      "GS1932 (Schere)": [
         {"titel": "📘 Serviceanleitung", "datei": "pdf/Siemens/S7-1500/Serviceanleitung.pdf"},
         {"titel": "⚠️ Fehlercodes", "datei": "pdf/Siemens/S7-1500/Fehlercodes.pdf"},
         {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Siemens/S7-1500/Bedienungsanleitung.pdf"}
       ],
-      "Sinamics G120 (Umrichter)": [
+      "S85 (Teleskop)": [
         {"titel": "📘 Serviceanleitung", "datei": "pdf/Siemens/Sinamics_G120/Serviceanleitung.pdf"},
         {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Siemens/Sinamics_G120/Ersatzteile.pdf"}
       ]
