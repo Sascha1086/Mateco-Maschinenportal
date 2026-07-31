@@ -56,6 +56,25 @@ const portalDaten = {
         {"titel": "📘 Betriebsanleitung", "datei": "pdf/Dingli/BA28BERT/Betriebsanleitung.pdf"}
       ]
     }
+  },
+ "manitou": {
+    "name": "Manitou",
+    "farbe": "#c2160a",
+    "maschinen": {
+      "TS0625 (Teleskopstapler)": [
+        {"titel": "📘 Serviceanleitung", "datei": "pdf/Manitou/TS0625/Serviceanleitung.pdf"},
+        {"titel": "⚡ Schaltplan", "datei": "pdf/Manitou/TS0625/Schaltplan.pdf"}
+      ],
+      "TS0932 (Teleskopstapler)": [
+        {"titel": "📘 Serviceanleitung", "datei": "pdf/Manitou/TS0932/Serviceanleitung.pdf"},
+        {"titel": "⚠️ Fehlercodes", "datei": "pdf/Manitou/TS0932/Fehlercodes.pdf"},
+        {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Manitou/TS0932/Bedienungsanleitung.pdf"}
+      ],
+      "TS1440 (Teleskopstapler)": [
+        {"titel": "📘 Serviceanleitung", "datei": "pdf/Manitou/TS1440/Serviceanleitung.pdf"},
+        {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Manitou/TS1440/Ersatzteilliste.pdf"}
+      ]
+    }
   }
 };
 
