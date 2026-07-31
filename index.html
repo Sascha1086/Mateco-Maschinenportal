@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -9,11 +10,13 @@
 <body>
 
     <header>
+        <div id="nav-buttons">
+            <button id="back-btn" style="display: none;" onclick="zurueckNavigieren()">⬅️ Zurück</button>
+            <button id="home-btn" style="display: none;" onclick="zurueckZurUebersicht()">🏠 Home</button>
+        </div>
         <h1 id="portal-titel" onclick="zurueckZurUebersicht()">🔧 Mateco-Maschinenportal</h1>
-        <button id="back-btn" style="display: none;" onclick="zurueckZurUebersicht()">⬅️ Zurück</button>
     </header>
 
-    <!-- Das neue Suchfeld für die Werkstatt -->
     <div id="search-container">
         <input type="text" id="search-input" placeholder="🔍 Maschine oder Hersteller suchen..." oninput="sucheMaschine()">
     </div>
