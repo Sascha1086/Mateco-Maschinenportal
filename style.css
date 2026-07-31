@@ -16,12 +16,40 @@ body {
 header {
     background: linear-gradient(135deg, #2c3e50, #34495e);
     color: white;
-    padding: 25px 20px;
+    padding: 20px;
     text-align: center;
     border-radius: 12px;
     margin-bottom: 20px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Wichtig: Das Steuerungsfeld für deine Buttons */
+#nav-buttons {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+/* Große, gut drückbare Navigationsknöpfe */
+#back-btn, #home-btn {
+    background: #34495e;
+    color: white;
+    border: 2px solid #3498db;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+#back-btn:active, #home-btn:active {
+    transform: scale(0.95);
 }
 
 #portal-titel {
@@ -29,27 +57,7 @@ header {
     cursor: pointer;
     font-weight: 700;
     letter-spacing: 0.5px;
-}
-
-#back-btn {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    padding: 10px 16px;
-    border-radius: 8px;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    backdrop-filter: blur(5px);
-    transition: background 0.2s;
-}
-
-#back-btn:hover {
-    background: rgba(255, 255, 255, 0.3);
+    margin-top: 5px;
 }
 
 #search-container {
@@ -66,11 +74,6 @@ header {
     color: white;
     outline: none;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transition: border-color 0.2s;
-}
-
-#search-input::placeholder {
-    color: #7f8c8d;
 }
 
 #search-input:focus {
@@ -90,7 +93,6 @@ h2 {
     gap: 15px;
 }
 
-/* Große, griffige Werkstatt-Buttons */
 .btn {
     display: block;
     width: 100%;
@@ -102,14 +104,12 @@ h2 {
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transition: transform 0.1s, box-shadow 0.1s;
     text-decoration: none;
     color: white;
 }
 
 .btn:active {
     transform: scale(0.97);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .maschine-btn {

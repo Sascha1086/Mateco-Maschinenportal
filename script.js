@@ -65,7 +65,7 @@ function zeigeMaschinen(herstellerKey) {
     searchContainer.style.display = "none";
     
     const hersteller = portalDaten[herstellerKey];
-    let html = `<h2>${hersteller.name} - Gerätetypen:</h2><div class="grid">`; // <-- HIER WAR DER FEHLER (Jetzt korrigiert!)
+    let html = '<h2>' + hersteller.name + ' - Gerätetypen:</h2><div class="grid">';
     for (let maschine in hersteller.maschinen) {
         html += `<button class="btn maschine-btn" onclick="zeigeDokumente('${herstellerKey}', '${maschine}')">📦 ${maschine}</button>`;
     }
@@ -83,7 +83,7 @@ function zeigeDokumente(herstellerKey, maschineName) {
     searchContainer.style.display = "none";
     
     const dokumente = portalDaten[herstellerKey].maschinen[maschineName];
-    let html = `<h2>${maschineName} - Unterlagen:</h2><div class="grid">`;
+    let html = '<h2>' + maschineName + ' - Unterlagen:</h2><div class="grid">';
     dokumente.forEach(doku => {
         html += `<a href="${doku.datei}" target="_blank" class="btn doku-btn">${doku.titel}</a>`;
     });
@@ -148,7 +148,7 @@ function zeigeDirektMaschine(name) {
             return;
         }
     }
-    app.innerHTML = `<p>Gerätetyp "${name}" wurde nicht gefunden.</p>`;
+    app.innerHTML = '<p>Gerätetyp "' + name + '" wurde nicht gefunden.</p>';
 }
 
 function zurueckZurUebersicht() {
