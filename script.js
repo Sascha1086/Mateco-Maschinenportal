@@ -13,8 +13,8 @@ const portalDaten = {
         {"titel": "⚠️ Fehlercodes", "datei": "pdf/Siemens/S7-1500/Fehlercodes.pdf"},
         {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Siemens/S7-1500/Bedienungsanleitung.pdf"}
       ],
-      "S85 (Teleskop)": [
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Siemens/Sinamics_G120/Serviceanleitung.pdf"},
+      "S85XC (Teleskop)": [
+        {"titel": "📘 Serviceanleitung", "datei": "pdf/Genie/Serviceanleitung.pdf"},
         {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Siemens/Sinamics_G120/Ersatzteile.pdf"}
       ]
     }
