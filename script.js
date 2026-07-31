@@ -20,7 +20,7 @@ const portalDaten = {
   },
   "jlg": {
     "name": "JLG",
-    "farbe": "#0078d4",
+    "farbe": "#f0660a",
     "maschinen": {
       "1932 (Schere)": [
         {"titel": "📘 Serviceanleitung", "datei": "pdf/JLG/1932/Serviceanleitung.pdf"}
@@ -32,7 +32,7 @@ const portalDaten = {
   },
   "zoomlion": {
     "name": "Zoomlion",
-    "farbe": "#ff6600",
+    "farbe": "#56f00a",
     "maschinen": {
       "Z0701 (Schere)": [
         {"titel": "📘 Serviceanleitung", "datei": "pdf/Zoomlion/Z0701/Serviceanleitung.pdf"}
@@ -41,7 +41,7 @@ const portalDaten = {
   },
   "haulotte": {
     "name": "Haulotte",
-    "farbe": "#ff6600",
+    "farbe": "#f0c60a",
     "maschinen": {
       "Star 10 (Telekopmast)": [
         {"titel": "📘 Serviceanleitung", "datei": "pdf/Haulotte/Star10/Serviceanleitung.pdf"}
@@ -50,7 +50,7 @@ const portalDaten = {
   },
   "dingli": {
     "name": "Dingli",
-    "farbe": "#d35400",
+    "farbe": "#f0660a",
     "maschinen": {
       "BA28BERT (Gelenk-Teleskop)": [
         {"titel": "📘 Betriebsanleitung", "datei": "pdf/Dingli/BA28BERT/Betriebsanleitung.pdf"}
