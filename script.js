@@ -57,7 +57,7 @@ const portalDaten = {
       ]
     }
   },
- "manitou": {
+  "manitou": {
     "name": "Manitou",
     "farbe": "#c2160a",
     "maschinen": {
