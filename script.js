@@ -19,25 +19,25 @@ const portalDaten = {
       ]
     }
   },
-  "kuka": {
-    "name": "KUKA",
+  "JLG": {
+    "name": "JLG",
     "farbe": "#ff6600",
     "maschinen": {
-      "KR 16 (Roboter)": [
+      "800SJ (Teleskop)": [
         {"titel": "📘 Serviceanleitung", "datei": "pdf/KUKA/KR16/Serviceanleitung.pdf"},
         {"titel": "⚠️ Fehlercodes", "datei": "pdf/KUKA/KR16/Fehlercodes.pdf"}
       ],
-      "KR IONTEC (Roboter)": [
+      "3369LE (Schere)": [
         {"titel": "📘 Wartungsanleitung", "datei": "pdf/KUKA/KR_IONTEC/Wartung.pdf"},
         {"titel": "📄 Bedienungshandbuch", "datei": "pdf/KUKA/KR_IONTEC/Bedienung.pdf"}
       ]
     }
   },
-  "abb": {
-    "name": "ABB",
+  "Zoomlion": {
+    "name": "Zoomlion",
     "farbe": "#ff0000",
     "maschinen": {
-      "IRB 2600 (Roboter)": [
+      "IRB 2600 (Schere)": [
         {"titel": "📘 Serviceanleitung", "datei": "pdf/ABB/IRB_2600/Serviceanleitung.pdf"},
         {"titel": "⚡ Schaltplan", "datei": "pdf/ABB/IRB_2600/Schaltplan.pdf"}
       ],
@@ -46,21 +46,21 @@ const portalDaten = {
       ]
     }
   },
-  "sew": {
-    "name": "SEW Eurodrive",
+  "Haulotte": {
+    "name": "Haulotte",
     "farbe": "#d35400",
     "maschinen": {
-      "Movidrive B (Umrichter)": [
+      "Star 10 (Telekopmast)": [
         {"titel": "📘 Betriebsanleitung", "datei": "pdf/SEW/Movidrive_B/Betriebsanleitung.pdf"},
         {"titel": "🔧 Parameterliste", "datei": "pdf/SEW/Movidrive_B/Parameter.pdf"}
       ]
     }
   },
-  "bosch_rexroth": {
-    "name": "Bosch Rexroth",
+  "PB-Lifttechnik": {
+    "name": "PB-Lifttechnik",
     "farbe": "#2980b9",
     "maschinen": {
-      "IndraDrive Cs (Antrieb)": [
+      "EL17 (Schere)": [
         {"titel": "📘 Serviceanleitung", "datei": "pdf/Bosch_Rexroth/IndraDrive/Serviceanleitung.pdf"},
         {"titel": "⚠️ Diagnose-Handbuch", "datei": "pdf/Bosch_Rexroth/IndraDrive/Diagnose.pdf"}
       ]
