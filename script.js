@@ -34,6 +34,22 @@ const herstellerDaten = {
     },
 
     'GS1932 E-Drive (Schere)': {},
+      '📄 Bedienungsanleitung':
+        'pdf/Genie/GS1932 EDrive/Bedienungsanleitung.pdf',
+
+      '📘 Serviceanleitung':
+        'pdf/Genie/GS1932 EDrive/Serviceanleitung.pdf',
+
+      '⚠️ Fehlercodes':
+        'pdf/Genie/GS1932 EDrive/Fehlercodeliste.pdf',
+
+      '⚡ Schaltplan':
+        'pdf/Genie/GS1932 EDrive/Schaltplan.pdf',
+
+      '🔧 Ersatzteilliste':
+        'pdf/Genie/GS1932 EDrive/Ersatzteilliste.pdf'
+    },
+
     'S85XC (Teleskop)': {},
     'Z60/34 (Gelenk-Teleskop)': {}
   },
