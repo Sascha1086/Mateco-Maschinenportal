@@ -1,0 +1,127 @@
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Mateco-Maschinenportal</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="portal-header">
+
+    <div class="navigation">
+
+      <button
+        id="backBtn"
+        class="nav-btn hidden"
+        type="button"
+      >
+        ⬅️ Zurück
+      </button>
+
+      <button
+        id="homeBtn"
+        class="nav-btn hidden"
+        type="button"
+      >
+        🏠 Home
+      </button>
+
+    </div>
+
+    <h1
+      id="portalTitle"
+      class="portal-title"
+      tabindex="0"
+    >
+      🔧 Mateco-Maschinenportal
+    </h1>
+
+  </header>
+
+
+  <section class="search-section">
+
+    <label
+      for="searchInput"
+      class="visually-hidden"
+    >
+      Maschine oder Hersteller suchen
+    </label>
+
+    <input
+      id="searchInput"
+      class="search-input"
+      type="search"
+      placeholder="🔍 Maschine, Hersteller oder Dokument suchen..."
+      autocomplete="off"
+    >
+
+  </section>
+
+
+  <main
+    id="app"
+    class="app"
+  >
+    <!-- Inhalt wird durch script.js eingefügt -->
+  </main>
+
+
+  <div
+    id="pdfModal"
+    class="modal hidden"
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    aria-labelledby="modalTitle"
+  >
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <h2 id="modalTitle">
+          Dokument
+        </h2>
+
+        <button
+          id="closeModalBtn"
+          class="close-btn"
+          type="button"
+          aria-label="PDF schließen"
+        >
+          ❌ Schließen
+        </button>
+
+      </div>
+
+      <div class="modal-body">
+
+        <iframe
+          id="pdfFrame"
+          title="PDF-Dokument"
+          src=""
+        ></iframe>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+```
