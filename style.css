@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1d20; /* Mateco Dunkel-Anthrazit */
+    color: #f5f6fa;
+    padding: 15px;
+    max-width: 600px; /* Optimal für Baustellen-Smartphones */
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(135deg, #ffcd00, #e30613); /* Mateco Signal-Farben */
+    color: #1a1d20;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+#nav-buttons {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+#back-btn, #home-btn {
+    background: #1a1d20;
+    color: white;
+    border: 2px solid #ffffff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.1s ease;
+}
+
+#back-btn:active, #home-btn:active {
+    transform: scale(0.95);
+}
+
+#portal-titel {
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+#search-container {
+    margin-bottom: 25px;
+}
+
+#search-input {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    background-color: #252a2e;
+    border: 2px solid #3a4149;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#search-input:focus {
+    border-color: #ffcd00;
+}
+
+h2 {
+    margin-bottom: 18px;
+    font-size: 18px;
+    color: #ffcd00; /* Signal-Gelb für Strukturübersichten */
+    font-weight: 700;
+    text-transform: uppercase;
+    border-left: 4px solid #e30613;
+    padding-left: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 18px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-decoration: none;
+    color: white;
+    transition: transform 0.1s ease;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.hersteller-btn {
+    background: #252a2e;
+    border-left: 6px solid #ccc; /* Farbe wird dynamisch via JS überschrieben */
+}
+
+.maschine-btn {
+    background: #2c353d;
+    border-left: 6px solid #ffcd00;
+}
+
+.doku-btn {
+    background: #1b4d3e;
+    border-left: 6px solid #2ecc71;
+}
+
+p {
+    text-align: center;
+    color: #9aa0a6;
+    font-size: 15px;
+    padding: 20px;
+}
