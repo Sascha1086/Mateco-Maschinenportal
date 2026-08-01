@@ -1,50 +1,13 @@
-```javascript
 'use strict';
-
-/*
-|--------------------------------------------------------------------------
-| Portal-Daten
-|--------------------------------------------------------------------------
-|
-| Aufbau:
-|
-| Kategorie
-|   → Hersteller
-|       → Modell
-|           → Dokumenttitel: PDF-Pfad
-|
-| Neue Hersteller, Modelle und Dokumente können direkt hier ergänzt werden.
-|
-*/
 
 const portalDaten = {
   'Arbeitsbühnen': {
     Genie: {
       'GS1532 (Schere)': {
-        '📄 Bedienungsanleitung':
-          'pdf/Genie/GS1532/Bedienungsanleitung.pdf',
-
-        '📘 Serviceanleitung':
-          'pdf/Genie/GS1532/Serviceanleitung.pdf',
-
-        '⚠️ Fehlercodes':
-          'pdf/Genie/GS1532/Fehlercodeliste.pdf',
-
-        '⚡ Schaltplan':
-          'pdf/Genie/GS1532/Schaltplan.pdf',
-
-        '🔧 Ersatzteilliste':
-          'pdf/Genie/GS1532/Ersatzteilliste.pdf'
+        '📄 Bedienungsanleitung': 'pdf/Genie/GS1532/Bedienungsanleitung.pdf',
+        '📘 Serviceanleitung': 'pdf/Genie/GS1532/Serviceanleitung.pdf'
       },
-
-      'GS1932 (Schere)': {
-        '📄 Bedienungsanleitung':
-          'pdf/Genie/GS1932/Bedienungsanleitung.pdf',
-
-        '📘 Serviceanleitung':
-          'pdf/Genie/GS1932/Serviceanleitung.pdf'
-      },
-
+      'GS1932 (Schere)': {},
       'GS1932 E-Drive (Schere)': {},
       'S85XC (Teleskop)': {},
       'Z60/34 (Gelenk-Teleskop)': {}
@@ -80,16 +43,12 @@ const portalDaten = {
     }
   },
 
-  Stapler: {
+  'Stapler': {
     Manitou: {
       'TS0625 (Teleskopstapler)': {
-        '📘 Serviceanleitung':
-          'pdf/Manitou/TS0625/Serviceanleitung.pdf',
-
-        '⚡ Schaltplan':
-          'pdf/Manitou/TS0625/Schaltplan.pdf'
+        '📘 Serviceanleitung': 'pdf/Manitou/TS0625/Serviceanleitung.pdf',
+        '⚡ Schaltplan': 'pdf/Manitou/TS0625/Schaltplan.pdf'
       },
-
       'TS0932 (Teleskopstapler)': {},
       'TS1440 (Teleskopstapler)': {}
     },
@@ -106,16 +65,8 @@ const portalDaten = {
   'Anhänger-Arbeitsbühnen': {}
 };
 
-
-/*
-|--------------------------------------------------------------------------
-| HTML-Elemente
-|--------------------------------------------------------------------------
-*/
-
 const app = document.getElementById('app');
 const searchInput = document.getElementById('searchInput');
-
 const backBtn = document.getElementById('backBtn');
 const homeBtn = document.getElementById('homeBtn');
 const portalTitle = document.getElementById('portalTitle');
@@ -125,151 +76,98 @@ const pdfFrame = document.getElementById('pdfFrame');
 const modalTitle = document.getElementById('modalTitle');
 const closeModalBtn = document.getElementById('closeModalBtn');
 
-
-/*
-|--------------------------------------------------------------------------
-| Navigationsstatus
-|--------------------------------------------------------------------------
-*/
-
 let aktuelleKategorie = null;
 let aktuellerHersteller = null;
 let aktuellesModell = null;
 
-
-/*
-|--------------------------------------------------------------------------
-| Hilfsfunktionen
-|--------------------------------------------------------------------------
-*/
-
-function setNavigation(showBack = false, showHome = false) {
-  backBtn.classList.toggle('hidden', !showBack);
-  homeBtn.classList.toggle('hidden', !showHome);
-}
-
-function resetNavigationState() {
-  aktuelleKategorie = null;
-  aktuellerHersteller = null;
-  aktuellesModell = null;
-}
-
-function erstelleButton(text, cssClass = '') {
+function erstelleButton(text, klasse, funktion) {
   const button = document.createElement('button');
 
   button.type = 'button';
-  button.className = `btn ${cssClass}`.trim();
+  button.className = `btn ${klasse}`;
   button.textContent = text;
+  button.addEventListener('click', funktion);
 
   return button;
 }
 
+function setNavigation(zurueckAnzeigen, homeAnzeigen) {
+  backBtn.classList.toggle('hidden', !zurueckAnzeigen);
+  homeBtn.classList.toggle('hidden', !homeAnzeigen);
+}
+
 function getKategorieIcon(kategorie) {
-  switch (kategorie) {
-    case 'Arbeitsbühnen':
-      return '🚀';
-
-    case 'Stapler':
-      return '🚜';
-
-    case 'LKW-Arbeitsbühnen':
-      return '🚚';
-
-    case 'Anhänger-Arbeitsbühnen':
-      return '🛻';
-
-    default:
-      return '📁';
+  if (kategorie === 'Arbeitsbühnen') {
+    return '🚀';
   }
+
+  if (kategorie === 'Stapler') {
+    return '🚜';
+  }
+
+  if (kategorie === 'LKW-Arbeitsbühnen') {
+    return '🚚';
+  }
+
+  if (kategorie === 'Anhänger-Arbeitsbühnen') {
+    return '🛻';
+  }
+
+  return '📁';
 }
 
 function getKategorieKlasse(kategorie) {
-  switch (kategorie) {
-    case 'Arbeitsbühnen':
-      return 'category-platforms';
-
-    case 'Stapler':
-      return 'category-forklifts';
-
-    case 'LKW-Arbeitsbühnen':
-      return 'category-trucks';
-
-    case 'Anhänger-Arbeitsbühnen':
-      return 'category-trailers';
-
-    default:
-      return '';
+  if (kategorie === 'Arbeitsbühnen') {
+    return 'category-platforms';
   }
+
+  if (kategorie === 'Stapler') {
+    return 'category-forklifts';
+  }
+
+  if (kategorie === 'LKW-Arbeitsbühnen') {
+    return 'category-trucks';
+  }
+
+  if (kategorie === 'Anhänger-Arbeitsbühnen') {
+    return 'category-trailers';
+  }
+
+  return '';
 }
-
-function zeigeFehler(text) {
-  app.innerHTML = '';
-
-  const title = document.createElement('h2');
-  title.textContent = 'Fehler';
-
-  const message = document.createElement('p');
-  message.className = 'empty';
-  message.textContent = text;
-
-  app.appendChild(title);
-  app.appendChild(message);
-}
-
-
-/*
-|--------------------------------------------------------------------------
-| Startseite
-|--------------------------------------------------------------------------
-*/
 
 function zeigeStartseite() {
-  resetNavigationState();
+  aktuelleKategorie = null;
+  aktuellerHersteller = null;
+  aktuellesModell = null;
+
   setNavigation(false, false);
 
   app.innerHTML = '';
 
-  const title = document.createElement('h2');
-  title.textContent = 'Kategorie auswählen';
+  const titel = document.createElement('h2');
+  titel.textContent = 'Kategorie auswählen';
 
   const grid = document.createElement('div');
   grid.className = 'grid category-grid';
 
-  Object.keys(portalDaten).forEach(kategorie => {
-    const icon = getKategorieIcon(kategorie);
-    const farbKlasse = getKategorieKlasse(kategorie);
-
+  Object.keys(portalDaten).forEach(function (kategorie) {
     const button = erstelleButton(
-      `${icon} ${kategorie}`,
-      `category-btn ${farbKlasse}`
+      `${getKategorieIcon(kategorie)} ${kategorie}`,
+      `category-btn ${getKategorieKlasse(kategorie)}`,
+      function () {
+        zeigeHersteller(kategorie);
+      }
     );
-
-    button.addEventListener('click', () => {
-      zeigeHersteller(kategorie);
-    });
 
     grid.appendChild(button);
   });
 
-  app.appendChild(title);
+  app.appendChild(titel);
   app.appendChild(grid);
 }
 
-
-/*
-|--------------------------------------------------------------------------
-| Hersteller anzeigen
-|--------------------------------------------------------------------------
-*/
-
 function zeigeHersteller(kategorie) {
-  const herstellerDaten = portalDaten[kategorie];
-
-  if (herstellerDaten === undefined) {
-    zeigeFehler('Die gewählte Kategorie wurde nicht gefunden.');
-    return;
-  }
-
   aktuelleKategorie = kategorie;
   aktuellerHersteller = null;
   aktuellesModell = null;
@@ -278,43 +176,34 @@ function zeigeHersteller(kategorie) {
 
   app.innerHTML = '';
 
-  const title = document.createElement('h2');
-  title.textContent = `Hersteller – ${kategorie}`;
+  const titel = document.createElement('h2');
+  titel.textContent = `Hersteller – ${kategorie}`;
 
-  app.appendChild(title);
+  app.appendChild(titel);
 
-  const herstellerListe = Object.keys(herstellerDaten);
+  const herstellerListe = Object.keys(portalDaten[kategorie]);
 
   if (herstellerListe.length === 0) {
-    const empty = document.createElement('div');
-    empty.className = 'empty';
+    const hinweis = document.createElement('p');
+    hinweis.className = 'empty';
+    hinweis.textContent =
+      'In dieser Kategorie sind noch keine Hersteller hinterlegt.';
 
-    const emptyTitle = document.createElement('strong');
-    emptyTitle.textContent = 'Noch keine Hersteller hinterlegt';
-
-    const emptyText = document.createElement('span');
-    emptyText.textContent =
-      ' Du kannst die Hersteller später oben in der Datei script.js ergänzen.';
-
-    empty.appendChild(emptyTitle);
-    empty.appendChild(emptyText);
-
-    app.appendChild(empty);
+    app.appendChild(hinweis);
     return;
   }
 
   const grid = document.createElement('div');
   grid.className = 'grid';
 
-  herstellerListe.forEach(hersteller => {
+  herstellerListe.forEach(function (hersteller) {
     const button = erstelleButton(
       `🏢 ${hersteller}`,
-      'manufacturer-btn'
+      'manufacturer-btn',
+      function () {
+        zeigeModelle(kategorie, hersteller);
+      }
     );
-
-    button.addEventListener('click', () => {
-      zeigeModelle(kategorie, hersteller);
-    });
 
     grid.appendChild(button);
   });
@@ -322,21 +211,7 @@ function zeigeHersteller(kategorie) {
   app.appendChild(grid);
 }
 
-
-/*
-|--------------------------------------------------------------------------
-| Modelle anzeigen
-|--------------------------------------------------------------------------
-*/
-
 function zeigeModelle(kategorie, hersteller) {
-  const modelleDaten = portalDaten[kategorie]?.[hersteller];
-
-  if (modelleDaten === undefined) {
-    zeigeFehler('Der gewählte Hersteller wurde nicht gefunden.');
-    return;
-  }
-
   aktuelleKategorie = kategorie;
   aktuellerHersteller = hersteller;
   aktuellesModell = null;
@@ -345,40 +220,36 @@ function zeigeModelle(kategorie, hersteller) {
 
   app.innerHTML = '';
 
-  const title = document.createElement('h2');
-  title.textContent = `${hersteller} – Modelle`;
+  const titel = document.createElement('h2');
+  titel.textContent = `${hersteller} – Modelle`;
 
-  app.appendChild(title);
+  app.appendChild(titel);
 
-  const modelleListe = Object.keys(modelleDaten);
+  const modelleListe = Object.keys(
+    portalDaten[kategorie][hersteller]
+  );
 
   if (modelleListe.length === 0) {
-    const empty = document.createElement('p');
-
-    empty.className = 'empty';
-    empty.textContent =
+    const hinweis = document.createElement('p');
+    hinweis.className = 'empty';
+    hinweis.textContent =
       'Für diesen Hersteller sind noch keine Modelle hinterlegt.';
 
-    app.appendChild(empty);
+    app.appendChild(hinweis);
     return;
   }
 
   const grid = document.createElement('div');
   grid.className = 'grid';
 
-  modelleListe.forEach(modell => {
+  modelleListe.forEach(function (modell) {
     const button = erstelleButton(
       `📦 ${modell}`,
-      'machine-btn'
+      'machine-btn',
+      function () {
+        zeigeDokumente(kategorie, hersteller, modell);
+      }
     );
-
-    button.addEventListener('click', () => {
-      zeigeDokumente(
-        kategorie,
-        hersteller,
-        modell
-      );
-    });
 
     grid.appendChild(button);
   });
@@ -386,26 +257,7 @@ function zeigeModelle(kategorie, hersteller) {
   app.appendChild(grid);
 }
 
-
-/*
-|--------------------------------------------------------------------------
-| Dokumente anzeigen
-|--------------------------------------------------------------------------
-*/
-
-function zeigeDokumente(
-  kategorie,
-  hersteller,
-  modell
-) {
-  const dokumenteDaten =
-    portalDaten[kategorie]?.[hersteller]?.[modell];
-
-  if (dokumenteDaten === undefined) {
-    zeigeFehler('Das gewählte Modell wurde nicht gefunden.');
-    return;
-  }
-
+function zeigeDokumente(kategorie, hersteller, modell) {
   aktuelleKategorie = kategorie;
   aktuellerHersteller = hersteller;
   aktuellesModell = modell;
@@ -414,49 +266,45 @@ function zeigeDokumente(
 
   app.innerHTML = '';
 
-  const title = document.createElement('h2');
-  title.textContent = modell;
+  const titel = document.createElement('h2');
+  titel.textContent = modell;
 
-  app.appendChild(title);
+  app.appendChild(titel);
 
-  const dokumenteListe = Object.entries(dokumenteDaten);
+  const dokumente = Object.entries(
+    portalDaten[kategorie][hersteller][modell]
+  );
 
-  if (dokumenteListe.length === 0) {
-    const empty = document.createElement('p');
-
-    empty.className = 'empty';
-    empty.textContent =
+  if (dokumente.length === 0) {
+    const hinweis = document.createElement('p');
+    hinweis.className = 'empty';
+    hinweis.textContent =
       'Für dieses Modell sind noch keine Dokumente hinterlegt.';
 
-    app.appendChild(empty);
+    app.appendChild(hinweis);
     return;
   }
 
   const grid = document.createElement('div');
   grid.className = 'grid';
 
-  dokumenteListe.forEach(([titel, pfad]) => {
-    const button = erstelleButton(
-      titel,
-      'document-btn'
-    );
+  dokumente.forEach(function (eintrag) {
+    const dokumentTitel = eintrag[0];
+    const dokumentPfad = eintrag[1];
 
-    button.addEventListener('click', () => {
-      oeffnePdf(pfad, titel);
-    });
+    const button = erstelleButton(
+      dokumentTitel,
+      'document-btn',
+      function () {
+        oeffnePdf(dokumentPfad, dokumentTitel);
+      }
+    );
 
     grid.appendChild(button);
   });
 
   app.appendChild(grid);
 }
-
-
-/*
-|--------------------------------------------------------------------------
-| Suchfunktion
-|--------------------------------------------------------------------------
-*/
 
 function suche() {
   const suchbegriff = searchInput.value
@@ -468,176 +316,88 @@ function suche() {
     return;
   }
 
-  aktuelleKategorie = null;
-  aktuellerHersteller = null;
-  aktuellesModell = null;
-
   setNavigation(false, true);
 
-  const treffer = [];
-
-  Object.entries(portalDaten).forEach(
-    ([kategorie, herstellerDaten]) => {
-      if (
-        kategorie
-          .toLowerCase()
-          .includes(suchbegriff)
-      ) {
-        treffer.push({
-          typ: 'Kategorie',
-          text: kategorie,
-          kategorie
-        });
-      }
-
-      Object.entries(herstellerDaten).forEach(
-        ([hersteller, modelleDaten]) => {
-          if (
-            hersteller
-              .toLowerCase()
-              .includes(suchbegriff)
-          ) {
-            treffer.push({
-              typ: 'Hersteller',
-              text: hersteller,
-              kategorie,
-              hersteller
-            });
-          }
-
-          Object.entries(modelleDaten).forEach(
-            ([modell, dokumenteDaten]) => {
-              if (
-                modell
-                  .toLowerCase()
-                  .includes(suchbegriff)
-              ) {
-                treffer.push({
-                  typ: 'Modell',
-                  text: modell,
-                  kategorie,
-                  hersteller,
-                  modell
-                });
-              }
-
-              Object.entries(dokumenteDaten).forEach(
-                ([dokumentTitel, dokumentPfad]) => {
-                  if (
-                    dokumentTitel
-                      .toLowerCase()
-                      .includes(suchbegriff)
-                  ) {
-                    treffer.push({
-                      typ: 'Dokument',
-                      text: dokumentTitel,
-                      kategorie,
-                      hersteller,
-                      modell,
-                      dokumentTitel,
-                      dokumentPfad
-                    });
-                  }
-                }
-              );
-            }
-          );
-        }
-      );
-    }
-  );
-
-  zeigeSuchergebnisse(treffer);
-}
-
-function zeigeSuchergebnisse(treffer) {
   app.innerHTML = '';
 
-  const title = document.createElement('h2');
-  title.textContent = 'Suchergebnisse';
-
-  app.appendChild(title);
-
-  if (treffer.length === 0) {
-    const empty = document.createElement('p');
-
-    empty.className = 'empty';
-    empty.textContent = 'Keine Treffer gefunden.';
-
-    app.appendChild(empty);
-    return;
-  }
+  const titel = document.createElement('h2');
+  titel.textContent = 'Suchergebnisse';
 
   const grid = document.createElement('div');
   grid.className = 'grid';
 
-  treffer.forEach(eintrag => {
-    let icon = '🔎';
+  let trefferGefunden = false;
 
-    if (eintrag.typ === 'Kategorie') {
-      icon = getKategorieIcon(eintrag.kategorie);
+  Object.entries(portalDaten).forEach(function (kategorieEintrag) {
+    const kategorie = kategorieEintrag[0];
+    const herstellerDaten = kategorieEintrag[1];
+
+    if (kategorie.toLowerCase().includes(suchbegriff)) {
+      grid.appendChild(
+        erstelleButton(
+          `${getKategorieIcon(kategorie)} ${kategorie}`,
+          'search-result-btn',
+          function () {
+            zeigeHersteller(kategorie);
+          }
+        )
+      );
+
+      trefferGefunden = true;
     }
 
-    if (eintrag.typ === 'Hersteller') {
-      icon = '🏢';
-    }
+    Object.entries(herstellerDaten).forEach(function (herstellerEintrag) {
+      const hersteller = herstellerEintrag[0];
+      const modelleDaten = herstellerEintrag[1];
 
-    if (eintrag.typ === 'Modell') {
-      icon = '📦';
-    }
-
-    if (eintrag.typ === 'Dokument') {
-      icon = '📄';
-    }
-
-    const button = erstelleButton(
-      `${icon} ${eintrag.text}`,
-      'search-result-btn'
-    );
-
-    button.addEventListener('click', () => {
-      if (eintrag.typ === 'Kategorie') {
-        zeigeHersteller(eintrag.kategorie);
-        return;
-      }
-
-      if (eintrag.typ === 'Hersteller') {
-        zeigeModelle(
-          eintrag.kategorie,
-          eintrag.hersteller
+      if (hersteller.toLowerCase().includes(suchbegriff)) {
+        grid.appendChild(
+          erstelleButton(
+            `🏢 ${hersteller}`,
+            'search-result-btn',
+            function () {
+              zeigeModelle(kategorie, hersteller);
+            }
+          )
         );
-        return;
+
+        trefferGefunden = true;
       }
 
-      if (eintrag.typ === 'Modell') {
-        zeigeDokumente(
-          eintrag.kategorie,
-          eintrag.hersteller,
-          eintrag.modell
-        );
-        return;
-      }
+      Object.keys(modelleDaten).forEach(function (modell) {
+        if (modell.toLowerCase().includes(suchbegriff)) {
+          grid.appendChild(
+            erstelleButton(
+              `📦 ${modell}`,
+              'search-result-btn',
+              function () {
+                zeigeDokumente(
+                  kategorie,
+                  hersteller,
+                  modell
+                );
+              }
+            )
+          );
 
-      if (eintrag.typ === 'Dokument') {
-        oeffnePdf(
-          eintrag.dokumentPfad,
-          eintrag.dokumentTitel
-        );
-      }
+          trefferGefunden = true;
+        }
+      });
     });
-
-    grid.appendChild(button);
   });
 
-  app.appendChild(grid);
+  app.appendChild(titel);
+
+  if (trefferGefunden) {
+    app.appendChild(grid);
+  } else {
+    const hinweis = document.createElement('p');
+    hinweis.className = 'empty';
+    hinweis.textContent = 'Keine Treffer gefunden.';
+
+    app.appendChild(hinweis);
+  }
 }
-
-
-/*
-|--------------------------------------------------------------------------
-| PDF-Viewer
-|--------------------------------------------------------------------------
-*/
 
 function oeffnePdf(pfad, titel) {
   modalTitle.textContent = titel;
@@ -645,8 +405,6 @@ function oeffnePdf(pfad, titel) {
 
   pdfModal.classList.remove('hidden');
   pdfModal.setAttribute('aria-hidden', 'false');
-
-  document.body.classList.add('modal-open');
 }
 
 function schliessePdf() {
@@ -654,16 +412,7 @@ function schliessePdf() {
 
   pdfModal.classList.add('hidden');
   pdfModal.setAttribute('aria-hidden', 'true');
-
-  document.body.classList.remove('modal-open');
 }
-
-
-/*
-|--------------------------------------------------------------------------
-| Navigation
-|--------------------------------------------------------------------------
-*/
 
 function geheZurueck() {
   if (
@@ -695,78 +444,22 @@ function geheNachHause() {
   zeigeStartseite();
 }
 
+backBtn.addEventListener('click', geheZurueck);
+homeBtn.addEventListener('click', geheNachHause);
+portalTitle.addEventListener('click', geheNachHause);
+searchInput.addEventListener('input', suche);
+closeModalBtn.addEventListener('click', schliessePdf);
 
-/*
-|--------------------------------------------------------------------------
-| Ereignisse
-|--------------------------------------------------------------------------
-*/
-
-backBtn.addEventListener(
-  'click',
-  geheZurueck
-);
-
-homeBtn.addEventListener(
-  'click',
-  geheNachHause
-);
-
-portalTitle.addEventListener(
-  'click',
-  geheNachHause
-);
-
-portalTitle.addEventListener(
-  'keydown',
-  event => {
-    if (
-      event.key === 'Enter' ||
-      event.key === ' '
-    ) {
-      event.preventDefault();
-      geheNachHause();
-    }
+pdfModal.addEventListener('click', function (event) {
+  if (event.target === pdfModal) {
+    schliessePdf();
   }
-);
+});
 
-searchInput.addEventListener(
-  'input',
-  suche
-);
-
-closeModalBtn.addEventListener(
-  'click',
-  schliessePdf
-);
-
-pdfModal.addEventListener(
-  'click',
-  event => {
-    if (event.target === pdfModal) {
-      schliessePdf();
-    }
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+    schliessePdf();
   }
-);
-
-document.addEventListener(
-  'keydown',
-  event => {
-    if (
-      event.key === 'Escape' &&
-      !pdfModal.classList.contains('hidden')
-    ) {
-      schliessePdf();
-    }
-  }
-);
-
-
-/*
-|--------------------------------------------------------------------------
-| Anwendung starten
-|--------------------------------------------------------------------------
-*/
+});
 
 zeigeStartseite();
-```
