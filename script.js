@@ -223,22 +223,25 @@ const portalDaten = {
   }
 };
 
-const app = document.getElementById('app');
-const backBtn = document.getElementById('back-btn');
-const homeBtn = document.getElementById('home-btn');
-const searchContainer = document.getElementById('search-container');
-const searchInput = document.getElementById('search-input');
-
 let aktuelleAnsicht = "hersteller";
 let geladenerHersteller = "";
 let geladeneMaschine = "";
 
 window.onload = function() {
+    // Erzwinge die Herstellerübersicht beim Laden
     zeigeHersteller();
 };
 
 function zeigeHersteller() {
     aktuelleAnsicht = "hersteller";
+    
+    // Elemente sicher abrufen
+    const app = document.getElementById('app');
+    const backBtn = document.getElementById('back-btn');
+    const homeBtn = document.getElementById('home-btn');
+    const searchContainer = document.getElementById('search-container');
+    const searchInput = document.getElementById('search-input');
+    
     if(backBtn) backBtn.style.display = "none";
     if(homeBtn) homeBtn.style.display = "none";
     if(searchContainer) searchContainer.style.display = "block";
@@ -259,11 +262,8 @@ function zeigeMaschinen(herstellerKey) {
     aktuelleAnsicht = "maschinen";
     geladenerHersteller = herstellerKey;
     
-    if(backBtn) backBtn.style.display = "block";
-    if(homeBtn) homeBtn.style.display = "none"; 
-    if(searchContainer) searchContainer.style.display = "none";
+    const app = document.getElementById('app');
+    const backBtn = document.getElementById('back-btn');
+    const homeBtn = document.getElementById('home-btn');
+    const searchContainer = document.getElementById('search-container');
     
-    if(!app) return;
-    
-    const hersteller = portalDaten[herstellerKey];
-    let html = '<h2>' + hersteller.name + ' - Gerätetypen:</h2><div class="grid">';
