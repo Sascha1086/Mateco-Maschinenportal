@@ -91,21 +91,76 @@ const herstellerDaten = {
 
 /*
 |--------------------------------------------------------------------------
-| HTML-Elemente
+| Elemente mit alten und neuen IDs finden
 |--------------------------------------------------------------------------
 */
 
-const app = document.getElementById('app');
-const searchInput = document.getElementById('searchInput');
+function findeElement(...ids) {
+  for (const id of ids) {
+    const element = document.getElementById(id);
 
-const backBtn = document.getElementById('backBtn');
-const homeBtn = document.getElementById('homeBtn');
-const portalTitle = document.getElementById('portalTitle');
+    if (element) {
+      return element;
+    }
+  }
 
-const pdfModal = document.getElementById('pdfModal');
-const pdfFrame = document.getElementById('pdfFrame');
-const modalTitle = document.getElementById('modalTitle');
-const closeModalBtn = document.getElementById('closeModalBtn');
+  return null;
+}
+
+const app = findeElement('app');
+
+const searchInput = findeElement(
+  'searchInput',
+  'search-input'
+);
+
+const backBtn = findeElement(
+  'backBtn',
+  'back-btn'
+);
+
+const homeBtn = findeElement(
+  'homeBtn',
+  'home-btn'
+);
+
+const portalTitle = findeElement(
+  'portalTitle',
+  'portal-titel'
+);
+
+const pdfModal = findeElement(
+  'pdfModal',
+  'pdf-modal'
+);
+
+const pdfFrame = findeElement(
+  'pdfFrame',
+  'pdf-frame'
+);
+
+const modalTitle = findeElement(
+  'modalTitle',
+  'modal-titel'
+);
+
+const closeModalBtn = findeElement(
+  'closeModalBtn',
+  'close-modal-btn'
+);
+
+
+/*
+|--------------------------------------------------------------------------
+| Sicherheitsprüfung
+|--------------------------------------------------------------------------
+*/
+
+if (!app) {
+  throw new Error(
+    'Das Element mit der ID "app" wurde nicht gefunden.'
+  );
+}
 
 
 /*
@@ -124,72 +179,116 @@ let aktuellesModell = null;
 |--------------------------------------------------------------------------
 */
 
-function setNavigation(showBack = false, showHome = false) {
-  backBtn.classList.toggle('hidden', !showBack);
-  homeBtn.classList.toggle('hidden', !showHome);
+function setNavigation(
+  showBack = false,
+  showHome = false
+) {
+  if (backBtn) {
+    backBtn.style.display =
+      showBack ? 'inline-block' : 'none';
+
+    backBtn.classList.toggle(
+      'hidden',
+      !showBack
+    );
+  }
+
+  if (homeBtn) {
+    homeBtn.style.display =
+      showHome ? 'inline-block' : 'none';
+
+    homeBtn.classList.toggle(
+      'hidden',
+      !showHome
+    );
+  }
 }
 
-function resetNavigation() {
-  aktuellerHersteller = null;
-  aktuellesModell = null;
-}
-
-function erstelleButton(text, cssClass, onClick) {
-  const button = document.createElement('button');
+function erstelleButton(
+  text,
+  cssClass,
+  onClick
+) {
+  const button =
+    document.createElement('button');
 
   button.type = 'button';
-  button.className = `btn ${cssClass}`.trim();
+  button.className =
+    `btn ${cssClass}`.trim();
+
   button.textContent = text;
 
-  button.addEventListener('click', onClick);
+  button.addEventListener(
+    'click',
+    onClick
+  );
 
   return button;
+}
+
+function zeigeHinweis(text) {
+  const hinweis =
+    document.createElement('p');
+
+  hinweis.className = 'empty';
+  hinweis.textContent = text;
+
+  app.appendChild(hinweis);
 }
 
 
 /*
 |--------------------------------------------------------------------------
-| Startseite: Hersteller direkt anzeigen
+| Startseite
 |--------------------------------------------------------------------------
 */
 
 function zeigeStartseite() {
-  resetNavigation();
+  aktuellerHersteller = null;
+  aktuellesModell = null;
+
   setNavigation(false, false);
 
   app.innerHTML = '';
 
-  const title = document.createElement('h2');
-  title.textContent = 'Hersteller auswählen';
+  const titel =
+    document.createElement('h2');
 
-  const grid = document.createElement('div');
+  titel.textContent =
+    'Hersteller auswählen';
+
+  const grid =
+    document.createElement('div');
+
   grid.className = 'grid';
 
-  const herstellerListe = Object.keys(herstellerDaten);
+  Object.keys(herstellerDaten)
+    .forEach(function (hersteller) {
+      const button = erstelleButton(
+        `🏢 ${hersteller}`,
+        'manufacturer-btn hersteller-btn',
+        function () {
+          zeigeModelle(hersteller);
+        }
+      );
 
-  herstellerListe.forEach(hersteller => {
-    const button = erstelleButton(
-      `🏢 ${hersteller}`,
-      'manufacturer-btn',
-      () => zeigeModelle(hersteller)
-    );
+      grid.appendChild(button);
+    });
 
-    grid.appendChild(button);
-  });
-
-  app.appendChild(title);
+  app.appendChild(titel);
   app.appendChild(grid);
 }
 
 
 /*
 |--------------------------------------------------------------------------
-| Modelle anzeigen
+| Modelle
 |--------------------------------------------------------------------------
 */
 
 function zeigeModelle(hersteller) {
-  const modelleDaten = herstellerDaten[hersteller];
+  const modelleDaten =
+    herstellerDaten[hersteller];
 
   if (!modelleDaten) {
     return;
@@ -202,32 +301,40 @@ function zeigeModelle(hersteller) {
 
   app.innerHTML = '';
 
-  const title = document.createElement('h2');
-  title.textContent = `${hersteller} – Modelle`;
+  const titel =
+    document.createElement('h2');
 
-  app.appendChild(title);
+  titel.textContent =
+    `${hersteller} – Modelle`;
 
-  const modelleListe = Object.keys(modelleDaten);
+  app.appendChild(titel);
 
-  if (modelleListe.length === 0) {
-    const hinweis = document.createElement('p');
+  const modelle =
+    Object.keys(modelleDaten);
 
-    hinweis.className = 'empty';
-    hinweis.textContent =
-      'Für diesen Hersteller sind noch keine Modelle hinterlegt.';
+  if (modelle.length === 0) {
+    zeigeHinweis(
+      'Für diesen Hersteller sind noch keine Modelle hinterlegt.'
+    );
 
-    app.appendChild(hinweis);
     return;
   }
 
-  const grid = document.createElement('div');
+  const grid =
+    document.createElement('div');
+
   grid.className = 'grid';
 
-  modelleListe.forEach(modell => {
+  modelle.forEach(function (modell) {
     const button = erstelleButton(
       `📦 ${modell}`,
-      'machine-btn',
-      () => zeigeDokumente(hersteller, modell)
+      'machine-btn maschine-btn',
+      function () {
+        zeigeDokumente(
+          hersteller,
+          modell
+        );
+      }
     );
 
     grid.appendChild(button);
@@ -239,11 +346,14 @@ function zeigeModelle(hersteller) {
 
 /*
 |--------------------------------------------------------------------------
-| Dokumente anzeigen
+| Dokumente
 |--------------------------------------------------------------------------
 */
 
-function zeigeDokumente(hersteller, modell) {
+function zeigeDokumente(
+  hersteller,
+  modell
+) {
   const dokumenteDaten =
     herstellerDaten[hersteller]?.[modell];
 
@@ -258,37 +368,45 @@ function zeigeDokumente(hersteller, modell) {
 
   app.innerHTML = '';
 
-  const title = document.createElement('h2');
-  title.textContent = modell;
+  const titel =
+    document.createElement('h2');
 
-  app.appendChild(title);
+  titel.textContent = modell;
 
-  const dokumenteListe =
+  app.appendChild(titel);
+
+  const dokumente =
     Object.entries(dokumenteDaten);
 
-  if (dokumenteListe.length === 0) {
-    const hinweis = document.createElement('p');
+  if (dokumente.length === 0) {
+    zeigeHinweis(
+      'Für dieses Modell sind noch keine Dokumente hinterlegt.'
+    );
 
-    hinweis.className = 'empty';
-    hinweis.textContent =
-      'Für dieses Modell sind noch keine Dokumente hinterlegt.';
-
-    app.appendChild(hinweis);
     return;
   }
 
-  const grid = document.createElement('div');
+  const grid =
+    document.createElement('div');
+
   grid.className = 'grid';
 
-  dokumenteListe.forEach(([titel, pfad]) => {
-    const button = erstelleButton(
-      titel,
-      'document-btn',
-      () => oeffnePdf(pfad, titel)
-    );
+  dokumente.forEach(
+    function ([dokumentTitel, pfad]) {
+      const button = erstelleButton(
+        dokumentTitel,
+        'document-btn maschine-btn',
+        function () {
+          oeffnePdf(
+            pfad,
+            dokumentTitel
+          );
+        }
+      );
 
-    grid.appendChild(button);
-  });
+      grid.appendChild(button);
+    }
+  );
 
   app.appendChild(grid);
 }
@@ -296,14 +414,19 @@ function zeigeDokumente(hersteller, modell) {
 
 /*
 |--------------------------------------------------------------------------
-| Suche
+| Suchfunktion
 |--------------------------------------------------------------------------
 */
 
 function suche() {
-  const suchbegriff = searchInput.value
-    .trim()
-    .toLowerCase();
+  if (!searchInput) {
+    return;
+  }
+
+  const suchbegriff =
+    searchInput.value
+      .trim()
+      .toLowerCase();
 
   if (suchbegriff === '') {
     zeigeStartseite();
@@ -317,112 +440,164 @@ function suche() {
 
   app.innerHTML = '';
 
-  const title = document.createElement('h2');
-  title.textContent = 'Suchergebnisse';
+  const titel =
+    document.createElement('h2');
 
-  app.appendChild(title);
+  titel.textContent =
+    'Suchergebnisse';
 
-  const grid = document.createElement('div');
+  app.appendChild(titel);
+
+  const grid =
+    document.createElement('div');
+
   grid.className = 'grid';
 
   let trefferGefunden = false;
 
-  Object.entries(herstellerDaten).forEach(
-    ([hersteller, modelleDaten]) => {
-      if (
-        hersteller
-          .toLowerCase()
-          .includes(suchbegriff)
+  Object.entries(herstellerDaten)
+    .forEach(
+      function (
+        [hersteller, modelleDaten]
       ) {
-        const button = erstelleButton(
-          `🏢 ${hersteller}`,
-          'search-result-btn',
-          () => zeigeModelle(hersteller)
-        );
+        if (
+          hersteller
+            .toLowerCase()
+            .includes(suchbegriff)
+        ) {
+          grid.appendChild(
+            erstelleButton(
+              `🏢 ${hersteller}`,
+              'search-result-btn hersteller-btn',
+              function () {
+                zeigeModelle(
+                  hersteller
+                );
+              }
+            )
+          );
 
-        grid.appendChild(button);
-        trefferGefunden = true;
-      }
+          trefferGefunden = true;
+        }
 
-      Object.entries(modelleDaten).forEach(
-        ([modell, dokumenteDaten]) => {
-          if (
-            modell
-              .toLowerCase()
-              .includes(suchbegriff)
-          ) {
-            const button = erstelleButton(
-              `📦 ${modell}`,
-              'search-result-btn',
-              () => zeigeDokumente(
-                hersteller,
-                modell
-              )
-            );
-
-            grid.appendChild(button);
-            trefferGefunden = true;
-          }
-
-          Object.entries(dokumenteDaten).forEach(
-            ([dokumentTitel, dokumentPfad]) => {
+        Object.entries(modelleDaten)
+          .forEach(
+            function (
+              [modell, dokumenteDaten]
+            ) {
               if (
-                dokumentTitel
+                modell
                   .toLowerCase()
                   .includes(suchbegriff)
               ) {
-                const button = erstelleButton(
-                  `${dokumentTitel} – ${modell}`,
-                  'search-result-btn',
-                  () => oeffnePdf(
-                    dokumentPfad,
-                    dokumentTitel
+                grid.appendChild(
+                  erstelleButton(
+                    `📦 ${modell}`,
+                    'search-result-btn maschine-btn',
+                    function () {
+                      zeigeDokumente(
+                        hersteller,
+                        modell
+                      );
+                    }
                   )
                 );
 
-                grid.appendChild(button);
                 trefferGefunden = true;
               }
+
+              Object.entries(
+                dokumenteDaten
+              ).forEach(
+                function (
+                  [
+                    dokumentTitel,
+                    dokumentPfad
+                  ]
+                ) {
+                  if (
+                    dokumentTitel
+                      .toLowerCase()
+                      .includes(
+                        suchbegriff
+                      )
+                  ) {
+                    grid.appendChild(
+                      erstelleButton(
+                        `${dokumentTitel} – ${modell}`,
+                        'search-result-btn',
+                        function () {
+                          oeffnePdf(
+                            dokumentPfad,
+                            dokumentTitel
+                          );
+                        }
+                      )
+                    );
+
+                    trefferGefunden =
+                      true;
+                  }
+                }
+              );
             }
           );
-        }
-      );
-    }
-  );
+      }
+    );
 
   if (trefferGefunden) {
     app.appendChild(grid);
-    return;
+  } else {
+    zeigeHinweis(
+      'Keine Treffer gefunden.'
+    );
   }
-
-  const hinweis = document.createElement('p');
-
-  hinweis.className = 'empty';
-  hinweis.textContent = 'Keine Treffer gefunden.';
-
-  app.appendChild(hinweis);
 }
 
 
 /*
 |--------------------------------------------------------------------------
-| PDF-Viewer
+| PDF
 |--------------------------------------------------------------------------
 */
 
 function oeffnePdf(pfad, titel) {
-  modalTitle.textContent = titel;
+  if (!pdfModal || !pdfFrame) {
+    window.open(pfad, '_blank');
+    return;
+  }
+
+  if (modalTitle) {
+    modalTitle.textContent = titel;
+  }
+
   pdfFrame.src = pfad;
 
+  pdfModal.style.display = 'flex';
   pdfModal.classList.remove('hidden');
-  pdfModal.setAttribute('aria-hidden', 'false');
+
+  pdfModal.setAttribute(
+    'aria-hidden',
+    'false'
+  );
 }
 
 function schliessePdf() {
-  pdfFrame.src = '';
+  if (!pdfModal) {
+    return;
+  }
 
+  if (pdfFrame) {
+    pdfFrame.src = '';
+  }
+
+  pdfModal.style.display = 'none';
   pdfModal.classList.add('hidden');
-  pdfModal.setAttribute('aria-hidden', 'true');
+
+  pdfModal.setAttribute(
+    'aria-hidden',
+    'true'
+  );
 }
 
 
@@ -437,7 +612,10 @@ function geheZurueck() {
     aktuellerHersteller &&
     aktuellesModell
   ) {
-    zeigeModelle(aktuellerHersteller);
+    zeigeModelle(
+      aktuellerHersteller
+    );
+
     return;
   }
 
@@ -445,58 +623,57 @@ function geheZurueck() {
 }
 
 function geheNachHause() {
-  searchInput.value = '';
+  if (searchInput) {
+    searchInput.value = '';
+  }
+
   zeigeStartseite();
 }
 
 
 /*
 |--------------------------------------------------------------------------
-| Ereignisse
+| Events
 |--------------------------------------------------------------------------
 */
 
-backBtn.addEventListener(
-  'click',
-  geheZurueck
-);
+if (backBtn) {
+  backBtn.onclick = geheZurueck;
+}
 
-homeBtn.addEventListener(
-  'click',
-  geheNachHause
-);
+if (homeBtn) {
+  homeBtn.onclick = geheNachHause;
+}
 
-portalTitle.addEventListener(
-  'click',
-  geheNachHause
-);
+if (portalTitle) {
+  portalTitle.onclick =
+    geheNachHause;
+}
 
-searchInput.addEventListener(
-  'input',
-  suche
-);
+if (searchInput) {
+  searchInput.oninput = suche;
+}
 
-closeModalBtn.addEventListener(
-  'click',
-  schliessePdf
-);
+if (closeModalBtn) {
+  closeModalBtn.onclick =
+    schliessePdf;
+}
 
-pdfModal.addEventListener(
-  'click',
-  event => {
-    if (event.target === pdfModal) {
-      schliessePdf();
+if (pdfModal) {
+  pdfModal.addEventListener(
+    'click',
+    function (event) {
+      if (event.target === pdfModal) {
+        schliessePdf();
+      }
     }
-  }
-);
+  );
+}
 
 document.addEventListener(
   'keydown',
-  event => {
-    if (
-      event.key === 'Escape' &&
-      !pdfModal.classList.contains('hidden')
-    ) {
+  function (event) {
+    if (event.key === 'Escape') {
       schliessePdf();
     }
   }
@@ -505,7 +682,26 @@ document.addEventListener(
 
 /*
 |--------------------------------------------------------------------------
-| Anwendung starten
+| Globale Funktionen für alte onclick-Angaben
+|--------------------------------------------------------------------------
+*/
+
+window.zeigeKategorienUebersicht =
+  zeigeStartseite;
+
+window.zeigeStartseite =
+  zeigeStartseite;
+
+window.sucheMaschine =
+  suche;
+
+window.schliessePdf =
+  schliessePdf;
+
+
+/*
+|--------------------------------------------------------------------------
+| Start
 |--------------------------------------------------------------------------
 */
 
