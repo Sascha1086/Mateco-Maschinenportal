@@ -625,7 +625,7 @@ function oeffnePdf(pfad, titel) {
     modalTitle.textContent = titel;
   }
 
-  pdfFrame.src = `pfad;
+  pdfFrame.src = pfad;
 
   pdfModal.style.display = 'flex';
   pdfModal.classList.remove('hidden');
