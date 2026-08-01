@@ -17,12 +17,12 @@ const portalDaten = {
         {"titel": "⚡ Schaltplan", "datei": "pdf/Genie/GS1932/Schaltplan.pdf"},
         {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Genie/1932/Ersatzteilliste.pdf"}
       ],
-      "GS1932_E-Drive (Schere)": [
-        {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Genie/GS1932 E-Drive/Bedienungsanleitung.pdf"},
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Genie/GS1932 E-Drive/Serviceanleitung.pdf"},
-        {"titel": "⚠️ Fehlercodes", "datei": "pdf/Genie/GS1932 E-Drive/Fehlercodes.pdf"},
-        {"titel": "⚡ Schaltplan", "datei": "pdf/Genie/GS1532 E-Drive/Schaltplan.pdf"},
-        {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Genie/GS1932 E-Drive/Ersatzteilliste.pdf"}
+      "GS1932_EDrive (Schere)": [
+        {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Genie/GS1932 EDrive/Bedienungsanleitung.pdf"},
+        {"titel": "📘 Serviceanleitung", "datei": "pdf/Genie/GS1932 EDrive/Serviceanleitung.pdf"},
+        {"titel": "⚠️ Fehlercodes", "datei": "pdf/Genie/GS1932 EDrive/Fehlercodes.pdf"},
+        {"titel": "⚡ Schaltplan", "datei": "pdf/Genie/GS1532 EDrive/Schaltplan.pdf"},
+        {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Genie/GS1932 EDrive/Ersatzteilliste.pdf"}
       ],
       "S85XC (Teleskop)": [
         {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Genie/S85XC/Bedienungsanleitung.pdf"},
