@@ -67,7 +67,7 @@ const herstellerDaten = {
         'pdf/Genie/S85XC/Ersatzteilliste.pdf'
     },
 
-    'Z60/34 (Gelenk-Teleskop)': {}
+    'Z60/34 (Gelenk-Teleskop)': {
       '📄 Bedienungsanleitung':
         'pdf/Genie/Z60_34/Bedienungsanleitung.pdf',
 
