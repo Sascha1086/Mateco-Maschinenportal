@@ -27,7 +27,7 @@ header {
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
-/* Wichtig: Das Steuerungsfeld für deine Buttons */
+/* Das Steuerungsfeld für deine Buttons */
 #nav-buttons {
     display: flex;
     gap: 15px;
@@ -89,24 +89,27 @@ h2 {
 
 .grid {
     display: grid;
-    /* ÄNDERUNG: Automatisch nebeneinander, wenn Platz ist (mindestens 250px breit pro Button) */
+    /* Automatisch nebeneinander, wenn Platz ist */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
 }
 
+/* Allgemeine Button-Klasse für Hersteller, Maschinen und Dokumente */
 .btn {
-    display: block;
-    width: 100%;
+    display: block !important;
+    width: 100% !important;
     padding: 22px 20px;
     font-size: 18px;
     font-weight: 600;
-    text-align: left;
+    text-align: left !important; /* Erzwingt Linksbündigkeit auf PC & Handy */
     border: none;
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    text-decoration: none;
-    color: white;
+    text-decoration: none !important; /* Entfernt Unterstreichungen bei Links */
+    color: white !important;
+    -webkit-appearance: none; /* Deaktiviert mobile Standard-Styles von iOS/Android */
+    box-sizing: border-box !important;
 }
 
 .btn:active {
