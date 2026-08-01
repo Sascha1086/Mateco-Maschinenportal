@@ -1,72 +1,103 @@
+```javascript
 'use strict';
 
-const portalDaten = {
-  'Arbeitsbühnen': {
-    Genie: {
-      'GS1532 (Schere)': {
-        '📄 Bedienungsanleitung': 'pdf/Genie/GS1532/Bedienungsanleitung.pdf',
-        '📘 Serviceanleitung': 'pdf/Genie/GS1532/Serviceanleitung.pdf'
-      },
-      'GS1932 (Schere)': {},
-      'GS1932 E-Drive (Schere)': {},
-      'S85XC (Teleskop)': {},
-      'Z60/34 (Gelenk-Teleskop)': {}
+/*
+|--------------------------------------------------------------------------
+| Hersteller, Modelle und Dokumente
+|--------------------------------------------------------------------------
+*/
+
+const herstellerDaten = {
+  Genie: {
+    'GS1532 (Schere)': {
+      '📄 Bedienungsanleitung':
+        'pdf/Genie/GS1532/Bedienungsanleitung.pdf',
+
+      '📘 Serviceanleitung':
+        'pdf/Genie/GS1532/Serviceanleitung.pdf',
+
+      '⚠️ Fehlercodes':
+        'pdf/Genie/GS1532/Fehlercodeliste.pdf',
+
+      '⚡ Schaltplan':
+        'pdf/Genie/GS1532/Schaltplan.pdf',
+
+      '🔧 Ersatzteilliste':
+        'pdf/Genie/GS1532/Ersatzteilliste.pdf'
     },
 
-    JLG: {
-      '1932 (Schere)': {},
-      '2032 (Schere)': {}
+    'GS1932 (Schere)': {
+      '📄 Bedienungsanleitung':
+        'pdf/Genie/GS1932/Bedienungsanleitung.pdf',
+
+      '📘 Serviceanleitung':
+        'pdf/Genie/GS1932/Serviceanleitung.pdf'
     },
 
-    Zoomlion: {
-      'Z0701 (Schere)': {}
-    },
-
-    Haulotte: {
-      'Star 10 (Teleskopmast)': {}
-    },
-
-    Dingli: {
-      'BA28BERT (Gelenk-Teleskop)': {}
-    },
-
-    Skyjack: {
-      'SJ12 (Roll-Lift)': {},
-      'SJ3 3219 (Schere)': {},
-      'SJ3 3226 (Schere)': {}
-    },
-
-    Teupen: {
-      'LEO15GT (Gelenk-Kette)': {},
-      'LEO18GT (Gelenk-Kette)': {},
-      'LEO21GT (Gelenk-Kette)': {}
-    }
+    'GS1932 E-Drive (Schere)': {},
+    'S85XC (Teleskop)': {},
+    'Z60/34 (Gelenk-Teleskop)': {}
   },
 
-  'Stapler': {
-    Manitou: {
-      'TS0625 (Teleskopstapler)': {
-        '📘 Serviceanleitung': 'pdf/Manitou/TS0625/Serviceanleitung.pdf',
-        '⚡ Schaltplan': 'pdf/Manitou/TS0625/Schaltplan.pdf'
-      },
-      'TS0932 (Teleskopstapler)': {},
-      'TS1440 (Teleskopstapler)': {}
-    },
-
-    Merlo: {
-      'TS0625 (Teleskopstapler)': {},
-      'TS0932 (Teleskopstapler)': {},
-      'TS1440 (Teleskopstapler)': {}
-    }
+  JLG: {
+    '1932 (Schere)': {},
+    '2032 (Schere)': {}
   },
 
-  'LKW-Arbeitsbühnen': {},
+  Zoomlion: {
+    'Z0701 (Schere)': {}
+  },
 
-  'Anhänger-Arbeitsbühnen': {}
+  Haulotte: {
+    'Star 10 (Teleskopmast)': {}
+  },
+
+  Dingli: {
+    'BA28BERT (Gelenk-Teleskop)': {}
+  },
+
+  Skyjack: {
+    'SJ12 (Roll-Lift)': {},
+    'SJ3 3219 (Schere)': {},
+    'SJ3 3226 (Schere)': {}
+  },
+
+  Teupen: {
+    'LEO15GT (Gelenk-Kette)': {},
+    'LEO18GT (Gelenk-Kette)': {},
+    'LEO21GT (Gelenk-Kette)': {}
+  },
+
+  Manitou: {
+    'TS0625 (Teleskopstapler)': {
+      '📘 Serviceanleitung':
+        'pdf/Manitou/TS0625/Serviceanleitung.pdf',
+
+      '⚡ Schaltplan':
+        'pdf/Manitou/TS0625/Schaltplan.pdf'
+    },
+
+    'TS0932 (Teleskopstapler)': {},
+    'TS1440 (Teleskopstapler)': {}
+  },
+
+  Merlo: {
+    'TS0625 (Teleskopstapler)': {},
+    'TS0932 (Teleskopstapler)': {},
+    'TS1440 (Teleskopstapler)': {}
+  }
 };
+
+
+/*
+|--------------------------------------------------------------------------
+| HTML-Elemente
+|--------------------------------------------------------------------------
+*/
 
 const app = document.getElementById('app');
 const searchInput = document.getElementById('searchInput');
+
 const backBtn = document.getElementById('backBtn');
 const homeBtn = document.getElementById('homeBtn');
 const portalTitle = document.getElementById('portalTitle');
@@ -76,143 +107,94 @@ const pdfFrame = document.getElementById('pdfFrame');
 const modalTitle = document.getElementById('modalTitle');
 const closeModalBtn = document.getElementById('closeModalBtn');
 
-let aktuelleKategorie = null;
+
+/*
+|--------------------------------------------------------------------------
+| Navigationsstatus
+|--------------------------------------------------------------------------
+*/
+
 let aktuellerHersteller = null;
 let aktuellesModell = null;
 
-function erstelleButton(text, klasse, funktion) {
+
+/*
+|--------------------------------------------------------------------------
+| Hilfsfunktionen
+|--------------------------------------------------------------------------
+*/
+
+function setNavigation(showBack = false, showHome = false) {
+  backBtn.classList.toggle('hidden', !showBack);
+  homeBtn.classList.toggle('hidden', !showHome);
+}
+
+function resetNavigation() {
+  aktuellerHersteller = null;
+  aktuellesModell = null;
+}
+
+function erstelleButton(text, cssClass, onClick) {
   const button = document.createElement('button');
 
   button.type = 'button';
-  button.className = `btn ${klasse}`;
+  button.className = `btn ${cssClass}`.trim();
   button.textContent = text;
-  button.addEventListener('click', funktion);
+
+  button.addEventListener('click', onClick);
 
   return button;
 }
 
-function setNavigation(zurueckAnzeigen, homeAnzeigen) {
-  backBtn.classList.toggle('hidden', !zurueckAnzeigen);
-  homeBtn.classList.toggle('hidden', !homeAnzeigen);
-}
 
-function getKategorieIcon(kategorie) {
-  if (kategorie === 'Arbeitsbühnen') {
-    return '🚀';
-  }
-
-  if (kategorie === 'Stapler') {
-    return '🚜';
-  }
-
-  if (kategorie === 'LKW-Arbeitsbühnen') {
-    return '🚚';
-  }
-
-  if (kategorie === 'Anhänger-Arbeitsbühnen') {
-    return '🛻';
-  }
-
-  return '📁';
-}
-
-function getKategorieKlasse(kategorie) {
-  if (kategorie === 'Arbeitsbühnen') {
-    return 'category-platforms';
-  }
-
-  if (kategorie === 'Stapler') {
-    return 'category-forklifts';
-  }
-
-  if (kategorie === 'LKW-Arbeitsbühnen') {
-    return 'category-trucks';
-  }
-
-  if (kategorie === 'Anhänger-Arbeitsbühnen') {
-    return 'category-trailers';
-  }
-
-  return '';
-}
+/*
+|--------------------------------------------------------------------------
+| Startseite: Hersteller direkt anzeigen
+|--------------------------------------------------------------------------
+*/
 
 function zeigeStartseite() {
-  aktuelleKategorie = null;
-  aktuellerHersteller = null;
-  aktuellesModell = null;
-
+  resetNavigation();
   setNavigation(false, false);
 
   app.innerHTML = '';
 
-  const titel = document.createElement('h2');
-  titel.textContent = 'Kategorie auswählen';
-
-  const grid = document.createElement('div');
-  grid.className = 'grid category-grid';
-
-  Object.keys(portalDaten).forEach(function (kategorie) {
-    const button = erstelleButton(
-      `${getKategorieIcon(kategorie)} ${kategorie}`,
-      `category-btn ${getKategorieKlasse(kategorie)}`,
-      function () {
-        zeigeHersteller(kategorie);
-      }
-    );
-
-    grid.appendChild(button);
-  });
-
-  app.appendChild(titel);
-  app.appendChild(grid);
-}
-
-function zeigeHersteller(kategorie) {
-  aktuelleKategorie = kategorie;
-  aktuellerHersteller = null;
-  aktuellesModell = null;
-
-  setNavigation(true, true);
-
-  app.innerHTML = '';
-
-  const titel = document.createElement('h2');
-  titel.textContent = `Hersteller – ${kategorie}`;
-
-  app.appendChild(titel);
-
-  const herstellerListe = Object.keys(portalDaten[kategorie]);
-
-  if (herstellerListe.length === 0) {
-    const hinweis = document.createElement('p');
-    hinweis.className = 'empty';
-    hinweis.textContent =
-      'In dieser Kategorie sind noch keine Hersteller hinterlegt.';
-
-    app.appendChild(hinweis);
-    return;
-  }
+  const title = document.createElement('h2');
+  title.textContent = 'Hersteller auswählen';
 
   const grid = document.createElement('div');
   grid.className = 'grid';
 
-  herstellerListe.forEach(function (hersteller) {
+  const herstellerListe = Object.keys(herstellerDaten);
+
+  herstellerListe.forEach(hersteller => {
     const button = erstelleButton(
       `🏢 ${hersteller}`,
       'manufacturer-btn',
-      function () {
-        zeigeModelle(kategorie, hersteller);
-      }
+      () => zeigeModelle(hersteller)
     );
 
     grid.appendChild(button);
   });
 
+  app.appendChild(title);
   app.appendChild(grid);
 }
 
-function zeigeModelle(kategorie, hersteller) {
-  aktuelleKategorie = kategorie;
+
+/*
+|--------------------------------------------------------------------------
+| Modelle anzeigen
+|--------------------------------------------------------------------------
+*/
+
+function zeigeModelle(hersteller) {
+  const modelleDaten = herstellerDaten[hersteller];
+
+  if (!modelleDaten) {
+    return;
+  }
+
   aktuellerHersteller = hersteller;
   aktuellesModell = null;
 
@@ -220,17 +202,16 @@ function zeigeModelle(kategorie, hersteller) {
 
   app.innerHTML = '';
 
-  const titel = document.createElement('h2');
-  titel.textContent = `${hersteller} – Modelle`;
+  const title = document.createElement('h2');
+  title.textContent = `${hersteller} – Modelle`;
 
-  app.appendChild(titel);
+  app.appendChild(title);
 
-  const modelleListe = Object.keys(
-    portalDaten[kategorie][hersteller]
-  );
+  const modelleListe = Object.keys(modelleDaten);
 
   if (modelleListe.length === 0) {
     const hinweis = document.createElement('p');
+
     hinweis.className = 'empty';
     hinweis.textContent =
       'Für diesen Hersteller sind noch keine Modelle hinterlegt.';
@@ -242,13 +223,11 @@ function zeigeModelle(kategorie, hersteller) {
   const grid = document.createElement('div');
   grid.className = 'grid';
 
-  modelleListe.forEach(function (modell) {
+  modelleListe.forEach(modell => {
     const button = erstelleButton(
       `📦 ${modell}`,
       'machine-btn',
-      function () {
-        zeigeDokumente(kategorie, hersteller, modell);
-      }
+      () => zeigeDokumente(hersteller, modell)
     );
 
     grid.appendChild(button);
@@ -257,8 +236,21 @@ function zeigeModelle(kategorie, hersteller) {
   app.appendChild(grid);
 }
 
-function zeigeDokumente(kategorie, hersteller, modell) {
-  aktuelleKategorie = kategorie;
+
+/*
+|--------------------------------------------------------------------------
+| Dokumente anzeigen
+|--------------------------------------------------------------------------
+*/
+
+function zeigeDokumente(hersteller, modell) {
+  const dokumenteDaten =
+    herstellerDaten[hersteller]?.[modell];
+
+  if (dokumenteDaten === undefined) {
+    return;
+  }
+
   aktuellerHersteller = hersteller;
   aktuellesModell = modell;
 
@@ -266,17 +258,17 @@ function zeigeDokumente(kategorie, hersteller, modell) {
 
   app.innerHTML = '';
 
-  const titel = document.createElement('h2');
-  titel.textContent = modell;
+  const title = document.createElement('h2');
+  title.textContent = modell;
 
-  app.appendChild(titel);
+  app.appendChild(title);
 
-  const dokumente = Object.entries(
-    portalDaten[kategorie][hersteller][modell]
-  );
+  const dokumenteListe =
+    Object.entries(dokumenteDaten);
 
-  if (dokumente.length === 0) {
+  if (dokumenteListe.length === 0) {
     const hinweis = document.createElement('p');
+
     hinweis.className = 'empty';
     hinweis.textContent =
       'Für dieses Modell sind noch keine Dokumente hinterlegt.';
@@ -288,16 +280,11 @@ function zeigeDokumente(kategorie, hersteller, modell) {
   const grid = document.createElement('div');
   grid.className = 'grid';
 
-  dokumente.forEach(function (eintrag) {
-    const dokumentTitel = eintrag[0];
-    const dokumentPfad = eintrag[1];
-
+  dokumenteListe.forEach(([titel, pfad]) => {
     const button = erstelleButton(
-      dokumentTitel,
+      titel,
       'document-btn',
-      function () {
-        oeffnePdf(dokumentPfad, dokumentTitel);
-      }
+      () => oeffnePdf(pfad, titel)
     );
 
     grid.appendChild(button);
@@ -305,6 +292,13 @@ function zeigeDokumente(kategorie, hersteller, modell) {
 
   app.appendChild(grid);
 }
+
+
+/*
+|--------------------------------------------------------------------------
+| Suche
+|--------------------------------------------------------------------------
+*/
 
 function suche() {
   const suchbegriff = searchInput.value
@@ -316,88 +310,105 @@ function suche() {
     return;
   }
 
+  aktuellerHersteller = null;
+  aktuellesModell = null;
+
   setNavigation(false, true);
 
   app.innerHTML = '';
 
-  const titel = document.createElement('h2');
-  titel.textContent = 'Suchergebnisse';
+  const title = document.createElement('h2');
+  title.textContent = 'Suchergebnisse';
+
+  app.appendChild(title);
 
   const grid = document.createElement('div');
   grid.className = 'grid';
 
   let trefferGefunden = false;
 
-  Object.entries(portalDaten).forEach(function (kategorieEintrag) {
-    const kategorie = kategorieEintrag[0];
-    const herstellerDaten = kategorieEintrag[1];
-
-    if (kategorie.toLowerCase().includes(suchbegriff)) {
-      grid.appendChild(
-        erstelleButton(
-          `${getKategorieIcon(kategorie)} ${kategorie}`,
+  Object.entries(herstellerDaten).forEach(
+    ([hersteller, modelleDaten]) => {
+      if (
+        hersteller
+          .toLowerCase()
+          .includes(suchbegriff)
+      ) {
+        const button = erstelleButton(
+          `🏢 ${hersteller}`,
           'search-result-btn',
-          function () {
-            zeigeHersteller(kategorie);
-          }
-        )
-      );
-
-      trefferGefunden = true;
-    }
-
-    Object.entries(herstellerDaten).forEach(function (herstellerEintrag) {
-      const hersteller = herstellerEintrag[0];
-      const modelleDaten = herstellerEintrag[1];
-
-      if (hersteller.toLowerCase().includes(suchbegriff)) {
-        grid.appendChild(
-          erstelleButton(
-            `🏢 ${hersteller}`,
-            'search-result-btn',
-            function () {
-              zeigeModelle(kategorie, hersteller);
-            }
-          )
+          () => zeigeModelle(hersteller)
         );
 
+        grid.appendChild(button);
         trefferGefunden = true;
       }
 
-      Object.keys(modelleDaten).forEach(function (modell) {
-        if (modell.toLowerCase().includes(suchbegriff)) {
-          grid.appendChild(
-            erstelleButton(
+      Object.entries(modelleDaten).forEach(
+        ([modell, dokumenteDaten]) => {
+          if (
+            modell
+              .toLowerCase()
+              .includes(suchbegriff)
+          ) {
+            const button = erstelleButton(
               `📦 ${modell}`,
               'search-result-btn',
-              function () {
-                zeigeDokumente(
-                  kategorie,
-                  hersteller,
-                  modell
+              () => zeigeDokumente(
+                hersteller,
+                modell
+              )
+            );
+
+            grid.appendChild(button);
+            trefferGefunden = true;
+          }
+
+          Object.entries(dokumenteDaten).forEach(
+            ([dokumentTitel, dokumentPfad]) => {
+              if (
+                dokumentTitel
+                  .toLowerCase()
+                  .includes(suchbegriff)
+              ) {
+                const button = erstelleButton(
+                  `${dokumentTitel} – ${modell}`,
+                  'search-result-btn',
+                  () => oeffnePdf(
+                    dokumentPfad,
+                    dokumentTitel
+                  )
                 );
+
+                grid.appendChild(button);
+                trefferGefunden = true;
               }
-            )
+            }
           );
-
-          trefferGefunden = true;
         }
-      });
-    });
-  });
-
-  app.appendChild(titel);
+      );
+    }
+  );
 
   if (trefferGefunden) {
     app.appendChild(grid);
-  } else {
-    const hinweis = document.createElement('p');
-    hinweis.className = 'empty';
-    hinweis.textContent = 'Keine Treffer gefunden.';
-
-    app.appendChild(hinweis);
+    return;
   }
+
+  const hinweis = document.createElement('p');
+
+  hinweis.className = 'empty';
+  hinweis.textContent = 'Keine Treffer gefunden.';
+
+  app.appendChild(hinweis);
 }
+
+
+/*
+|--------------------------------------------------------------------------
+| PDF-Viewer
+|--------------------------------------------------------------------------
+*/
 
 function oeffnePdf(pfad, titel) {
   modalTitle.textContent = titel;
@@ -414,25 +425,19 @@ function schliessePdf() {
   pdfModal.setAttribute('aria-hidden', 'true');
 }
 
+
+/*
+|--------------------------------------------------------------------------
+| Navigation
+|--------------------------------------------------------------------------
+*/
+
 function geheZurueck() {
   if (
-    aktuelleKategorie &&
     aktuellerHersteller &&
     aktuellesModell
   ) {
-    zeigeModelle(
-      aktuelleKategorie,
-      aktuellerHersteller
-    );
-
-    return;
-  }
-
-  if (
-    aktuelleKategorie &&
-    aktuellerHersteller
-  ) {
-    zeigeHersteller(aktuelleKategorie);
+    zeigeModelle(aktuellerHersteller);
     return;
   }
 
@@ -444,22 +449,65 @@ function geheNachHause() {
   zeigeStartseite();
 }
 
-backBtn.addEventListener('click', geheZurueck);
-homeBtn.addEventListener('click', geheNachHause);
-portalTitle.addEventListener('click', geheNachHause);
-searchInput.addEventListener('input', suche);
-closeModalBtn.addEventListener('click', schliessePdf);
 
-pdfModal.addEventListener('click', function (event) {
-  if (event.target === pdfModal) {
-    schliessePdf();
-  }
-});
+/*
+|--------------------------------------------------------------------------
+| Ereignisse
+|--------------------------------------------------------------------------
+*/
 
-document.addEventListener('keydown', function (event) {
-  if (event.key === 'Escape') {
-    schliessePdf();
+backBtn.addEventListener(
+  'click',
+  geheZurueck
+);
+
+homeBtn.addEventListener(
+  'click',
+  geheNachHause
+);
+
+portalTitle.addEventListener(
+  'click',
+  geheNachHause
+);
+
+searchInput.addEventListener(
+  'input',
+  suche
+);
+
+closeModalBtn.addEventListener(
+  'click',
+  schliessePdf
+);
+
+pdfModal.addEventListener(
+  'click',
+  event => {
+    if (event.target === pdfModal) {
+      schliessePdf();
+    }
   }
-});
+);
+
+document.addEventListener(
+  'keydown',
+  event => {
+    if (
+      event.key === 'Escape' &&
+      !pdfModal.classList.contains('hidden')
+    ) {
+      schliessePdf();
+    }
+  }
+);
+
+
+/*
+|--------------------------------------------------------------------------
+| Anwendung starten
+|--------------------------------------------------------------------------
+*/
 
 zeigeStartseite();
+```
