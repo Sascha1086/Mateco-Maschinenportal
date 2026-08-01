@@ -88,7 +88,23 @@ const herstellerDaten = {
   },
 
   Zoomlion: {
-    'Z0701 (Schere)': {}
+      '📄 Bedienungsanleitung':
+        'pdf/Zoomlion/ZT26JE/Bedienungsanleitung.pdf',
+
+      '📘 Serviceanleitung':
+        'pdf/Zoomlion/ZT26JE/Serviceanleitung.pdf',
+
+      '⚠️ Fehlercodes':
+        'pdf/Zoomlion/ZT26JE/Fehlercodeliste.pdf',
+
+      '⚡ Schaltplan':
+        'pdf/Zoomlion/ZT26JE/Schaltplan.pdf', 
+
+      '🔧 Ersatzteilliste':
+        'pdf/Zoomlion/ZT26JE/Ersatzteilliste.pdf'
+    },
+
+   'Z0701 (Schere)': {}
   },
 
   Haulotte: {
