@@ -235,17 +235,12 @@ let geladeneMaschine = "";
 
 window.onload = function() {
     const urlParams = new URLSearchParams(window.location.search);
-    const maschinenName = urlParams.get('maschine');
+    let maschinenName = urlParams.get('maschine');
     
     if (maschinenName) {
         zeigeDirektMaschine(maschinenName);
     } else {
         zeigeHersteller();
-    }
-    
-    // AKTIVIERUNG DER SUCHLEISTE
-    if (searchInput) {
-        searchInput.oninput = fahreSucheAus;
     }
 };
 
@@ -255,6 +250,8 @@ function zeigeHersteller() {
     if(homeBtn) homeBtn.style.display = "none";
     if(searchContainer) searchContainer.style.display = "block";
     if(searchInput) searchInput.value = "";
+    
+    if(!app) return;
     
     let html = '<h2>🏭 Hersteller auswählen:</h2><div class="grid">';
     for (let key in portalDaten) {
@@ -270,4 +267,4 @@ function zeigeMaschinen(herstellerKey) {
     geladenerHersteller = herstellerKey;
     
     if(backBtn) backBtn.style.display = "block";
-
+    if(homeBtn) homeBtn.style.display = "none"; 
