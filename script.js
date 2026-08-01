@@ -608,30 +608,11 @@ function suche() {
 */
 
 function oeffnePdf(pfad, titel) {
-  const istMobil =
-    window.matchMedia('(max-width: 768px)').matches;
+  const pdfPfad = encodeURI(pfad);
 
-  if (istMobil) {
-    window.location.href = pfad;
-    return;
-  }
-
-  if (!pdfModal || !pdfFrame) {
-    window.open(pfad, '_blank');
-    return;
-  }
-
-  if (modalTitle) {
-    modalTitle.textContent = titel;
-  }
-
-  pdfFrame.src = pfad;
-
-  pdfModal.style.display = 'flex';
-  pdfModal.classList.remove('hidden');
-  pdfModal.setAttribute('aria-hidden', 'false');
+  window.open(pdfPfad, '_blank', 'noopener,noreferrer');
 }
-
+  
 function schliessePdf() {
   if (pdfFrame) {
     pdfFrame.src = '';
