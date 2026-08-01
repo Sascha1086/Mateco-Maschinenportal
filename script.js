@@ -608,9 +608,13 @@ function suche() {
 */
 
 function oeffnePdf(pfad, titel) {
-  const pdfPfad = encodeURI(pfad);
+  const pdfUrl = new URL(pfad, window.location.href).href;
 
-  window.open(pdfPfad, '_blank', 'noopener,noreferrer');
+  const neuesFenster = window.open(pdfUrl, '_blank');
+
+  if (!neuesFenster) {
+    window.location.href = pdfUrl;
+  }
 }
   
 function schliessePdf() {
