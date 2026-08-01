@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateco-Maschinenportal</title>
+    <style>
+        /* CSS direkt integriert - falls deine style.css falsch geschrieben ist */
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+        body { background-color: #1a1d20; color: #f5f6fa; padding: 15px; max-width: 600px; margin: 0 auto; }
+        header { background: linear-gradient(135deg, #ffcd00, #e30613); color: #1a1d20; padding: 20px; text-align: center; border-radius: 12px; margin-bottom: 20px; }
+        #nav-buttons { display: flex; gap: 15px; width: 100%; justify-content: flex-start; margin-bottom: 10px; }
+        #back-btn, #home-btn { background: #1a1d20; color: white; border: 2px solid #ffffff; padding: 10px 16px; border-radius: 8px; font-weight: bold; cursor: pointer; }
+        #portal-titel { font-size: 24px; cursor: pointer; font-weight: 800; text-transform: uppercase; }
+        #search-container { margin-bottom: 25px; }
+        #search-input { width: 100%; padding: 16px; font-size: 16px; background-color: #252a2e; border: 2px solid #3a4149; border-radius: 10px; color: white; outline: none; }
+        h2 { margin-bottom: 18px; font-size: 18px; color: #ffcd00; font-weight: 700; text-transform: uppercase; border-left: 4px solid #e30613; padding-left: 10px; }
+        .grid { display: flex; flex-direction: column; gap: 12px; }
+        .btn { display: block; width: 100%; padding: 18px 16px; font-size: 16px; font-weight: 600; text-align: left; border: none; border-radius: 10px; cursor: pointer; color: white; text-decoration: none; }
+        .kat-btn { background: #2c3e50; border-left: 6px solid #ffcd00; }
+        .hersteller-btn { background: #252a2e; border-left: 6px solid #0b31ba; }
+        .maschine-btn { background: #2c353d; border-left: 6px solid #ffcd00; }
+        .modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.9); display: flex; flex-direction: column; z-index: 9999; }
+        .modal-header { background-color: #252a2e; padding: 15px; display: flex; justify-content: space-between; align-items: center; }
+        #modal-titel { font-weight: bold; color: #ffcd00; }
+        .close-btn { background: #e30613; color: white; border: none; padding: 8px 14px; border-radius: 6px; cursor: pointer; }
+        .modal-body { flex-grow: 1; width: 100%; }
+        #pdf-frame { width: 100%; height: 100%; background-color: #ffffff; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div id="nav-buttons">
+            <button id="back-btn" style="display: none;" onclick="zeigeKategorienUebersicht()">⬅️ Zurück</button>
+            <button id="home-btn" style="display: none;" onclick="zeigeKategorienUebersicht()">🏠 Home</button>
+        </div>
+        <h1 id="portal-titel" onclick="zeigeKategorienUebersicht()">🔧 Mateco-Maschinenportal</h1>
+    </header>
+
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="🔍 Maschine oder Hersteller suchen..." oninput="sucheMaschine()">
+    </div>
+
+    <main id="app">
+        <!-- Dynamischer Inhalt -->
+    </main>
+
+    <div id="pdf-modal" class="modal" style="display: none;">
+        <div class="modal-header">
+            <span id="modal-titel">Dokument</span>
+            <button class="close-btn" onclick="schliessePdf()">❌ Schließen</button>
+        </div>
+        <div class="modal-body">
+            <iframe id="pdf-frame" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script>
+    // Vereinfachte Datenbank komplett ohne verschachtelte Kategorien-IDs
+    const herstellerListeBuehnen = [
+        { key: "genie", name: "Genie", farbe: "#0b31ba" },
+        { key: "jlg", name: "JLG", farbe: "#f0660a" },
+        { key: "zoomlion", name: "Zoomlion", farbe: "#56f00a" },
+        { key: "haulotte", name: "Haulotte", farbe: "#f0c60a" },
+        { key: "dingli", name: "Dingli", farbe: "#f0660a" },
+        { key: "skyjack", name: "Skyjack", farbe: "#f55505" }
+    ];
+
+    const herstellerListeStapler = [
+        { key: "manitou", name: "Manitou", farbe: "#c2160a" },
+        { key: "merlo", name: "Merlo", farbe: "#51f505" },
+        { key: "teupen", name: "Teupen", farbe: "#ba0924" }
+    ];
+
+    const maschinenDaten = {
+        "genie": ["GS1532 (Schere)", "GS1932 (Schere)", "GS1932_EDrive (Schere)", "S85XC (Teleskop)", "Z60_34 (Gelenk-Teleskop)"],
+        "jlg": ["1932 (Schere)", "2032 (Schere)"],
+        "zoomlion": ["Z0701 (Schere)"],
+        "haulotte": ["Star 10 (Telekopmast)"],
+        "dingli": ["BA28BERT (Gelenk-Teleskop)"],
+        "manitou": ["TS0625 (Teleskopstapler)", "TS0932 (Teleskopstapler)", "TS1440 (Teleskopstapler)"],
+        "merlo": ["TS0625 (Teleskopstapler)", "TS0932 (Teleskopstapler)", "TS1440 (Teleskopstapler)"],
+        "teupen": ["LEO15GT (Gelenk-Kette)", "LEO18GT (Gelenk-Kette)", "LEO21GT (Gelenk-Kette)"],
+        "skyjack": ["SJ12 (Roll-Lift)", "SJ3 3219 (Schere)", "SJ3 3226 (Schere)"]
+    };
+
+    const dokumentenDaten = {
+        "GS1532 (Schere)": [
+            {titel: "📄 Bedienungsanleitung", datei: "pdf/Genie/GS1532/Bedienungsanleitung.pdf"},
+            {titel: "📘 Serviceanleitung", datei: "pdf/Genie/GS1532/Serviceanleitung.pdf"},
+            {titel: "⚠️ Fehlercodes", datei: "pdf/Genie/GS1532/Fehlercodeliste.pdf"},
+            {titel: "⚡ Schaltplan", datei: "pdf/Genie/GS1532/Schaltplan.pdf"},
+            {titel: "🔧 Ersatzteilliste", datei: "pdf/Genie/1532/Ersatzteilliste.pdf"}
+        ],
+        "GS1932 (Schere)": [
+            {titel: "📄 Bedienungsanleitung", datei: "pdf/Genie/GS1932/Bedienungsanleitung.pdf"},
+            {titel: "📘 Serviceanleitung", datei: "pdf/Genie/GS1932/Serviceanleitung.pdf"}
+        ],
+        "TS0625 (Teleskopstapler)": [
+            {titel: "📘 Serviceanleitung", datei: "pdf/Manitou/TS0625/Serviceanleitung.pdf"},
+            {titel: "⚡ Schaltplan", datei: "pdf/Manitou/TS0625/Schaltplan.pdf"}
+        ]
+    };
+
+    function zeigeKategorienUebersicht() {
+        document.getElementById('back-btn').style.display = 'none';
+        document.getElementById('home-btn').style.display = 'none';
+        
+        let html = `
+            <h2>Kategorie auswählen</h2>
+            <div class="grid">
+                <button class="btn kat-btn" onclick="zeigeHersteller('buehne')">🚀 Arbeitsbühnen</button>
+                <button class="btn kat-btn" onclick="zeigeHersteller('stapler')">🚜 Stapler & Kettenbühnen</button>
+            </div>
+        `;
+        document.getElementById('app').innerHTML = html;
+    }
+
+    function zeigeHersteller(typ) {
+        document.getElementById('back-btn').style.display = 'block';
+        document.getElementById('home-btn').style.display = 'block';
+        
+        let liste = (typ === 'buehne') ? herstellerListeBuehnen : herstellerListeStapler;
+        let titel = (typ === 'buehne') ? 'Arbeitsbühnen' : 'Stapler & Kettenbühnen';
+        
+        let html = `<h2>Hersteller (${titel})</h2><div class="grid">`;
+        liste.forEach(h => {
+            html += `
+                <button class="btn hersteller-btn" style="border-left-color: ${h.farbe}" onclick="waehleHersteller('${h.key}', '${h.name}')">
+                    🏢 ${h.name}
+                </button>
+            `;
+        });
+        html += '</div>';
+        document.getElementById('app').innerHTML = html;
+    }
+
+    function waehleHersteller(key, name) {
+        let html = `<h2>${name} - Modelle</h2><div class="grid">`;
+        let modelle = maschinenDaten[key] || [];
+        
+        modelle.forEach(m => {
+            html += `
+                <button class="btn maschine-btn" onclick="waehleMaschine('${m}')">
+                    📦 ${m}
+                </button>
+            `;
+        });
+        html += '</div>';
+        document.getElementById('app').innerHTML = html;
+    }
+
+    function waehleMaschine(maschineName) {
+        let html = `<h2>${maschineName}</h2><div class="grid">`;
+        let dokumente = dokumentenDaten[maschineName] || [];
+        
+        if (dokumente.length === 0) {
+            html += '<p>Keine Dokumente für diese Maschine hinterlegt.</p>';
+        } else {
+            dokumente.forEach(doku => {
+                html += `
+                    <button class="btn maschine-btn" onclick="oeffnePdf('${doku.datei}', '${doku.titel}')">
+                        ${doku.titel}
+                    </button>
+                `;
+            });
+        }
+        html += '</div>';
+        document.getElementById('app').innerHTML = html;
+    }
+
+    function oeffnePdf(pfad, titel) {
+        document.getElementById('modal-titel').innerText = titel;
+        document.getElementById('pdf-frame').src = pfad;
+        document.getElementById('pdf-modal').style.display = 'flex';
+    }
+
+    function schliessePdf() {
+        document.getElementById('pdf-modal').style.display = 'none';
+        document.getElementById('pdf-frame').src = '';
+    }
+
+    function sucheMaschine() {
+        let suchbegriff = document.getElementById('search-input').value.toLowerCase().trim();
+        if (suchbegriff === "") { zeigeKategorienUebersicht(); return; }
+
+        let html = '<h2>Suchergebnisse</h2><div class="grid">';
+        let treffer = false;
+
+        // Suche in Herstellern
+        [...herstellerListeBuehnen, ...herstellerListeStapler].forEach(h => {
+            if (h.name.toLowerCase().includes(suchbegriff)) {
+                html += `<button class="btn hersteller-btn" style="border-left-color: ${h.farbe}" onclick="waehleHersteller('${h.key}', '${h.name}')">🏢 ${h.name}</button>`;
+                treffer = true;
+            }
+        });
+
+        // Suche in Modellen
+        for (let key in maschinenDaten) {
+            maschinenDaten[key].forEach(m => {
+                if (m.toLowerCase().includes(suchbegriff)) {
