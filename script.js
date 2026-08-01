@@ -210,26 +210,30 @@ function zeigeMaschinen(herstellerKey) {
     app.innerHTML = html;
 }
 
-function zeigeDokumente(herstellerKey, maschineName) {
+function zeigeDokumente(herstellerKey, maschineKey) {
     aktuelleAnsicht = "dokumente";
     geladenerHersteller = herstellerKey;
-    geladeneMaschine = maschineName;
+    geladeneMaschine = maschineKey;
     
     if(backBtn) backBtn.style.display = "block";
     if(homeBtn) homeBtn.style.display = "block"; 
     if(searchContainer) searchContainer.style.display = "none";
     
-    const dokumente = portalDaten[herstellerKey].maschinen[maschineName];
-    let html = '<h2>' + maschineName + ' - Unterlagen:</h2><div class="grid">';
-    if (dokumente) {
-        dokumente.forEach(doc => {
-            html += `<a href="${doc.datei}" target="_blank" class="btn doc-btn">${doc.titel}</a>`;
+    const maschine = portalDaten[herstellerKey].maschinen[maschineKey];
+    let html = '<h2>' + maschine.anzeigename + ' - Unterlagen:</h2><div class="grid">';
+    
+    if (maschine && maschine.docs) {
+        maschine.docs.forEach(doc => {
+            // HIER WURDE 'maschine-btn' HINZUGEFÜGT, DAMIT DIE OPTIK EXAKT GLEICH IST
+            html += `<a href="${doc.datei}" target="_blank" class="btn maschine-btn">${doc.titel}</a>`;
         });
     } else {
         html += '<p>Keine Dokumente gefunden.</p>';
     }
     html += '</div>';
     app.innerHTML = html;
+}
+
 }
 
 function zeigeDirektMaschine(maschinenName) {
