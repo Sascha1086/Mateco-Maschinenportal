@@ -33,7 +33,7 @@ const herstellerDaten = {
         'pdf/Genie/GS1932/Serviceanleitung.pdf'
     },
 
-    'GS1932 E-Drive (Schere)': {},
+    'GS1932 E-Drive (Schere)': {
       '📄 Bedienungsanleitung':
         'pdf/Genie/GS1932 EDrive/Bedienungsanleitung.pdf',
 
