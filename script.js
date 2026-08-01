@@ -234,14 +234,7 @@ let geladenerHersteller = "";
 let geladeneMaschine = "";
 
 window.onload = function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    let maschinenName = urlParams.get('maschine');
-    
-    if (maschinenName) {
-        zeigeDirektMaschine(maschinenName);
-    } else {
-        zeigeHersteller();
-    }
+    zeigeHersteller();
 };
 
 function zeigeHersteller() {
@@ -268,3 +261,9 @@ function zeigeMaschinen(herstellerKey) {
     
     if(backBtn) backBtn.style.display = "block";
     if(homeBtn) homeBtn.style.display = "none"; 
+    if(searchContainer) searchContainer.style.display = "none";
+    
+    if(!app) return;
+    
+    const hersteller = portalDaten[herstellerKey];
+    let html = '<h2>' + hersteller.name + ' - Gerätetypen:</h2><div class="grid">';
