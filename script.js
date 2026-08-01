@@ -30,6 +30,13 @@ const portalDaten = {
         {"titel": "⚠️ Fehlercodes", "datei": "pdf/Genie/S85XC/Fehlercodeliste.pdf"},
         {"titel": "⚡ Schaltplan", "datei": "pdf/Genie/S85XC/Schaltplan.pdf"},
         {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Genie/S85XC/Ersatzteilliste.pdf"}
+      ],
+      "Z60_34 (Gelenk-Teleskop)": [
+        {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Genie/Z60_34/Bedienungsanleitung.pdf"},
+        {"titel": "📘 Serviceanleitung", "datei": "pdf/Genie/Z60_34/Serviceanleitung.pdf"},
+        {"titel": "⚠️ Fehlercodes", "datei": "pdf/Genie/Z60_34/Fehlercodeliste.pdf"},
+        {"titel": "⚡ Schaltplan", "datei": "pdf/Genie/Z60_34/Schaltplan.pdf"},
+        {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Genie/Z60_34/Ersatzteilliste.pdf"}
       ]
     }
   },
