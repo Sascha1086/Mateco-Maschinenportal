@@ -214,9 +214,13 @@ function zeigeDokumente(herstellerKey, maschineName) {
     
     const dokumente = portalDaten[herstellerKey].maschinen[maschineName];
     let html = '<h2>' + maschineName + ' - Unterlagen:</h2><div class="grid">';
-    dokumente.forEach(doc => {
-        html += `<a href="${doc.datei}" target="_blank" class="btn doc-btn">${doc.titel}</a>`;
-    });
+    if (dokumente) {
+        dokumente.forEach(doc => {
+            html += `<a href="${doc.datei}" target="_blank" class="btn doc-btn">${doc.titel}</a>`;
+        });
+    } else {
+        html += '<p>Keine Dokumente gefunden.</p>';
+    }
     html += '</div>';
     app.innerHTML = html;
 }
@@ -231,7 +235,6 @@ function zeigeDirektMaschine(maschinenName) {
     zeigeHersteller();
 }
 
-// Event-Listener für Navigation
 if(backBtn) {
     backBtn.onclick = function() {
         if (aktuelleAnsicht === "maschinen") zeigeHersteller();
