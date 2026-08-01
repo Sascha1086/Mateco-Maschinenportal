@@ -50,7 +50,23 @@ const herstellerDaten = {
         'pdf/Genie/GS1932 EDrive/Ersatzteilliste.pdf'
     },
 
-    'S85XC (Teleskop)': {},
+    'S85XC (Teleskop)': {
+      '📄 Bedienungsanleitung':
+        'pdf/Genie/S85XC/Bedienungsanleitung.pdf',
+
+      '📘 Serviceanleitung':
+        'pdf/Genie/S85XC/Serviceanleitung.pdf',
+
+      '⚠️ Fehlercodes':
+        'pdf/Genie/S85XC/Fehlercodeliste.pdf',
+
+      '⚡ Schaltplan':
+        'pdf/Genie/S85XC/Schaltplan.pdf',
+
+      '🔧 Ersatzteilliste':
+        'pdf/Genie/S85XC/Ersatzteilliste.pdf'
+    },
+
     'Z60/34 (Gelenk-Teleskop)': {}
   },
 
