@@ -705,4 +705,3 @@ window.schliessePdf =
 */
 
 zeigeStartseite();
-```
