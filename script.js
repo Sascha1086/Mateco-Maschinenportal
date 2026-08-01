@@ -608,6 +608,13 @@ function suche() {
 */
 
 function oeffnePdf(pfad, titel) {
+  const istMobil = window.matchMedia('(max-width: 768px)').matches;
+
+  if (istMobil) {
+    window.location.href = pfad;
+    return;
+  }
+
   if (!pdfModal || !pdfFrame) {
     window.open(pfad, '_blank');
     return;
@@ -617,34 +624,12 @@ function oeffnePdf(pfad, titel) {
     modalTitle.textContent = titel;
   }
 
-  pdfFrame.src = pfad;
+  pdfFrame.src = `${pfad}#view=FitH`;
 
   pdfModal.style.display = 'flex';
   pdfModal.classList.remove('hidden');
-
-  pdfModal.setAttribute(
-    'aria-hidden',
-    'false'
-  );
-}
-
-function schliessePdf() {
-  if (!pdfModal) {
-    return;
-  }
-
-  if (pdfFrame) {
-    pdfFrame.src = '';
-  }
-
-  pdfModal.style.display = 'none';
-  pdfModal.classList.add('hidden');
-
-  pdfModal.setAttribute(
-    'aria-hidden',
-    'true'
-  );
-}
+  pdfModal.setAttribute('aria-hidden', 'false');
+} 
 
 
 /*
