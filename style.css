@@ -129,10 +129,3 @@ p {
     font-size: 16px;
     padding: 20px;
 }
-
-/* Zwingt Links mit der Klasse doc-btn oder maschine-btn, exakt wie die Buttons auszusehen */
-a.btn {
-    text-decoration: none; /* Entfernt den Unterstrich */
-    color: inherit;        /* Übernimmt die Textfarbe der Buttons */
-    display: inline-block; /* Sorgt für die richtige Button-Form */
-}
