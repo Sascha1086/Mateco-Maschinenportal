@@ -78,7 +78,7 @@ const portalDaten = {
   },
   "merlo": {
     "name": "Merlo",
-    "farbe": "#c2160a",
+    "farbe": "#51f505",
     "maschinen": {
       "TS0625 (Teleskopstapler)": [
         {"titel": "📘 Serviceanleitung", "datei": "pdf/Merlo/TS0625/Serviceanleitung.pdf"},
@@ -97,7 +97,7 @@ const portalDaten = {
   },
   "teupen": {
     "name": "Teupen",
-    "farbe": "#c2160a",
+    "farbe": "#ba0924",
     "maschinen": {
       "LEO15GT (Gelenk-Kette)": [
         {"titel": "📘 Serviceanleitung", "datei": "pdf/Teupen/LEO15GT/Serviceanleitung.pdf"},
@@ -111,6 +111,25 @@ const portalDaten = {
       "LEO21GT (Gelenk-Kette)": [
         {"titel": "📘 Serviceanleitung", "datei": "pdf/Teupen/LEO21GT/Serviceanleitung.pdf"},
         {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Teupen/Leo21GT/Ersatzteilliste.pdf"}
+      ]
+    }
+  },
+  "skyjack": {
+    "name": "Skyjack",
+    "farbe": "#f55505",
+    "maschinen": {
+      "SJ12 (Roll-Lift)": [
+        {"titel": "📘 Serviceanleitung", "datei": "pdf/Skyjack/SJ12/Serviceanleitung.pdf"},
+        {"titel": "⚡ Schaltplan", "datei": "pdf/Skyjack/SJ12/Schaltplan.pdf"}
+      ],
+      "SJ3 3219 (Schere)": [
+        {"titel": "📘 Serviceanleitung", "datei": "pdf/Skyjack/SJ3-3219/Serviceanleitung.pdf"},
+        {"titel": "⚠️ Fehlercodes", "datei": "pdf/Skyjack/SJ3-3219/Fehlercodes.pdf"},
+        {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Skyjack/SJ3-3219/Bedienungsanleitung.pdf"}
+      ],
+      "SJ3 3226 (Schere)": [
+        {"titel": "📘 Serviceanleitung", "datei": "pdf/Skyjack/SJ3-3226/Serviceanleitung.pdf"},
+        {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Teupen/SJ3 3226/Ersatzteilliste.pdf"}
       ]
     }
   }
