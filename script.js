@@ -79,9 +79,6 @@ const herstellerDaten = {
 
       '⚡ Schaltplan':
         'pdf/Genie/Z60_34/Schaltplan.pdf',
-
-      '🔧 Ersatzteilliste':
-        'pdf/Genie/Z60_34/Ersatzteilliste.pdf'
     }
   },
 
