@@ -3,156 +3,222 @@ const portalDaten = {
     "name": "Genie",
     "farbe": "#0b31ba",
     "maschinen": {
-      "GS1532 (Schere)": [
-        {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Genie/GS1532/Bedienungsanleitung.pdf"},
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Genie/GS1532/Serviceanleitung.pdf"},
-        {"titel": "⚠️ Fehlercodes", "datei": "pdf/Genie/GS1532/Fehlercodeliste.pdf"},
-        {"titel": "⚡ Schaltplan", "datei": "pdf/Genie/GS1532/Schaltplan.pdf"},
-        {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Genie/1532/Ersatzteilliste.pdf"}
-      ],
-      "GS1932 (Schere)": [
-        {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Genie/GS1932/Bedienungsanleitung.pdf"},
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Genie/GS1932/Serviceanleitung.pdf"},
-        {"titel": "⚠️ Fehlercodes", "datei": "pdf/Genie/GS1932/Fehlercodeliste.pdf"},
-        {"titel": "⚡ Schaltplan", "datei": "pdf/Genie/GS1932/Schaltplan.pdf"},
-        {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Genie/1932/Ersatzteilliste.pdf"}
-      ],
-      "GS1932_EDrive (Schere)": [
-        {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Genie/GS1932 EDrive/Bedienungsanleitung.pdf"},
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Genie/GS1932 EDrive/Serviceanleitung.pdf"},
-        {"titel": "⚠️ Fehlercodes", "datei": "pdf/Genie/GS1932 EDrive/Fehlercodeliste.pdf"},
-        {"titel": "⚡ Schaltplan", "datei": "pdf/Genie/GS1932 EDrive/Schaltplan.pdf"},
-        {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Genie/GS1932 EDrive/Ersatzteilliste.pdf"}
-      ],
-      "S85XC (Teleskop)": [
-        {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Genie/S85XC/Bedienungsanleitung.pdf"},
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Genie/S85XC/Serviceanleitung.pdf"},
-        {"titel": "⚠️ Fehlercodes", "datei": "pdf/Genie/S85XC/Fehlercodeliste.pdf"},
-        {"titel": "⚡ Schaltplan", "datei": "pdf/Genie/S85XC/Schaltplan.pdf"},
-        {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Genie/S85XC/Ersatzteilliste.pdf"}
-      ],
-      "Z60_34 (Gelenk-Teleskop)": [
-        {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Genie/Z60_34/Bedienungsanleitung.pdf"},
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Genie/Z60_34/Serviceanleitung.pdf"},
-        {"titel": "⚠️ Fehlercodes", "datei": "pdf/Genie/Z60_34/Fehlercodeliste.pdf"},
-        {"titel": "⚡ Schaltplan", "datei": "pdf/Genie/Z60_34/Schaltplan.pdf"},
-        {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Genie/Z60_34/Ersatzteilliste.pdf"}
-      ]
+      "GS1532": {
+        "anzeigename": "GS1532 (Schere)",
+        "docs": [
+          {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Genie/GS1532/Bedienungsanleitung.pdf"},
+          {"titel": "📘 Serviceanleitung", "datei": "pdf/Genie/GS1532/Serviceanleitung.pdf"},
+          {"titel": "⚠️ Fehlercodes", "datei": "pdf/Genie/GS1532/Fehlercodeliste.pdf"},
+          {"titel": "⚡ Schaltplan", "datei": "pdf/Genie/GS1532/Schaltplan.pdf"},
+          {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Genie/1532/Ersatzteilliste.pdf"}
+        ]
+      },
+      "GS1932": {
+        "anzeigename": "GS1932 (Schere)",
+        "docs": [
+          {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Genie/GS1932/Bedienungsanleitung.pdf"},
+          {"titel": "📘 Serviceanleitung", "datei": "pdf/Genie/GS1932/Serviceanleitung.pdf"},
+          {"titel": "⚠️ Fehlercodes", "datei": "pdf/Genie/GS1932/Fehlercodeliste.pdf"},
+          {"titel": "⚡ Schaltplan", "datei": "pdf/Genie/GS1932/Schaltplan.pdf"},
+          {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Genie/1932/Ersatzteilliste.pdf"}
+        ]
+      },
+      "GS1932_EDrive": {
+        "anzeigename": "GS1932 E-Drive (Schere)",
+        "docs": [
+          {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Genie/GS1932 EDrive/Bedienungsanleitung.pdf"},
+          {"titel": "📘 Serviceanleitung", "datei": "pdf/Genie/GS1932 EDrive/Serviceanleitung.pdf"},
+          {"titel": "⚠️ Fehlercodes", "datei": "pdf/Genie/GS1932 EDrive/Fehlercodeliste.pdf"},
+          {"titel": "⚡ Schaltplan", "datei": "pdf/Genie/GS1932 EDrive/Schaltplan.pdf"},
+          {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Genie/GS1932 EDrive/Ersatzteilliste.pdf"}
+        ]
+      },
+      "S85XC": {
+        "anzeigename": "S85XC (Teleskop)",
+        "docs": [
+          {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Genie/S85XC/Bedienungsanleitung.pdf"},
+          {"titel": "📘 Serviceanleitung", "datei": "pdf/Genie/S85XC/Serviceanleitung.pdf"},
+          {"titel": "⚠️ Fehlercodes", "datei": "pdf/Genie/S85XC/Fehlercodeliste.pdf"},
+          {"titel": "⚡ Schaltplan", "datei": "pdf/Genie/S85XC/Schaltplan.pdf"},
+          {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Genie/S85XC/Ersatzteilliste.pdf"}
+        ]
+      },
+      "Z60_34": {
+        "anzeigename": "Z60_34 (Gelenk-Teleskop)",
+        "docs": [
+          {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Genie/Z60_34/Bedienungsanleitung.pdf"},
+          {"titel": "📘 Serviceanleitung", "datei": "pdf/Genie/Z60_34/Serviceanleitung.pdf"},
+          {"titel": "⚠️ Fehlercodes", "datei": "pdf/Genie/Z60_34/Fehlercodeliste.pdf"},
+          {"titel": "⚡ Schaltplan", "datei": "pdf/Genie/Z60_34/Schaltplan.pdf"},
+          {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Genie/Z60_34/Ersatzteilliste.pdf"}
+        ]
+      }
     }
   },
   "jlg": {
     "name": "JLG",
     "farbe": "#f0660a",
     "maschinen": {
-      "1932 (Schere)": [
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/JLG/1932/Serviceanleitung.pdf"}
-      ],
-      "2032 (Schere)": [
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/JLG/2032/Serviceanleitung.pdf"}
-      ]
+      "1932": {
+        "anzeigename": "1932 (Schere)",
+        "docs": [
+          {"titel": "📘 Serviceanleitung", "datei": "pdf/JLG/1932/Serviceanleitung.pdf"}
+        ]
+      },
+      "2032": {
+        "anzeigename": "2032 (Schere)",
+        "docs": [
+          {"titel": "📘 Serviceanleitung", "datei": "pdf/JLG/2032/Serviceanleitung.pdf"}
+        ]
+      }
     }
   },
   "zoomlion": {
     "name": "Zoomlion",
     "farbe": "#56f00a",
     "maschinen": {
-      "Z0701 (Schere)": [
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Zoomlion/Z0701/Serviceanleitung.pdf"}
-      ]
+      "Z0701": {
+        "anzeigename": "Z0701 (Schere)",
+        "docs": [
+          {"titel": "📘 Serviceanleitung", "datei": "pdf/Zoomlion/Z0701/Serviceanleitung.pdf"}
+        ]
+      }
     }
   },
   "haulotte": {
     "name": "Haulotte",
     "farbe": "#f0c60a",
     "maschinen": {
-      "Star 10 (Telekopmast)": [
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Haulotte/Star10/Serviceanleitung.pdf"}
-      ]
+      "Star10": {
+        "anzeigename": "Star 10 (Telekopmast)",
+        "docs": [
+          {"titel": "📘 Serviceanleitung", "datei": "pdf/Haulotte/Star10/Serviceanleitung.pdf"}
+        ]
+      }
     }
   },
   "dingli": {
     "name": "Dingli",
     "farbe": "#f0660a",
     "maschinen": {
-      "BA28BERT (Gelenk-Teleskop)": [
-        {"titel": "📘 Betriebsanleitung", "datei": "pdf/Dingli/BA28BERT/Betriebsanleitung.pdf"}
-      ]
+      "BA28BERT": {
+        "anzeigename": "BA28BERT (Gelenk-Teleskop)",
+        "docs": [
+          {"titel": "📘 Betriebsanleitung", "datei": "pdf/Dingli/BA28BERT/Betriebsanleitung.pdf"}
+        ]
+      }
     }
   },
   "manitou": {
     "name": "Manitou",
     "farbe": "#c2160a",
     "maschinen": {
-      "TS0625 (Teleskopstapler)": [
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Manitou/TS0625/Serviceanleitung.pdf"},
-        {"titel": "⚡ Schaltplan", "datei": "pdf/Manitou/TS0625/Schaltplan.pdf"}
-      ],
-      "TS0932 (Teleskopstapler)": [
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Manitou/TS0932/Serviceanleitung.pdf"},
-        {"titel": "⚠️ Fehlercodes", "datei": "pdf/Manitou/TS0932/Fehlercodes.pdf"},
-        {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Manitou/TS0932/Bedienungsanleitung.pdf"}
-      ],
-      "TS1440 (Teleskopstapler)": [
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Manitou/TS1440/Serviceanleitung.pdf"},
-        {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Manitou/TS1440/Ersatzteilliste.pdf"}
-      ]
+      "TS0625": {
+        "anzeigename": "TS0625 (Teleskopstapler)",
+        "docs": [
+          {"titel": "📘 Serviceanleitung", "datei": "pdf/Manitou/TS0625/Serviceanleitung.pdf"},
+          {"titel": "⚡ Schaltplan", "datei": "pdf/Manitou/TS0625/Schaltplan.pdf"}
+        ]
+      },
+      "TS0932": {
+        "anzeigename": "TS0932 (Teleskopstapler)",
+        "docs": [
+          {"titel": "📘 Serviceanleitung", "datei": "pdf/Manitou/TS0932/Serviceanleitung.pdf"},
+          {"titel": "⚠️ Fehlercodes", "datei": "pdf/Manitou/TS0932/Fehlercodes.pdf"},
+          {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Manitou/TS0932/Bedienungsanleitung.pdf"}
+        ]
+      },
+      "TS1440": {
+        "anzeigename": "TS1440 (Teleskopstapler)",
+        "docs": [
+          {"titel": "📘 Serviceanleitung", "datei": "pdf/Manitou/TS1440/Serviceanleitung.pdf"},
+          {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Manitou/TS1440/Ersatzteilliste.pdf"}
+        ]
+      }
     }
   },
   "merlo": {
     "name": "Merlo",
     "farbe": "#51f505",
     "maschinen": {
-      "TS0625 (Teleskopstapler)": [
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Merlo/TS0625/Serviceanleitung.pdf"},
-        {"titel": "⚡ Schaltplan", "datei": "pdf/Merlo/TS0625/Schaltplan.pdf"}
-      ],
-      "TS0932 (Teleskopstapler)": [
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Merlo/TS0932/Serviceanleitung.pdf"},
-        {"titel": "⚠️ Fehlercodes", "datei": "pdf/Merlo/TS0932/Fehlercodes.pdf"},
-        {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Manitou/TS0932/Bedienungsanleitung.pdf"}
-      ],
-      "TS1440 (Teleskopstapler)": [
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Merlo/TS1440/Serviceanleitung.pdf"},
-        {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Merlo/TS1440/Ersatzteilliste.pdf"}
-      ]
+      "TS0625": {
+        "anzeigename": "TS0625 (Teleskopstapler)",
+        "docs": [
+          {"titel": "📘 Serviceanleitung", "datei": "pdf/Merlo/TS0625/Serviceanleitung.pdf"},
+          {"titel": "⚡ Schaltplan", "datei": "pdf/Merlo/TS0625/Schaltplan.pdf"}
+        ]
+      },
+      "TS0932": {
+        "anzeigename": "TS0932 (Teleskopstapler)",
+        "docs": [
+          {"titel": "📘 Serviceanleitung", "datei": "pdf/Merlo/TS0932/Serviceanleitung.pdf"},
+          {"titel": "⚠️ Fehlercodes", "datei": "pdf/Merlo/TS0932/Fehlercodes.pdf"},
+          {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Manitou/TS0932/Bedienungsanleitung.pdf"}
+        ]
+      },
+      "TS1440": {
+        "anzeigename": "TS1440 (Teleskopstapler)",
+        "docs": [
+          {"titel": "📘 Serviceanleitung", "datei": "pdf/Merlo/TS1440/Serviceanleitung.pdf"},
+          {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Merlo/TS1440/Ersatzteilliste.pdf"}
+        ]
+      }
     }
   },
   "teupen": {
     "name": "Teupen",
     "farbe": "#ba0924",
     "maschinen": {
-      "LEO15GT (Gelenk-Kette)": [
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Teupen/LEO15GT/Serviceanleitung.pdf"},
-        {"titel": "⚡ Schaltplan", "datei": "pdf/Teupen/LEO15GT/Schaltplan.pdf"}
-      ],
-      "LEO18GT (Gelenk-Kette)": [
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Teupen/LEO18GT/Serviceanleitung.pdf"},
-        {"titel": "⚠️ Fehlercodes", "datei": "pdf/Teupen/LEO18GT/Fehlercodes.pdf"},
-        {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Teupen/LEO18GT/Bedienungsanleitung.pdf"}
-      ],
-      "LEO21GT (Gelenk-Kette)": [
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Teupen/LEO21GT/Serviceanleitung.pdf"},
-        {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Teupen/Leo21GT/Ersatzteilliste.pdf"}
-      ]
+      "LEO15GT": {
+        "anzeigename": "LEO15GT (Gelenk-Kette)",
+        "docs": [
+          {"titel": "📘 Serviceanleitung", "datei": "pdf/Teupen/LEO15GT/Serviceanleitung.pdf"},
+          {"titel": "⚡ Schaltplan", "datei": "pdf/Teupen/LEO15GT/Schaltplan.pdf"}
+        ]
+      },
+      "LEO18GT": {
+        "anzeigename": "LEO18GT (Gelenk-Kette)",
+        "docs": [
+          {"titel": "📘 Serviceanleitung", "datei": "pdf/Teupen/LEO18GT/Serviceanleitung.pdf"},
+          {"titel": "⚠️ Fehlercodes", "datei": "pdf/Teupen/LEO18GT/Fehlercodes.pdf"},
+          {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Teupen/LEO18GT/Bedienungsanleitung.pdf"}
+        ]
+      },
+      "LEO21GT": {
+        "anzeigename": "LEO21GT (Gelenk-Kette)",
+        "docs": [
+          {"titel": "📘 Serviceanleitung", "datei": "pdf/Teupen/LEO21GT/Serviceanleitung.pdf"},
+          {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Teupen/Leo21GT/Ersatzteilliste.pdf"}
+        ]
+      }
     }
   },
   "skyjack": {
     "name": "Skyjack",
     "farbe": "#f55505",
     "maschinen": {
-      "SJ12 (Roll-Lift)": [
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Skyjack/SJ12/Serviceanleitung.pdf"},
-        {"titel": "⚡ Schaltplan", "datei": "pdf/Skyjack/SJ12/Schaltplan.pdf"}
-      ],
-      "SJ3 3219 (Schere)": [
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Skyjack/SJ3-3219/Serviceanleitung.pdf"},
-        {"titel": "⚠️ Fehlercodes", "datei": "pdf/Skyjack/SJ3-3219/Fehlercodes.pdf"},
-        {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Skyjack/SJ3-3219/Bedienungsanleitung.pdf"}
-      ],
-      "SJ3 3226 (Schere)": [
-        {"titel": "📘 Serviceanleitung", "datei": "pdf/Skyjack/SJ3-3226/Serviceanleitung.pdf"},
-        {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Teupen/SJ3 3226/Ersatzteilliste.pdf"}
-      ]
+      "SJ12": {
+        "anzeigename": "SJ12 (Roll-Lift)",
+        "docs": [
+          {"titel": "📘 Serviceanleitung", "datei": "pdf/Skyjack/SJ12/Serviceanleitung.pdf"},
+          {"titel": "⚡ Schaltplan", "datei": "pdf/Skyjack/SJ12/Schaltplan.pdf"}
+        ]
+      },
+      "SJ3_3219": {
+        "anzeigename": "SJ3 3219 (Schere)",
+        "docs": [
+          {"titel": "📘 Serviceanleitung", "datei": "pdf/Skyjack/SJ3-3219/Serviceanleitung.pdf"},
+          {"titel": "⚠️ Fehlercodes", "datei": "pdf/Skyjack/SJ3-3219/Fehlercodes.pdf"},
+          {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Skyjack/SJ3-3219/Bedienungsanleitung.pdf"}
+        ]
+      },
+      "SJ3_3226": {
+        "anzeigename": "SJ3 3226 (Schere)",
+        "docs": [
+          {"titel": "📘 Serviceanleitung", "datei": "pdf/Skyjack/SJ3-3226/Serviceanleitung.pdf"},
+          {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Teupen/SJ3 3226/Ersatzteilliste.pdf"}
+        ]
+      }
     }
   }
 };
@@ -176,6 +242,11 @@ window.onload = function() {
     } else {
         zeigeHersteller();
     }
+    
+    // AKTIVIERUNG DER SUCHLEISTE
+    if (searchInput) {
+        searchInput.oninput = fahreSucheAus;
+    }
 };
 
 function zeigeHersteller() {
@@ -183,6 +254,7 @@ function zeigeHersteller() {
     if(backBtn) backBtn.style.display = "none";
     if(homeBtn) homeBtn.style.display = "none";
     if(searchContainer) searchContainer.style.display = "block";
+    if(searchInput) searchInput.value = "";
     
     let html = '<h2>🏭 Hersteller auswählen:</h2><div class="grid">';
     for (let key in portalDaten) {
@@ -198,56 +270,4 @@ function zeigeMaschinen(herstellerKey) {
     geladenerHersteller = herstellerKey;
     
     if(backBtn) backBtn.style.display = "block";
-    if(homeBtn) homeBtn.style.display = "none"; 
-    if(searchContainer) searchContainer.style.display = "none";
-    
-    const hersteller = portalDaten[herstellerKey];
-    let html = '<h2>' + hersteller.name + ' - Gerätetypen:</h2><div class="grid">';
-    for (let maschine in hersteller.maschinen) {
-        html += `<button class="btn maschine-btn" onclick="zeigeDokumente('${herstellerKey}', '${maschine}')">📦 ${maschine}</button>`;
-    }
-    html += '</div>';
-    app.innerHTML = html;
-}
 
-function zeigeDokumente(herstellerKey, maschineName) {
-    aktuelleAnsicht = "dokumente";
-    geladenerHersteller = herstellerKey;
-    geladeneMaschine = maschineName;
-    
-    if(backBtn) backBtn.style.display = "block";
-    if(homeBtn) homeBtn.style.display = "block"; 
-    if(searchContainer) searchContainer.style.display = "none";
-    
-    const dokumente = portalDaten[herstellerKey].maschinen[maschineName];
-    let html = '<h2>' + maschineName + ' - Unterlagen:</h2><div class="grid">';
-    if (dokumente) {
-        dokumente.forEach(doc => {
-            html += `<a href="${doc.datei}" target="_blank" class="btn doc-btn">${doc.titel}</a>`;
-        });
-    } else {
-        html += '<p>Keine Dokumente gefunden.</p>';
-    }
-    html += '</div>';
-    app.innerHTML = html;
-}
-
-function zeigeDirektMaschine(maschinenName) {
-    for (let herstellerKey in portalDaten) {
-        if (portalDaten[herstellerKey].maschinen[maschinenName]) {
-            zeigeDokumente(herstellerKey, maschinenName);
-            return;
-        }
-    }
-    zeigeHersteller();
-}
-
-if(backBtn) {
-    backBtn.onclick = function() {
-        if (aktuelleAnsicht === "maschinen") zeigeHersteller();
-        else if (aktuelleAnsicht === "dokumente") zeigeMaschinen(geladenerHersteller);
-    };
-}
-if(homeBtn) {
-    homeBtn.onclick = zeigeHersteller;
-}
