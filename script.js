@@ -13,7 +13,7 @@ const portalDaten = {
       "GS1932 (Schere)": [
         {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Genie/GS1932/Bedienungsanleitung.pdf"},
         {"titel": "📘 Serviceanleitung", "datei": "pdf/Genie/GS1932/Serviceanleitung.pdf"},
-        {"titel": "⚠️ Fehlercodes", "datei": "pdf/Genie/GS1932/Fehlercodes.pdf"},
+        {"titel": "⚠️ Fehlercodes", "datei": "pdf/Genie/GS1932/Fehlercodeliste.pdf"},
         {"titel": "⚡ Schaltplan", "datei": "pdf/Genie/GS1932/Schaltplan.pdf"},
         {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Genie/1932/Ersatzteilliste.pdf"}
       ],
