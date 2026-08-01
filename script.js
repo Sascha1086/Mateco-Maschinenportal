@@ -88,24 +88,25 @@ const herstellerDaten = {
   },
 
   Zoomlion: {
-      '📄 Bedienungsanleitung':
-        'pdf/Zoomlion/ZT26JE/Bedienungsanleitung.pdf',
+  'ZT26JE (Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Zoomlion/ZT26JE/Bedienungsanleitung.pdf',
 
-      '📘 Serviceanleitung':
-        'pdf/Zoomlion/ZT26JE/Serviceanleitung.pdf',
+    '📘 Serviceanleitung':
+      'pdf/Zoomlion/ZT26JE/Serviceanleitung.pdf',
 
-      '⚠️ Fehlercodes':
-        'pdf/Zoomlion/ZT26JE/Fehlercodeliste.pdf',
+    '⚠️ Fehlercodes':
+      'pdf/Zoomlion/ZT26JE/Fehlercodeliste.pdf',
 
-      '⚡ Schaltplan':
-        'pdf/Zoomlion/ZT26JE/Schaltplan.pdf', 
+    '⚡ Schaltplan':
+      'pdf/Zoomlion/ZT26JE/Schaltplan.pdf',
 
-      '🔧 Ersatzteilliste':
-        'pdf/Zoomlion/ZT26JE/Ersatzteilliste.pdf'
-    },
-
-   'Z0701 (Schere)': {}
+    '🔧 Ersatzteilliste':
+      'pdf/Zoomlion/ZT26JE/Ersatzteilliste.pdf'
   },
+
+  'Z0701 (Schere)': {}
+},
 
   Haulotte: {
     'Star 10 (Teleskopmast)': {}
