@@ -75,6 +75,44 @@ const portalDaten = {
         {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Manitou/TS1440/Ersatzteilliste.pdf"}
       ]
     }
+  },
+  "merlo": {
+    "name": "Merlo",
+    "farbe": "#c2160a",
+    "maschinen": {
+      "TS0625 (Teleskopstapler)": [
+        {"titel": "📘 Serviceanleitung", "datei": "pdf/Merlo/TS0625/Serviceanleitung.pdf"},
+        {"titel": "⚡ Schaltplan", "datei": "pdf/Merlo/TS0625/Schaltplan.pdf"}
+      ],
+      "TS0932 (Teleskopstapler)": [
+        {"titel": "📘 Serviceanleitung", "datei": "pdf/Merlo/TS0932/Serviceanleitung.pdf"},
+        {"titel": "⚠️ Fehlercodes", "datei": "pdf/Merlo/TS0932/Fehlercodes.pdf"},
+        {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Manitou/TS0932/Bedienungsanleitung.pdf"}
+      ],
+      "TS1440 (Teleskopstapler)": [
+        {"titel": "📘 Serviceanleitung", "datei": "pdf/Merlo/TS1440/Serviceanleitung.pdf"},
+        {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Merlo/TS1440/Ersatzteilliste.pdf"}
+      ]
+    }
+  },
+  "teupen": {
+    "name": "Teupen",
+    "farbe": "#c2160a",
+    "maschinen": {
+      "LEO15GT (Gelenk-Kette)": [
+        {"titel": "📘 Serviceanleitung", "datei": "pdf/Teupen/LEO15GT/Serviceanleitung.pdf"},
+        {"titel": "⚡ Schaltplan", "datei": "pdf/Teupen/LEO15GT/Schaltplan.pdf"}
+      ],
+      "LEO18GT (Gelenk-Kette)": [
+        {"titel": "📘 Serviceanleitung", "datei": "pdf/Teupen/LEO18GT/Serviceanleitung.pdf"},
+        {"titel": "⚠️ Fehlercodes", "datei": "pdf/Teupen/LEO18GT/Fehlercodes.pdf"},
+        {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Teupen/LEO18GT/Bedienungsanleitung.pdf"}
+      ],
+      "LEO21GT (Gelenk-Kette)": [
+        {"titel": "📘 Serviceanleitung", "datei": "pdf/Teupen/LEO21GT/Serviceanleitung.pdf"},
+        {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Teupen/Leo21GT/Ersatzteilliste.pdf"}
+      ]
+    }
   }
 };
 
