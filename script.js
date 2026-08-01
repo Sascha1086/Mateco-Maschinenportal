@@ -610,7 +610,6 @@ function suche() {
 function oeffnePdf(pfad) {
   const pdfUrl = new URL(pfad, window.location.href).href;
   window.location.assign(pdfUrl);
- }
 }
   
 function schliessePdf() {
