@@ -607,14 +607,10 @@ function suche() {
 |--------------------------------------------------------------------------
 */
 
-function oeffnePdf(pfad, titel) {
+function oeffnePdf(pfad) {
   const pdfUrl = new URL(pfad, window.location.href).href;
-
-  const neuesFenster = window.open(pdfUrl, '_blank');
-
-  if (!neuesFenster) {
-    window.location.href = pdfUrl;
-  }
+  window.location.assign(pdfUrl);
+ }
 }
   
 function schliessePdf() {
