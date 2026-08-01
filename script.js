@@ -4,24 +4,24 @@ const portalDaten = {
     "farbe": "#0b31ba",
     "maschinen": {
       "GS1532 (Schere)": [
-        {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Genie/GS1932/Bedienungsanleitung.pdf"}
+        {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Genie/GS1932/Bedienungsanleitung.pdf"},
         {"titel": "📘 Serviceanleitung", "datei": "pdf/Genie/GS1532/Serviceanleitung.pdf"},
         {"titel": "⚠️ Fehlercodes", "datei": "pdf/Genie/GS1932/Fehlercodes.pdf"},
-        {"titel": "⚡ Schaltplan", "datei": "pdf/Genie/GS1532/Schaltplan.pdf"}
+        {"titel": "⚡ Schaltplan", "datei": "pdf/Genie/GS1532/Schaltplan.pdf"},
 	{"titel": "🔧 Ersatzteilliste", "datei": "pdf/Genie/S85XC/S85XC_Ersatzteilliste.pdf"}
       ],
       "GS1932 (Schere)": [
-        {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Genie/GS1932/Bedienungsanleitung.pdf"}
+        {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Genie/GS1932/Bedienungsanleitung.pdf"},
         {"titel": "📘 Serviceanleitung", "datei": "pdf/Genie/GS1932/Serviceanleitung.pdf"},
         {"titel": "⚠️ Fehlercodes", "datei": "pdf/Genie/GS1932/Fehlercodes.pdf"},
-        {"titel": "⚡ Schaltplan", "datei": "pdf/Genie/GS1532/Schaltplan.pdf"}
+        {"titel": "⚡ Schaltplan", "datei": "pdf/Genie/GS1532/Schaltplan.pdf"},
         {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Genie/S85XC/S85XC_Ersatzteilliste.pdf"}
       ],
       "S85XC (Teleskop)": [
-        {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Genie/GS1932/Bedienungsanleitung.pdf"}
+        {"titel": "📄 Bedienungsanleitung", "datei": "pdf/Genie/GS1932/Bedienungsanleitung.pdf"},
         {"titel": "📘 Serviceanleitung", "datei": "pdf/Genie/S85XC/S85XC_Serviceanleitung.pdf"},
         {"titel": "⚠️ Fehlercodes", "datei": "pdf/Genie/GS1932/Fehlercodes.pdf"},
-        {"titel": "⚡ Schaltplan", "datei": "pdf/Genie/GS1532/Schaltplan.pdf"}
+        {"titel": "⚡ Schaltplan", "datei": "pdf/Genie/GS1532/Schaltplan.pdf"},
         {"titel": "🔧 Ersatzteilliste", "datei": "pdf/Genie/S85XC/S85XC_Ersatzteilliste.pdf"}
       ]
     }
