@@ -75,13 +75,14 @@ const herstellerDaten = {
         'pdf/Genie/Z60_34/Serviceanleitung.pdf',
 
       '⚠️ Fehlercodes':
-        'pdf/Genie/ZT60_34/Fehlercodeliste.pdf',
+        'pdf/Genie/Z60_34/Fehlercodeliste.pdf',
 
       '⚡ Schaltplan':
         'pdf/Genie/Z60_34/Schaltplan.pdf',
 
       '🔧 Ersatzteilliste':
         'pdf/Genie/Z60_34/Ersatzteilliste.pdf'
+    }
   },
 
   JLG: {
