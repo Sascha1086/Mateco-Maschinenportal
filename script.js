@@ -8,6 +8,23 @@
 
 const herstellerDaten = {
   Genie: {
+  'GS1530 (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/GS1530/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/GS1530/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/GS1530/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/GS1530/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/GS1530/Ersatzteilliste.pdf'
+  },
+
   'GS1532 (Schere)': {
     '📄 Bedienungsanleitung':
         'pdf/Genie/GS1532/Bedienungsanleitung.pdf',
@@ -312,6 +329,23 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
         'pdf/Genie/Z40_23NRJ/Ersatzteilliste.pdf'
+  },
+
+  'Z45/25J Bi-Energy (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/Z45_25J_BiEnergy/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/Z45_25J_BiEnergy/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/Z45_25J_BiEnergy/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/Z45_25J_BiEnergy/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/Z45_25J_BiEnergy/Ersatzteilliste.pdf'
   },
 
   'S45 (Teleskop)': {
