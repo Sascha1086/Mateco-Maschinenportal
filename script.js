@@ -1308,6 +1308,40 @@ const herstellerDaten = {
   },
 
   Niftylift: {
+  'HR15NE (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Niftylift/HR15NE/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Niftylift/HR15NE/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Niftylift/HR15NE/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Niftylift/HR15NE/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Niftylift/HR15NE/Ersatzteilliste.pdf' 
+  },
+
+  'HR17N Hybrid (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Niftylift/HR17N_Hybrid/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Niftylift/HR17N_Hybrid/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Niftylift/HR17N_Hybrid/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Niftylift/HR17N_Hybrid/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Niftylift/HR17N_Hybrid/Ersatzteilliste.pdf' 
+  },
+
   'HR17 Hybrid 4X4 (Gelenk-Teleskop)': {
     '📄 Bedienungsanleitung':
       'pdf/Niftylift/HR17_Hybrid_4X4/Bedienungsanleitung.pdf',
@@ -1322,7 +1356,58 @@ const herstellerDaten = {
       'pdf/Niftylift/HR17_Hybrid_4X4/Schaltplan.pdf',
 
     '🔧 Ersatzteilliste':
-      'pdf/Niftylift/HR17_Hybrid_4X4/Ersatzteilliste.pdf'
+      'pdf/Niftylift/HR17_Hybrid_4X4/Ersatzteilliste.pdf' 
+  },
+
+  'HR21 Hybrid 4X4 (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Niftylift/HR21_Hybrid_4X4/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Niftylift/HR21_Hybrid_4X4/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Niftylift/HR21_Hybrid_4X4/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Niftylift/HR21_Hybrid_4X4/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Niftylift/HR21_Hybrid_4X4/Ersatzteilliste.pdf' 
+  },
+
+  'HR28 Hybrid 4X4 (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Niftylift/HR28_Hybrid_4X4/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Niftylift/HR28_Hybrid_4X4/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Niftylift/HR28_Hybrid_4X4/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Niftylift/HR28_Hybrid_4X4/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Niftylift/HR28_Hybrid_4X4/Ersatzteilliste.pdf' 
+  },
+
+  'HR28E 4X4 (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Niftylift/HR28E_4X4/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Niftylift/HR28E_4X4/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Niftylift/HR28E_4X4/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Niftylift/HR28E_4X4/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Niftylift/HR28E_4X4/Ersatzteilliste.pdf'
      } 
   },
 
