@@ -1081,7 +1081,7 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
       'pdf/Zoomlion/ZA20JERT-LI/Ersatzteilliste.pdf'
-    }
+  },
 
   'ZT22JE (Teleskop)': {
     '📄 Bedienungsanleitung':
@@ -1098,7 +1098,7 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
       'pdf/Zoomlion/ZT22JE/Ersatzteilliste.pdf'
-    }
+  },
 
   'ZT26JE (Teleskop)': {
     '📄 Bedienungsanleitung':
