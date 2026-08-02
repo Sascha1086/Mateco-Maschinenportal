@@ -947,6 +947,22 @@ const herstellerDaten = {
   },
 
   Zoomlion: {
+  'ZS0407DC-LI (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Zoomlion/ZS0407DC_LI/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Zoomlion/ZS0407DC_LI/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Zoomlion/ZS0407DC_LI/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Zoomlion/ZS0407DC_LI/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Zoomlion/ZS0407DC_LI/Ersatzteilliste.pdf'
+  },
 
   'ZS0607ACW-LI (Teleskop)': {
     '📄 Bedienungsanleitung':
@@ -963,6 +979,57 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
       'pdf/Zoomlion/ZS0607ACW_LI/Ersatzteilliste.pdf'
+  },
+
+  'ZS0808AC-LI (Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Zoomlion/ZS0808AC_LI/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Zoomlion/ZS0808AC_LI/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Zoomlion/ZS0808AC_LI/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Zoomlion/ZS0808AC_LI/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Zoomlion/ZS0808AC_LI/Ersatzteilliste.pdf'
+  },
+
+  'ZS0812AC-LI (Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Zoomlion/ZS0812AC_LI/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Zoomlion/ZS0812AC_LI/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Zoomlion/ZS0812AC_LI/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Zoomlion/ZS0812AC_LI/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Zoomlion/ZS0812AC_LI/Ersatzteilliste.pdf'
+  },
+
+  'ZS1212AC-LI (Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Zoomlion/ZS1212AC-LI/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Zoomlion/ZS1212AC-LI/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Zoomlion/ZS1212AC-LI/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Zoomlion/ZS1212AC-LI/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Zoomlion/ZS1212AC-LI/Ersatzteilliste.pdf'
   },
 
   'ZA10RJE (Teleskop)': {
@@ -999,6 +1066,40 @@ const herstellerDaten = {
       'pdf/Zoomlion/ZS1623RT/Ersatzteilliste.pdf'
   },
 
+  'ZA20JERT-LI (Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Zoomlion/ZA20JERT-LI/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Zoomlion/ZA20JERT-LI/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Zoomlion/ZA20JERT-LI/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Zoomlion/ZA20JERT-LI/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Zoomlion/ZA20JERT-LI/Ersatzteilliste.pdf'
+    }
+
+  'ZT22JE (Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Zoomlion/ZT22JE/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Zoomlion/ZT22JE/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Zoomlion/ZT22JE/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Zoomlion/ZT22JE/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Zoomlion/ZT22JE/Ersatzteilliste.pdf'
+    }
+
   'ZT26JE (Teleskop)': {
     '📄 Bedienungsanleitung':
       'pdf/Zoomlion/ZT26JE/Bedienungsanleitung.pdf',
@@ -1014,9 +1115,7 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
       'pdf/Zoomlion/ZT26JE/Ersatzteilliste.pdf'
-  },
-
-  'Z0701 (Schere)': {}
+    }  
   },
 
   Haulotte: {
