@@ -2089,6 +2089,23 @@ const herstellerDaten = {
       'pdf/Manitou/120AETJ_C_3D/Ersatzteilliste.pdf'
   },
 
+  '150AETJ C 3D (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Manitou/150AETJ_C_3D/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Manitou/150AETJ_C_3D/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Manitou/150AETJ_C_3D/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Manitou/150AETJ_C_3D/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Manitou/150AETJ_C_3D/Ersatzteilliste.pdf'
+  },
+
   '160ATJ+ST5 S1 (Gelenk-Teleskop)': {
     '📄 Bedienungsanleitung':
       'pdf/Manitou/160ATJ+ST5_S1/Bedienungsanleitung.pdf',
@@ -2121,6 +2138,57 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
       'pdf/Manitou/170AETJL/Ersatzteilliste.pdf'
+  },
+
+  '200ATJE (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Manitou/200ATJE/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Manitou/200ATJE/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Manitou/200ATJE/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Manitou/200ATJE/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Manitou/200ATJE/Ersatzteilliste.pdf'
+  },
+
+  '280TJ (Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Manitou/280TJ/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Manitou/280TJ/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Manitou/280TJ/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Manitou/280TJ/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Manitou/280TJ/Ersatzteilliste.pdf'
+  },
+
+  'M30-4 ST3B (Gelände-Stapler)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Manitou/M30-4_ST3B/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Manitou/M30-4_ST3B/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Manitou/M30-4_ST3B/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Manitou/M30-4_ST3B/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Manitou/M30-4_ST3B/Ersatzteilliste.pdf'
   },
 
   'M30-4D ST5 S1 EU (Gelände-Stapler)': {
@@ -2172,6 +2240,40 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
       'pdf/Manitou/MT930H_75K_ST5_S1/Ersatzteilliste.pdf'
+  },
+
+  'MT933 Easy 75D ST5 S1 (Tele-Stapler)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Manitou/MT933_Easy_75D_ST5_S1/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Manitou/MT933_Easy_75D_ST5_S1/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Manitou/MT933_Easy_75D_ST5_S1/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Manitou/MT933_Easy_75D_ST5_S1/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Manitou/MT933_Easy_75D_ST5_S1/Ersatzteilliste.pdf'
+  },
+
+  'MT935 75D ST5 S1 (Tele-Stapler)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Manitou/MT935_75D_ST5_S1/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Manitou/MT935_75D_ST5_S1/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Manitou/MT935_75D_ST5_S1/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Manitou/MT935_75D_ST5_S1/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Manitou/MT935_75D_ST5_S1/Ersatzteilliste.pdf'
   },
 
   'MT1440 100P ST4 S1 (Tele-Stapler)': {
@@ -2240,6 +2342,23 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
       'pdf/Manitou/MRT1840_Easy_400°_ST3B/Ersatzteilliste.pdf'
+  },
+
+  'MRT2145 360 115D ST5 S1 (Roto-Stapler)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Manitou/MRT2145 360 115D ST5 S1/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Manitou/MRT2145 360 115D ST5 S1/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Manitou/MRT2145 360 115D ST5 S1/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Manitou/MRT2145 360 115D ST5 S1/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Manitou/MRT2145 360 115D ST5 S1/Ersatzteilliste.pdf'
   },
 
   'MRT2150 Privilege+ ST4 S2 (Roto-Stapler)': {
