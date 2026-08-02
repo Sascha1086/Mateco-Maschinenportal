@@ -586,6 +586,23 @@ const herstellerDaten = {
         'pdf/Genie/SX_125XC/Ersatzteilliste.pdf'
   },
 
+  'S-135/70 (Teleskop)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/Z135_70/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/Z135_70/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/Z135_70/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/Z135_70/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/Z135_70/Ersatzteilliste.pdf'
+  },
+
   'ZX-135/70 (Teleskop)': {
     '📄 Bedienungsanleitung':
         'pdf/Genie/ZX_135_70/Bedienungsanleitung.pdf',
@@ -605,8 +622,22 @@ const herstellerDaten = {
   },
 
   JLG: {
-    '1932 (Schere)': {},
-    '2032 (Schere)': {}
+  'GS1930ES (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/JLG/GS1930ES/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/JLG/GS1930ES/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/JLG/GS1930ES/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/JLG/GS1930ES/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/JLG/GS1930ES/Ersatzteilliste.pdf'
+    }
   },
 
   Zoomlion: {
