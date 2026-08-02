@@ -157,6 +157,57 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
       'pdf/PB Lift/S151-16E/Ersatzteilliste.pdf'
+  },
+
+  'S171-12E (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/PB Lift/S171-12E/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/PB Lift/S171-12E/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/PB Lift/S171-12E/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/PB Lift/S171-12E/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/PB Lift/S171-12E/Ersatzteilliste.pdf'
+  },
+
+  'S171-16E (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/PB Lift/S171-16E/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/PB Lift/S171-16E/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/PB Lift/S171-16E/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/PB Lift/S171-16E/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/PB Lift/S171-16E/Ersatzteilliste.pdf'
+  },
+
+   'S225-23 DS 4X4 (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/PB Lift/S225-23 DS 4X4/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/PB Lift/S225-23 DS 4X4/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/PB Lift/S225-23 DS 4X4/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/PB Lift/S225-23 DS 4X4/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/PB Lift/S225-23 DS 4X4/Ersatzteilliste.pdf' 
     }
   },
 
