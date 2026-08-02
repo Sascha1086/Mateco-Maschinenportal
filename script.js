@@ -947,6 +947,58 @@ const herstellerDaten = {
   },
 
   Zoomlion: {
+
+  'ZS0607ACW-LI (Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Zoomlion/ZS0607ACW_LI/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Zoomlion/ZS0607ACW_LI/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Zoomlion/ZS0607ACW_LI/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Zoomlion/ZS0607ACW_LI/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Zoomlion/ZS0607ACW_LI/Ersatzteilliste.pdf'
+  },
+
+  'ZA10RJE (Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Zoomlion/ZA10RJE/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Zoomlion/ZA10RJE/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Zoomlion/ZA10RJE/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Zoomlion/ZA10RJE/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Zoomlion/ZA10RJE/Ersatzteilliste.pdf'
+  },
+
+  'ZS1623RT (Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Zoomlion/ZS1623RT/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Zoomlion/ZS1623RT/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Zoomlion/ZS1623RT/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Zoomlion/ZS1623RT/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Zoomlion/ZS1623RT/Ersatzteilliste.pdf'
+  },
+
   'ZT26JE (Teleskop)': {
     '📄 Bedienungsanleitung':
       'pdf/Zoomlion/ZT26JE/Bedienungsanleitung.pdf',
