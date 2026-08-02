@@ -31,6 +31,15 @@ const herstellerDaten = {
 
     '📘 Serviceanleitung':
         'pdf/Genie/GS1932/Serviceanleitung.pdf'
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/GS1932/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/GS1932/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/GS1932/Ersatzteilliste.pdf'
   },
 
   'GS1932 E-Drive (Schere)': {
@@ -48,6 +57,108 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
         'pdf/Genie/GS1932 EDrive/Ersatzteilliste.pdf'
+  },
+
+  'GS2646 (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/GS2646/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/GS2646/Serviceanleitung.pdf'
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/GS2646/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/GS2646/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/GS2646/Ersatzteilliste.pdf'
+  },
+
+  'GS3232 (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/GS3232/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/GS3232/Serviceanleitung.pdf'
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/GS3232/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/GS3232/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/GS3232/Ersatzteilliste.pdf'
+  },
+
+  'GS4047 (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/GS4047/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/GS4047/Serviceanleitung.pdf'
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/GS4047/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/GS4047/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/GS4047/Ersatzteilliste.pdf'
+  },
+
+  'GS3390RT (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/GS3390RT/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/GS3390RT/Serviceanleitung.pdf'
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/GS3390RT/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/GS3390RT/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/GS3390RT/Ersatzteilliste.pdf'
+  },
+
+  'GS4390RT (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/GS4390RT/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/GS4390RT/Serviceanleitung.pdf'
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/GS4390RT/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/GS4390RT/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/GS4390RT/Ersatzteilliste.pdf'
+  },
+
+  'GS5390RT (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/GS5390RT/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/GS5390RT/Serviceanleitung.pdf'
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/GS5390RT/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/GS5390RT/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/GS5390RT/Ersatzteilliste.pdf'
   },
 
   'S85XC (Teleskop)': {
