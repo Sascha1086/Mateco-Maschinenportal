@@ -2123,6 +2123,74 @@ const herstellerDaten = {
       'pdf/Manitou/170AETJL/Ersatzteilliste.pdf'
   },
 
+  'M30-4D ST5 S1 EU (Gelände-Stapler)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Manitou/M30_4D_ST5_S1_EU/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Manitou/M30_4D_ST5_S1_EU/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Manitou/M30_4D_ST5_S1_EU/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Manitou/M30_4D_ST5_S1_EU/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Manitou/M30_4D_ST5_S1_EU/Ersatzteilliste.pdf'
+  },
+
+  'MT625H Comfort 75K ST5 S1 (Tele-Stapler)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Manitou/MT625H_Comfort_75K_ST5_S1/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Manitou/MT625H_Comfort_75K_ST5_S1/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Manitou/MT625H_Comfort_75K_ST5_S1/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Manitou/MT625H_Comfort_75K_ST5_S1/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Manitou/MT625H_Comfort_75K_ST5_S1/Ersatzteilliste.pdf'
+  },
+
+  'MT930H 75K ST5 S1 (Tele-Stapler)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Manitou/MT930H_75K_ST5_S1/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Manitou/MT930H_75K_ST5_S1/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Manitou/MT930H_75K_ST5_S1/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Manitou/MT930H_75K_ST5_S1/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Manitou/MT930H_75K_ST5_S1/Ersatzteilliste.pdf'
+  },
+
+  'MT1440 100P ST4 S1 (Tele-Stapler)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Manitou/MT1440_100P_ST4_S1/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Manitou/MT1440_Easy_75D_ST5_S1/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Manitou/MT1440_Easy_75D_ST5_S1/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Manitou/MT1440_Easy_75D_ST5_S1/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Manitou/MT1440_Easy_75D_ST5_S1/Ersatzteilliste.pdf'
+  },
+
   'MT1440 Easy 75D ST5 S1 (Tele-Stapler)': {
     '📄 Bedienungsanleitung':
       'pdf/Manitou/MT1440_Easy_75D_ST5_S1/Bedienungsanleitung.pdf',
@@ -2138,6 +2206,23 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
       'pdf/Manitou/MT1440_Easy_75D_ST5_S1/Ersatzteilliste.pdf'
+  },
+
+  'MT1840 Easy 75D ST5 S1 (Tele-Stapler)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Manitou/MT1840_Easy_75D_ST5_S1/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Manitou/MT1840_Easy_75D_ST5_S1/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Manitou/MT1840_Easy_75D_ST5_S1/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Manitou/MT1840_Easy_75D_ST5_S1/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Manitou/MT1840_Easy_75D_ST5_S1/Ersatzteilliste.pdf'
   },
 
   'MRT1840 Easy 400° ST3B (Roto-Stapler)': {
