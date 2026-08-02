@@ -42,6 +42,23 @@ const herstellerDaten = {
         'pdf/Genie/GS1532/Ersatzteilliste.pdf'
   },
 
+  'GS1930 (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/GS1930/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/GS1930/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/GS1930/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/GS1930/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/GS1930/Ersatzteilliste.pdf'
+  },
+
   'GS1932 (Schere)': {
     '📄 Bedienungsanleitung':
         'pdf/Genie/GS1932/Bedienungsanleitung.pdf',
@@ -93,6 +110,23 @@ const herstellerDaten = {
         'pdf/Genie/GS2032/Ersatzteilliste.pdf'
   },
 
+  'GS2046 (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/GS2046/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/GS2046/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/GS2046/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/GS2046/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/GS2046/Ersatzteilliste.pdf'
+  },
+
   'GS2046 E-Drive (Schere)': {
     '📄 Bedienungsanleitung':
         'pdf/Genie/GS2046 EDrive/Bedienungsanleitung.pdf',
@@ -108,6 +142,23 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
         'pdf/Genie/GS2046 EDrive/Ersatzteilliste.pdf'
+  },
+
+  'GS2632 (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/GS2632/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/GS2632/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/GS2632/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/GS2632/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/GS2632/Ersatzteilliste.pdf'
   },
 
   'GS2646 (Schere)': {
@@ -193,6 +244,23 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
         'pdf/Genie/GS3232 EDrive/Ersatzteilliste.pdf'
+  },
+
+  'GS3246 (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/GS3246/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/GS3246/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/GS3246/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/GS3246/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/GS3246/Ersatzteilliste.pdf'
   },
 
   'GS3369DC (Schere)': {
