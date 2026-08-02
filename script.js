@@ -144,6 +144,23 @@ const herstellerDaten = {
         'pdf/Genie/GS2669DC/Ersatzteilliste.pdf'
   },
 
+  'GS2669RT (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/GS2669RT/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/GS2669RT/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/GS2669RT/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/GS2669RT/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/GS2669RT/Ersatzteilliste.pdf'
+  },
+
   'GS3232 (Schere)': {
     '📄 Bedienungsanleitung':
         'pdf/Genie/GS3232/Bedienungsanleitung.pdf',
@@ -193,6 +210,23 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
         'pdf/Genie/GS3369DC/Ersatzteilliste.pdf'
+  },
+
+  'GS3369RT (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/GS3369RT/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/GS3369RT/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/GS3369RT/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/GS3369RT/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/GS3369RT/Ersatzteilliste.pdf'
   },
 
   'GS3390RT (Schere)': {
@@ -261,6 +295,23 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
         'pdf/Genie/GS4069DC/Ersatzteilliste.pdf'
+  },
+
+  'GS4069RT (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/GS4069RT/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/GS4069RT/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/GS4069RT/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/GS4069RT/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/GS4069RT/Ersatzteilliste.pdf'
   },
 
   'GS4390RT (Schere)': {
@@ -1531,7 +1582,7 @@ const herstellerDaten = {
       'pdf/Dingli/JCPT2223DC/Ersatzteilliste.pdf'   
   },
 
-  'BT28BERT (Schere)': {
+  'BT28BERT (Gelenk-Teleskop)': {
     '📄 Bedienungsanleitung':
       'pdf/Dingli/BT28BERT/Bedienungsanleitung.pdf',
 
@@ -1548,7 +1599,7 @@ const herstellerDaten = {
       'pdf/Dingli/BT28BERT/Ersatzteilliste.pdf'   
   },
 
-  'BT34BERT (Schere)': {
+  'BT34BERT (Gelenk-Teleskop)': {
     '📄 Bedienungsanleitung':
       'pdf/Dingli/BT34BERT/Bedienungsanleitung.pdf',
 
@@ -2267,13 +2318,13 @@ const herstellerDaten = {
       'pdf/Manitou/MT935_75D_ST5_S1/Serviceanleitung.pdf',
 
     '⚠️ Fehlercodes':
-      'pdf/Manitou/MT935_75D_ST5_S1/Fehlercodeliste.pdf',
+      'pdf/Manitou/MT933_Easy_75D_ST5_S1/Fehlercodeliste.pdf',
 
     '⚡ Schaltplan':
-      'pdf/Manitou/MT935_75D_ST5_S1/Schaltplan.pdf',
+      'pdf/Manitou/MT933_Easy_75D_ST5_S1/Schaltplan.pdf',
 
     '🔧 Ersatzteilliste':
-      'pdf/Manitou/MT935_75D_ST5_S1/Ersatzteilliste.pdf'
+      'pdf/Manitou/MT933_Easy_75D_ST5_S1/Ersatzteilliste.pdf'
   },
 
   'MT1440 100P ST4 S1 (Tele-Stapler)': {
