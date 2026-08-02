@@ -1015,6 +1015,23 @@ const herstellerDaten = {
       'pdf/Zoomlion/ZS0812AC_LI/Ersatzteilliste.pdf'
   },
 
+  'ZS1012AC-LI (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Zoomlion/ZS1012AC-LI/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Zoomlion/ZS1012AC-LI/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Zoomlion/ZS1012AC-LI/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Zoomlion/ZS1012AC-LI/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Zoomlion/ZS1012AC-LI/Ersatzteilliste.pdf'
+  },
+
   'ZS1212AC-LI (Schere)': {
     '📄 Bedienungsanleitung':
       'pdf/Zoomlion/ZS1212AC-LI/Bedienungsanleitung.pdf',
@@ -1030,6 +1047,23 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
       'pdf/Zoomlion/ZS1212AC-LI/Ersatzteilliste.pdf'
+  },
+
+  'ZS1414AC-LI (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Zoomlion/ZS1414AC-LI/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Zoomlion/ZS1414AC-LI/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Zoomlion/ZS1414AC-LI/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Zoomlion/ZS1414AC-LI/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Zoomlion/ZS1414AC-LI/Ersatzteilliste.pdf'
   },
 
   'ZA10RJE (Gelenk-Teleskop)': {
@@ -1199,7 +1233,24 @@ const herstellerDaten = {
       'pdf/Zoomlion/ZT26JE/Schaltplan.pdf',
 
     '🔧 Ersatzteilliste':
-      'pdf/Zoomlion/ZT26JE/Ersatzteilliste.pdf'
+      'pdf/Zoomlion/ZT26JE/Ersatzteilliste.pdf'  
+  },
+
+  'ZT38JE (Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Zoomlion/ZT38JE/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Zoomlion/ZT38JE/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Zoomlion/ZT38JE/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Zoomlion/ZT38JE/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Zoomlion/ZT38JE/Ersatzteilliste.pdf'
     }  
   },
 
