@@ -1412,7 +1412,158 @@ const herstellerDaten = {
   },
 
   Dingli: {
-    'BA28BERT (Gelenk-Teleskop)': {}
+  'JCPT0607A (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Dingli/JCPT0607A/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Dingli/JCPT0607A/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Dingli/JCPT0607A/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Dingli/JCPT0607A/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Dingli/JCPT0607A/Ersatzteilliste.pdf'   
+  },
+
+  'JCPT1218DC (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Dingli/JCPT1218DC/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Dingli/JCPT1218DC/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Dingli/JCPT1218DC/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Dingli/JCPT1218DC/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Dingli/JCPT1218DC/Ersatzteilliste.pdf'   
+  },
+
+  'JCPT1418DC (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Dingli/JCPT1418DC/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Dingli/JCPT1418DC/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Dingli/JCPT1418DC/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Dingli/JCPT1418DC/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Dingli/JCPT1418DC/Ersatzteilliste.pdf'   
+  },
+
+  'JCPT1523DCB (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Dingli/JCPT1523DCB/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Dingli/JCPT1523DCB/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Dingli/JCPT1523DCB/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Dingli/JCPT1523DCB/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Dingli/JCPT1523DCB/Ersatzteilliste.pdf'   
+  },
+
+  'JCPT1823DCB (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Dingli/JCPT1823DCB/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Dingli/JCPT1823DCB/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Dingli/JCPT1823DCB/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Dingli/JCPT1823DCB/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Dingli/JCPT1823DCB/Ersatzteilliste.pdf'   
+  },
+
+  'JCPT1912DCL (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Dingli/JCPT1912DCL/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Dingli/JCPT1912DCL/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Dingli/JCPT1912DCL/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Dingli/JCPT1912DCL/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Dingli/JCPT1912DCL/Ersatzteilliste.pdf'   
+  },
+
+  'JCPT2223DC (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Dingli/JCPT2223DC/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Dingli/JCPT2223DC/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Dingli/JCPT2223DC/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Dingli/JCPT2223DC/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Dingli/JCPT2223DC/Ersatzteilliste.pdf'   
+  },
+
+  'BT28BERT (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Dingli/BT28BERT/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Dingli/BT28BERT/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Dingli/BT28BERT/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Dingli/BT28BERT/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Dingli/BT28BERT/Ersatzteilliste.pdf'   
+  },
+
+  'BT34BERT (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Dingli/BT34BERT/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Dingli/BT34BERT/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Dingli/BT34BERT/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Dingli/BT34BERT/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Dingli/BT34BERT/Ersatzteilliste.pdf' 
+     }  
   },
 
   Skyjack: {
