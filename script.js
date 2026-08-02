@@ -142,21 +142,21 @@ const herstellerDaten = {
   },
 
   'PB Lift': {
-  'Monostar (Schere)': {
+  'S151-16E (Schere)': {
     '📄 Bedienungsanleitung':
-      'pdf/PB Lift/15/Bedienungsanleitung.pdf',
+      'pdf/PB Lift/S151-16E/Bedienungsanleitung.pdf',
 
     '📘 Serviceanleitung':
-      'pdf/PB Lift/15/Serviceanleitung.pdf',
+      'pdf/PB Lift/S151-16E/Serviceanleitung.pdf',
 
     '⚠️ Fehlercodes':
-      'pdf/PB Lift/15/Fehlercodeliste.pdf',
+      'pdf/PB Lift/S151-16E/Fehlercodeliste.pdf',
 
     '⚡ Schaltplan':
-      'pdf/PB Lift/15/Schaltplan.pdf',
+      'pdf/PB Lift/S151-16E/Schaltplan.pdf',
 
     '🔧 Ersatzteilliste':
-      'pdf/PB Lift/15/Ersatzteilliste.pdf'
+      'pdf/PB Lift/S151-16E/Ersatzteilliste.pdf'
     }
   },
 
