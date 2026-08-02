@@ -1307,6 +1307,25 @@ const herstellerDaten = {
     }  
   },
 
+  Niftylift: {
+  'HR17 Hybrid 4X4 (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Niftylift/HR17_Hybrid_4X4/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Niftylift/HR17_Hybrid_4X4/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Niftylift/HR17_Hybrid_4X4/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Niftylift/HR17_Hybrid_4X4/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Niftylift/HR17_Hybrid_4X4/Ersatzteilliste.pdf'
+     } 
+  },
+
   Dingli: {
     'BA28BERT (Gelenk-Teleskop)': {}
   },
