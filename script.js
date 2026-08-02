@@ -59,6 +59,23 @@ const herstellerDaten = {
         'pdf/Genie/GS1932 EDrive/Ersatzteilliste.pdf'
   },
 
+  'GS2032 (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/GS2032/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/GS2032/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/GS2032/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/GS2032/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/GS2032/Ersatzteilliste.pdf'
+  },
+
   'GS2646 (Schere)': {
     '📄 Bedienungsanleitung':
         'pdf/Genie/GS2646/Bedienungsanleitung.pdf',
@@ -74,6 +91,23 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
         'pdf/Genie/GS2646/Ersatzteilliste.pdf'
+  },
+
+  'GS2669DC (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/GS2669DC/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/GS2669DC/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/GS2669DC/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/GS2669DC/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/GS2669DC/Ersatzteilliste.pdf'
   },
 
   'GS3232 (Schere)': {
@@ -161,6 +195,20 @@ const herstellerDaten = {
         'pdf/Genie/GS5390RT/Ersatzteilliste.pdf'
   },
 
+  'Z60/34 (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/Z60_34/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/Z60_34/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/Z60_34/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/Z60_34/Schaltplan.pdf',
+  },
+
   'S85XC (Teleskop)': {
     '📄 Bedienungsanleitung':
         'pdf/Genie/S85XC/Bedienungsanleitung.pdf',
@@ -178,18 +226,21 @@ const herstellerDaten = {
         'pdf/Genie/S85XC/Ersatzteilliste.pdf'
   },
 
-  'Z60/34 (Gelenk-Teleskop)': {
+  'SX-125XC (Teleskop)': {
     '📄 Bedienungsanleitung':
-        'pdf/Genie/Z60_34/Bedienungsanleitung.pdf',
+        'pdf/Genie/SX-125XC/Bedienungsanleitung.pdf',
 
     '📘 Serviceanleitung':
-        'pdf/Genie/Z60_34/Serviceanleitung.pdf',
+        'pdf/Genie/SX-125XC/Serviceanleitung.pdf',
 
     '⚠️ Fehlercodes':
-        'pdf/Genie/Z60_34/Fehlercodeliste.pdf',
+        'pdf/Genie/SX-125XC/Fehlercodeliste.pdf',
 
     '⚡ Schaltplan':
-        'pdf/Genie/Z60_34/Schaltplan.pdf',
+        'pdf/Genie/SX-125XC/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/SX-125XC/Ersatzteilliste.pdf'
     }
   },
 
