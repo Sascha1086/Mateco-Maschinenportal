@@ -2055,18 +2055,126 @@ const herstellerDaten = {
   },
 
   Manitou: {
-    'TS0625 (Teleskopstapler)': {
-      '📘 Serviceanleitung':
-        'pdf/Manitou/TS0625/Serviceanleitung.pdf',
+  '100VJR (Teleskopmast)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Manitou/100VJR/Bedienungsanleitung.pdf',
 
-      '⚡ Schaltplan':
-        'pdf/Manitou/TS0625/Schaltplan.pdf'
-    },
+    '📘 Serviceanleitung':
+      'pdf/Manitou/100VJR/Serviceanleitung.pdf',
 
-    'TS0932 (Teleskopstapler)': {},
-    'TS1440 (Teleskopstapler)': {}
+    '⚠️ Fehlercodes':
+      'pdf/Manitou/100VJR/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Manitou/100VJR/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Manitou/100VJR/Ersatzteilliste.pdf'
   },
 
+  '120AETJ C 3D (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Manitou/120AETJ_C_3D/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Manitou/120AETJ_C_3D/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Manitou/120AETJ_C_3D/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Manitou/120AETJ_C_3D/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Manitou/120AETJ_C_3D/Ersatzteilliste.pdf'
+  },
+
+  '160ATJ+ST5 S1 (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Manitou/160ATJ+ST5_S1/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Manitou/160ATJ+ST5_S1/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Manitou/160ATJ+ST5_S1/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Manitou/160ATJ+ST5_S1/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Manitou/160ATJ+ST5_S1/Ersatzteilliste.pdf'
+  },
+
+  '170AETJL (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Manitou/170AETJL/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Manitou/170AETJL/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Manitou/170AETJL/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Manitou/170AETJL/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Manitou/170AETJL/Ersatzteilliste.pdf'
+  },
+
+  'MT1440 Easy 75D ST5 S1 (Tele-Stapler)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Manitou/MT1440_Easy_75D_ST5_S1/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Manitou/MT1440_Easy_75D_ST5_S1/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Manitou/MT1440_Easy_75D_ST5_S1/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Manitou/MT1440_Easy_75D_ST5_S1/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Manitou/MT1440_Easy_75D_ST5_S1/Ersatzteilliste.pdf'
+  },
+
+  'MRT1840 Easy 400° ST3B (Roto-Stapler)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Manitou/MRT1840_Easy_400°_ST3B/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Manitou/MRT1840_Easy_400°_ST3B/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Manitou/MRT1840_Easy_400°_ST3B/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Manitou/MRT1840_Easy_400°_ST3B/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Manitou/MRT1840_Easy_400°_ST3B/Ersatzteilliste.pdf'
+  },
+
+  'MRT2150 Privilege+ ST4 S2 (Roto-Stapler)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Manitou/MRT2150_Privilege+_ST4_S2/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Manitou/MRT2150_Privilege+_ST4_S2/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Manitou/MRT2150_Privilege+_ST4_S2/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Manitou/MRT2150_Privilege+_ST4_S2/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Manitou/MRT2150_Privilege+_ST4_S2/Ersatzteilliste.pdf'
+    }
+  },
+  
   Merlo: {
     'TS0625 (Teleskopstapler)': {},
     'TS0932 (Teleskopstapler)': {},
