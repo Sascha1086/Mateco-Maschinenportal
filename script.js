@@ -195,6 +195,23 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
       'pdf/Gefas/Helix 1205/Ersatzteilliste.pdf'
+  },
+
+  'Helix 1508 (Telekopmast)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Gefas/Helix 1508/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Gefas/Helix 1508/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Gefas/Helix 1508/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Gefas/Helix 1508/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Gefas/Helix 1508/Ersatzteilliste.pdf'
     }
   },
 
