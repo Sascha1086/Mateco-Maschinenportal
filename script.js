@@ -8,76 +8,76 @@
 
 const herstellerDaten = {
   Genie: {
-    'GS1532 (Schere)': {
-      '📄 Bedienungsanleitung':
+  'GS1532 (Schere)': {
+    '📄 Bedienungsanleitung':
         'pdf/Genie/GS1532/Bedienungsanleitung.pdf',
 
-      '📘 Serviceanleitung':
+    '📘 Serviceanleitung':
         'pdf/Genie/GS1532/Serviceanleitung.pdf',
 
-      '⚠️ Fehlercodes':
+    '⚠️ Fehlercodes':
         'pdf/Genie/GS1532/Fehlercodeliste.pdf',
 
-      '⚡ Schaltplan':
+    '⚡ Schaltplan':
         'pdf/Genie/GS1532/Schaltplan.pdf',
 
-      '🔧 Ersatzteilliste':
+    '🔧 Ersatzteilliste':
         'pdf/Genie/GS1532/Ersatzteilliste.pdf'
-    },
+  },
 
-    'GS1932 (Schere)': {
-      '📄 Bedienungsanleitung':
+  'GS1932 (Schere)': {
+    '📄 Bedienungsanleitung':
         'pdf/Genie/GS1932/Bedienungsanleitung.pdf',
 
-      '📘 Serviceanleitung':
+    '📘 Serviceanleitung':
         'pdf/Genie/GS1932/Serviceanleitung.pdf'
-    },
+  },
 
-    'GS1932 E-Drive (Schere)': {
-      '📄 Bedienungsanleitung':
+  'GS1932 E-Drive (Schere)': {
+    '📄 Bedienungsanleitung':
         'pdf/Genie/GS1932 EDrive/Bedienungsanleitung.pdf',
 
-      '📘 Serviceanleitung':
+    '📘 Serviceanleitung':
         'pdf/Genie/GS1932 EDrive/Serviceanleitung.pdf',
 
-      '⚠️ Fehlercodes':
+    '⚠️ Fehlercodes':
         'pdf/Genie/GS1932 EDrive/Fehlercodeliste.pdf',
 
-      '⚡ Schaltplan':
+    '⚡ Schaltplan':
         'pdf/Genie/GS1932 EDrive/Schaltplan.pdf',
 
-      '🔧 Ersatzteilliste':
+    '🔧 Ersatzteilliste':
         'pdf/Genie/GS1932 EDrive/Ersatzteilliste.pdf'
-    },
+  },
 
-    'S85XC (Teleskop)': {
-      '📄 Bedienungsanleitung':
+  'S85XC (Teleskop)': {
+    '📄 Bedienungsanleitung':
         'pdf/Genie/S85XC/Bedienungsanleitung.pdf',
 
-      '📘 Serviceanleitung':
+    '📘 Serviceanleitung':
         'pdf/Genie/S85XC/Serviceanleitung.pdf',
 
-      '⚠️ Fehlercodes':
+    '⚠️ Fehlercodes':
         'pdf/Genie/S85XC/Fehlercodeliste.pdf',
 
-      '⚡ Schaltplan':
+    '⚡ Schaltplan':
         'pdf/Genie/S85XC/Schaltplan.pdf',
 
-      '🔧 Ersatzteilliste':
+    '🔧 Ersatzteilliste':
         'pdf/Genie/S85XC/Ersatzteilliste.pdf'
-    },
+  },
 
-    'Z60/34 (Gelenk-Teleskop)': {
-      '📄 Bedienungsanleitung':
+  'Z60/34 (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
         'pdf/Genie/Z60_34/Bedienungsanleitung.pdf',
 
-      '📘 Serviceanleitung':
+    '📘 Serviceanleitung':
         'pdf/Genie/Z60_34/Serviceanleitung.pdf',
 
-      '⚠️ Fehlercodes':
+    '⚠️ Fehlercodes':
         'pdf/Genie/Z60_34/Fehlercodeliste.pdf',
 
-      '⚡ Schaltplan':
+    '⚡ Schaltplan':
         'pdf/Genie/Z60_34/Schaltplan.pdf',
     }
   },
@@ -106,7 +106,7 @@ const herstellerDaten = {
   },
 
   'Z0701 (Schere)': {}
-},
+  },
 
   Haulotte: {
     'Star 10 (Teleskopmast)': {}
@@ -120,6 +120,24 @@ const herstellerDaten = {
     'SJ12 (Roll-Lift)': {},
     'SJ3 3219 (Schere)': {},
     'SJ3 3226 (Schere)': {}
+  },
+
+  Holland Lift: {
+    'Monostar (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Holland Lift/Monostar/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Holland Lift/Monostar/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Holland Lift/Monostar/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Holland Lift/Monostar/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Holland Lift/Monostar/Ersatzteilliste.pdf'
   },
 
   Teupen: {
