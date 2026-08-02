@@ -141,6 +141,44 @@ const herstellerDaten = {
     }
   },
 
+  'PB Lift': {
+  'Monostar (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/PB Lift/15/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/PB Lift/15/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/PB Lift/15/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/PB Lift/15/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/PB Lift/15/Ersatzteilliste.pdf'
+    }
+  },
+
+  Bravi: {
+  'Leonardo (Rolllift)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Bravi/Leonardo/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Bravi/Leonardo/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Bravi/Leonardo/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Bravi/Leonardo/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Bravi/Leonardo/Ersatzteilliste.pdf'
+    }
+  },
+
   Teupen: {
     'LEO15GT (Gelenk-Kette)': {},
     'LEO18GT (Gelenk-Kette)': {},
