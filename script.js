@@ -30,7 +30,7 @@ const herstellerDaten = {
         'pdf/Genie/GS1932/Bedienungsanleitung.pdf',
 
     '📘 Serviceanleitung':
-        'pdf/Genie/GS1932/Serviceanleitung.pdf'
+        'pdf/Genie/GS1932/Serviceanleitung.pdf',
 
     '⚠️ Fehlercodes':
         'pdf/Genie/GS1932/Fehlercodeliste.pdf',
@@ -64,7 +64,7 @@ const herstellerDaten = {
         'pdf/Genie/GS2646/Bedienungsanleitung.pdf',
 
     '📘 Serviceanleitung':
-        'pdf/Genie/GS2646/Serviceanleitung.pdf'
+        'pdf/Genie/GS2646/Serviceanleitung.pdf',
 
     '⚠️ Fehlercodes':
         'pdf/Genie/GS2646/Fehlercodeliste.pdf',
@@ -81,7 +81,7 @@ const herstellerDaten = {
         'pdf/Genie/GS3232/Bedienungsanleitung.pdf',
 
     '📘 Serviceanleitung':
-        'pdf/Genie/GS3232/Serviceanleitung.pdf'
+        'pdf/Genie/GS3232/Serviceanleitung.pdf',
 
     '⚠️ Fehlercodes':
         'pdf/Genie/GS3232/Fehlercodeliste.pdf',
@@ -98,7 +98,7 @@ const herstellerDaten = {
         'pdf/Genie/GS4047/Bedienungsanleitung.pdf',
 
     '📘 Serviceanleitung':
-        'pdf/Genie/GS4047/Serviceanleitung.pdf'
+        'pdf/Genie/GS4047/Serviceanleitung.pdf',
 
     '⚠️ Fehlercodes':
         'pdf/Genie/GS4047/Fehlercodeliste.pdf',
@@ -115,7 +115,7 @@ const herstellerDaten = {
         'pdf/Genie/GS3390RT/Bedienungsanleitung.pdf',
 
     '📘 Serviceanleitung':
-        'pdf/Genie/GS3390RT/Serviceanleitung.pdf'
+        'pdf/Genie/GS3390RT/Serviceanleitung.pdf',
 
     '⚠️ Fehlercodes':
         'pdf/Genie/GS3390RT/Fehlercodeliste.pdf',
@@ -132,7 +132,7 @@ const herstellerDaten = {
         'pdf/Genie/GS4390RT/Bedienungsanleitung.pdf',
 
     '📘 Serviceanleitung':
-        'pdf/Genie/GS4390RT/Serviceanleitung.pdf'
+        'pdf/Genie/GS4390RT/Serviceanleitung.pdf',
 
     '⚠️ Fehlercodes':
         'pdf/Genie/GS4390RT/Fehlercodeliste.pdf',
@@ -149,7 +149,7 @@ const herstellerDaten = {
         'pdf/Genie/GS5390RT/Bedienungsanleitung.pdf',
 
     '📘 Serviceanleitung':
-        'pdf/Genie/GS5390RT/Serviceanleitung.pdf'
+        'pdf/Genie/GS5390RT/Serviceanleitung.pdf',
 
     '⚠️ Fehlercodes':
         'pdf/Genie/GS5390RT/Fehlercodeliste.pdf',
@@ -488,7 +488,7 @@ const herstellerDaten = {
       'pdf/Teupen/LEO23T/Serviceanleitung.pdf',
 
     '⚠️ Fehlercodes':
-      'pdf/Teupen/LEO23/Fehlercodeliste.pdf',
+      'pdf/Teupen/LEO23T/Fehlercodeliste.pdf',
 
     '⚡ Schaltplan':
       'pdf/Teupen/LEO23T/Schaltplan.pdf',
@@ -562,7 +562,7 @@ const herstellerDaten = {
       'pdf/Teupen/LEO30T/Schaltplan.pdf',
 
     '🔧 Ersatzteilliste':
-      'pdf/Teupen/LEO230T/Ersatzteilliste.pdf'
+      'pdf/Teupen/LEO30T/Ersatzteilliste.pdf'
   },
 
   'LEO31T (Kette)': {
