@@ -144,6 +144,23 @@ const herstellerDaten = {
         'pdf/Genie/GS4047/Ersatzteilliste.pdf'
   },
 
+  'GS4069DC (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/GS4069DC/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/GS4069DC/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/GS4069DC/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/GS4069DC/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/GS4069DC/Ersatzteilliste.pdf'
+  },
+
   'GS3390RT (Schere)': {
     '📄 Bedienungsanleitung':
         'pdf/Genie/GS3390RT/Bedienungsanleitung.pdf',
@@ -195,21 +212,38 @@ const herstellerDaten = {
         'pdf/Genie/GS5390RT/Ersatzteilliste.pdf'
   },
 
-  'Z40/23NRJ (Gelenk-Teleskop)': {
+  'Z30/20NRJ (Gelenk-Teleskop)': {
     '📄 Bedienungsanleitung':
-        'pdf/Genie/Z40/23NRJ/Bedienungsanleitung.pdf',
+        'pdf/Genie/Z30_20NRJ/Bedienungsanleitung.pdf',
 
     '📘 Serviceanleitung':
-        'pdf/Genie/Z40/23NRJ/Serviceanleitung.pdf',
+        'pdf/Genie/Z30_20NRJ/Serviceanleitung.pdf',
 
     '⚠️ Fehlercodes':
-        'pdf/Genie/Z40/23NRJ/Fehlercodeliste.pdf',
+        'pdf/Genie/Z30_20NRJ/Fehlercodeliste.pdf',
 
     '⚡ Schaltplan':
-        'pdf/Genie/Z40/23NRJ/Schaltplan.pdf',
+        'pdf/Genie/Z30_20NRJ/Schaltplan.pdf',
 
     '🔧 Ersatzteilliste':
-        'pdf/Genie/Z40/23NRJ/Ersatzteilliste.pdf'
+        'pdf/Genie/Z30_20NRJ/Ersatzteilliste.pdf'
+  },
+
+  'Z40/23NRJ (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/Z40_23NRJ/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/Z40_23NRJ/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/Z40_23NRJ/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/Z40_23NRJ/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/Z40_23NRJ/Ersatzteilliste.pdf'
   },
 
   'Z60/34 (Gelenk-Teleskop)': {
@@ -224,6 +258,43 @@ const herstellerDaten = {
 
     '⚡ Schaltplan':
         'pdf/Genie/Z60_34/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/Z60_34/Ersatzteilliste.pdf'
+  },
+
+  'S65XC TRAX (Teleskop)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/S65XC_TRAX/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/S65XC_TRAX/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/S65XC_TRAX/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/S65XC_TRAX/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/S65XC_TRAX/Ersatzteilliste.pdf'
+  },
+
+  'Z80/60 (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/Z80_60/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/Z80_60/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/Z80_60/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/Z80_60/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/Z80_60/Ersatzteilliste.pdf'
   },
 
   'S85XC (Teleskop)': {
