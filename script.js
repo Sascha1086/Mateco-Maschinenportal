@@ -792,7 +792,7 @@ const herstellerDaten = {
         'pdf/JLG/450AJ/Ersatzteilliste.pdf'
   },
 
-  460SJ (Teleskop)': {
+  '460SJ (Teleskop)': {
     '📄 Bedienungsanleitung':
         'pdf/JLG/460SJ/Bedienungsanleitung.pdf',
 
@@ -809,7 +809,7 @@ const herstellerDaten = {
         'pdf/JLG/460SJ/Ersatzteilliste.pdf'
   },
 
-  460SJC (Teleskop)': {
+  '460SJC (Teleskop)': {
     '📄 Bedienungsanleitung':
         'pdf/JLG/460SJC/Bedienungsanleitung.pdf',
 
