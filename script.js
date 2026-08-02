@@ -318,9 +318,22 @@ const herstellerDaten = {
   },
 
   Teupen: {
-    'LEO15GT (Gelenk-Kette)': {},
-    'LEO18GT (Gelenk-Kette)': {},
-    'LEO21GT (Gelenk-Kette)': {}
+  'LEO35T Plus (Kette)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Teupen/LEO35T Plus/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Teupen/LEO35T Plus/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Teupen/LEO35T Plus/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Teupen/LEO35T Plus/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Teupen/LEO35T Plus/Ersatzteilliste.pdf'
+    }
   },
 
   Manitou: {
