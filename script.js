@@ -179,6 +179,25 @@ const herstellerDaten = {
     }
   },
 
+  Gefas: {
+  'Helix 1205 (Telekopmast)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Gefas/Helix 1205/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Gefas/Helix 1205/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Gefas/Helix 1205/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Gefas/Helix 1205/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Gefas/Helix 1205/Ersatzteilliste.pdf'
+    }
+  },
+
   Teupen: {
     'LEO15GT (Gelenk-Kette)': {},
     'LEO18GT (Gelenk-Kette)': {},
