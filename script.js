@@ -622,38 +622,106 @@ const herstellerDaten = {
   },
 
   JLG: {
-  'GS1930ES (Schere)': {
+  '1230ES (Rolllift)': {
     '📄 Bedienungsanleitung':
-        'pdf/JLG/GS1930ES/Bedienungsanleitung.pdf',
+        'pdf/JLG/1230ES/Bedienungsanleitung.pdf',
 
     '📘 Serviceanleitung':
-        'pdf/JLG/GS1930ES/Serviceanleitung.pdf',
+        'pdf/JLG/1230ES/Serviceanleitung.pdf',
 
     '⚠️ Fehlercodes':
-        'pdf/JLG/GS1930ES/Fehlercodeliste.pdf',
+        'pdf/JLG/1230ES/Fehlercodeliste.pdf',
 
     '⚡ Schaltplan':
-        'pdf/JLG/GS1930ES/Schaltplan.pdf',
+        'pdf/JLG/1230ES/Schaltplan.pdf',
 
     '🔧 Ersatzteilliste':
-        'pdf/JLG/GS1930ES/Ersatzteilliste.pdf'
+        'pdf/JLG/1230ES/Ersatzteilliste.pdf'
   },
 
-  'GS2632ES (Schere)': {
+  'ES1530L (Schere)': {
     '📄 Bedienungsanleitung':
-        'pdf/JLG/GS2632ES/Bedienungsanleitung.pdf',
+        'pdf/JLG/ES1530L/Bedienungsanleitung.pdf',
 
     '📘 Serviceanleitung':
-        'pdf/JLG/GS2632ES/Serviceanleitung.pdf',
+        'pdf/JLG/ES1530L/Serviceanleitung.pdf',
 
     '⚠️ Fehlercodes':
-        'pdf/JLG/GS2632ES/Fehlercodeliste.pdf',
+        'pdf/JLG/ES1530L/Fehlercodeliste.pdf',
 
     '⚡ Schaltplan':
-        'pdf/JLG/GS2632ES/Schaltplan.pdf',
+        'pdf/JLG/ES1530L/Schaltplan.pdf',
 
     '🔧 Ersatzteilliste':
-        'pdf/JLG/GS2632ES/Ersatzteilliste.pdf'
+        'pdf/JLG/ES1530L/Ersatzteilliste.pdf'
+  },
+
+  '1930ES (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/JLG/1930ES/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/JLG/1930ES/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/JLG/1930ES/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/JLG/1930ES/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/JLG/1930ES/Ersatzteilliste.pdf'
+  },
+
+  '2032ES (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/JLG/2032ES/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/JLG/2032ES/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/JLG/2032ES/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/JLG/2032ES/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/JLG/2032ES/Ersatzteilliste.pdf'
+  },
+
+  '2632ES (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/JLG/2632ES/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/JLG/2632ES/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/JLG/2632ES/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/JLG/2632ES/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/JLG/2632ES/Ersatzteilliste.pdf'
+  },
+
+  '2646ES (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/JLG/2646ES/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/JLG/2646ES/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/JLG/2646ES/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/JLG/2646ES/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/JLG/2646ES/Ersatzteilliste.pdf'
   },
 
   'M3369 (Schere)': {
@@ -671,6 +739,23 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
         'pdf/JLG/M3369/Ersatzteilliste.pdf'
+  },
+
+  'E300AJP (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
+        'pdf/JLG/E300AJP/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/JLG/E300AJP/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/JLG/E300AJP/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/JLG/E300AJP/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/JLG/E300AJP/Ersatzteilliste.pdf'
   },
 
   'E400AJPN (Gelenk-Teleskop)': {
@@ -707,6 +792,40 @@ const herstellerDaten = {
         'pdf/JLG/450AJ/Ersatzteilliste.pdf'
   },
 
+  460SJ (Teleskop)': {
+    '📄 Bedienungsanleitung':
+        'pdf/JLG/460SJ/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/JLG/460SJ/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/JLG/460SJ/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/JLG/460SJ/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/JLG/460SJ/Ersatzteilliste.pdf'
+  },
+
+  460SJC (Teleskop)': {
+    '📄 Bedienungsanleitung':
+        'pdf/JLG/460SJC/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/JLG/460SJC/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/JLG/460SJC/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/JLG/460SJC/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/JLG/460SJC/Ersatzteilliste.pdf'
+  },
+
   '660SJ (Teleskop)': {
     '📄 Bedienungsanleitung':
         'pdf/JLG/660SJ/Bedienungsanleitung.pdf',
@@ -724,7 +843,58 @@ const herstellerDaten = {
         'pdf/JLG/660SJ/Ersatzteilliste.pdf'
   },
 
-  'Toucan 12E Plus (Teleskop)': {
+  '1350SJP (Teleskop)': {
+    '📄 Bedienungsanleitung':
+        'pdf/JLG/1350SJP/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/JLG/1350SJP/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/JLG/1350SJP/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/JLG/1350SJP/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/JLG/1350SJP/Ersatzteilliste.pdf'
+  },
+
+  'Toucan 8E-L (Teleskopmast)': {
+    '📄 Bedienungsanleitung':
+        'pdf/JLG/Toucan8E_L/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/JLG/Toucan8E_L/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/JLG/Toucan8E_L/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/JLG/Toucan8E_L/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/JLG/Toucan8E_L/Ersatzteilliste.pdf'
+  },
+
+  'Toucan 12E (Teleskopmast)': {
+    '📄 Bedienungsanleitung':
+        'pdf/JLG/Toucan12E_Plus/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/JLG/Toucan12E/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/JLG/Toucan12E/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/JLG/Toucan12E/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/JLG/Toucan12E/Ersatzteilliste.pdf'
+  },
+
+  'Toucan 12E Plus (Teleskopmast)': {
     '📄 Bedienungsanleitung':
         'pdf/JLG/Toucan12E_Plus/Bedienungsanleitung.pdf',
 
@@ -741,7 +911,7 @@ const herstellerDaten = {
         'pdf/JLG/Toucan12E_Plus/Ersatzteilliste.pdf'
   },
 
-  'X15J Plus (Teleskop)': {
+  'X15J Plus (Gelenk-Kette)': {
     '📄 Bedienungsanleitung':
         'pdf/JLG/X15J_Plus/Bedienungsanleitung.pdf',
 
@@ -756,6 +926,23 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
         'pdf/X15J_Plus/Ersatzteilliste.pdf'
+  },
+
+  'X18J Plus (Gelenk-Kette)': {
+    '📄 Bedienungsanleitung':
+        'pdf/JLG/X18J_Plus/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/X18J_Plus/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/X18J_Plus/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/X18J_Plus/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/X18J_Plus/Ersatzteilliste.pdf'
     }
   },
 
