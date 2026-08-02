@@ -122,8 +122,8 @@ const herstellerDaten = {
     'SJ3 3226 (Schere)': {}
   },
 
-  Holland Lift: {
-    'Monostar (Schere)': {
+  Holland Lift': {
+  'Monostar (Schere)': {
     '📄 Bedienungsanleitung':
       'pdf/Holland Lift/Monostar/Bedienungsanleitung.pdf',
 
@@ -138,6 +138,7 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
       'pdf/Holland Lift/Monostar/Ersatzteilliste.pdf'
+    }
   },
 
   Teupen: {
