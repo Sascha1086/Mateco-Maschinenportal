@@ -1257,19 +1257,19 @@ const herstellerDaten = {
   Haulotte: {
   'Star 10 (Teleskopmast)': {
     '📄 Bedienungsanleitung':
-      'pdf/Haulotte/Star 10/Bedienungsanleitung.pdf',
+      'pdf/Haulotte/Star_10/Bedienungsanleitung.pdf',
 
     '📘 Serviceanleitung':
-      'pdf/Haulotte/Star 10/Serviceanleitung.pdf',
+      'pdf/Haulotte/Star_10/Serviceanleitung.pdf',
 
     '⚠️ Fehlercodes':
-      'pdf/Haulotte/Star 10/Fehlercodeliste.pdf',
+      'pdf/Haulotte/Star_10/Fehlercodeliste.pdf',
 
     '⚡ Schaltplan':
-      'pdf/Haulotte/Star 10/Schaltplan.pdf',
+      'pdf/Haulotte/Star_10/Schaltplan.pdf',
 
     '🔧 Ersatzteilliste':
-      'pdf/Haulotte/Star 10/Ersatzteilliste.pdf'  
+      'pdf/Haulotte/Star_10/Ersatzteilliste.pdf'  
   },
 
   'HA12CJ+ (Gelenk-Teleskop)': {
@@ -1329,6 +1329,23 @@ const herstellerDaten = {
       'pdf/Skyjack/SJ12/Ersatzteilliste.pdf'  
   },
 
+  'SJ16 (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Skyjack/SJ16/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Skyjack/SJ16/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Skyjack/SJ16/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Skyjack/SJ16/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Skyjack/SJ16/Ersatzteilliste.pdf'  
+  },
+
   'SJIII 3219 (Schere)': {
     '📄 Bedienungsanleitung':
       'pdf/Skyjack/SJIII 3219/Bedienungsanleitung.pdf',
@@ -1346,21 +1363,38 @@ const herstellerDaten = {
       'pdf/Skyjack/SJIII 3219/Ersatzteilliste.pdf'  
   },
 
-  'SJIII 4632 (Schere)': {
+  'SJIII 3226 (Schere)': {
     '📄 Bedienungsanleitung':
-      'pdf/Skyjack/SJIII 4632/Bedienungsanleitung.pdf',
+      'pdf/Skyjack/SJIII_3226/Bedienungsanleitung.pdf',
 
     '📘 Serviceanleitung':
-      'pdf/Skyjack/SJIII 4632/Serviceanleitung.pdf',
+      'pdf/Skyjack/SJIII_3226/Serviceanleitung.pdf',
 
     '⚠️ Fehlercodes':
-      'pdf/Skyjack/SJIII 4632/Fehlercodeliste.pdf',
+      'pdf/Skyjack/SJIII_3226/Fehlercodeliste.pdf',
 
     '⚡ Schaltplan':
-      'pdf/Skyjack/SJIII 4632/Schaltplan.pdf',
+      'pdf/Skyjack/SJIII_3226/Schaltplan.pdf',
 
     '🔧 Ersatzteilliste':
-      'pdf/Skyjack/SJIII 4632/Ersatzteilliste.pdf'    
+      'pdf/Skyjack/SJIII_3226/Ersatzteilliste.pdf'  
+  },
+
+  'SJIII 4632 (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Skyjack/SJIII_4632/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Skyjack/SJIII_4632/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Skyjack/SJIII_4632/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Skyjack/SJIII_4632/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Skyjack/SJIII_4632/Ersatzteilliste.pdf'    
   },
 
   'SJ6832 RTE (Schere)': {
