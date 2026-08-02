@@ -331,6 +331,23 @@ const herstellerDaten = {
         'pdf/Genie/Z40_23NRJ/Ersatzteilliste.pdf'
   },
 
+  'Z45/25JRT (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/Z45/25JRT/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/Z45/25JRT/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/Z45/25JRT/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/Z45/25JRT/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/Z45/25JRT/Ersatzteilliste.pdf'
+  },
+
   'Z45/25J Bi-Energy (Gelenk-Teleskop)': {
     '📄 Bedienungsanleitung':
         'pdf/Genie/Z45_25J_BiEnergy/Bedienungsanleitung.pdf',
@@ -414,6 +431,23 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
         'pdf/Genie/Z51_30JRT/Ersatzteilliste.pdf'
+  },
+
+  'S60 (Teleskop)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/S60/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/S60/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/S60/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/S60/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/S60/Ersatzteilliste.pdf'
   },
 
   'Z60/34 (Gelenk-Teleskop)': {
@@ -550,6 +584,23 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
         'pdf/Genie/SX_125XC/Ersatzteilliste.pdf'
+  },
+
+  'ZX-135/70 (Teleskop)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/ZX_135_70/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/ZX_135_70/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/ZX_135_70/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/ZX_135_70/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/ZX_135_70/Ersatzteilliste.pdf'
     }
   },
 
