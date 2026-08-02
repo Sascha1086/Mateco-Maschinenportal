@@ -1255,7 +1255,56 @@ const herstellerDaten = {
   },
 
   Haulotte: {
-    'Star 10 (Teleskopmast)': {}
+  'Star 10 (Teleskopmast)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Zoomlion/Star 10/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Zoomlion/Star 10/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Zoomlion/Star 10/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Zoomlion/Star 10/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Zoomlion/Star 10/Ersatzteilliste.pdf'  
+  },
+
+  'HA12CJ+ (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Zoomlion/HA12CJ+/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Zoomlion/HA12CJ+/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Zoomlion/HA12CJ+/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Zoomlion/HA12CJ+/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Zoomlion/HA12CJ+/Ersatzteilliste.pdf'  
+  },
+
+  'HA15IP (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Zoomlion/HA15IP/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Zoomlion/HA15IP/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Zoomlion/HA15IP/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Zoomlion/HA15IP/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Zoomlion/HA15IP/Ersatzteilliste.pdf'
+    }  
   },
 
   Dingli: {
