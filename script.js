@@ -122,7 +122,7 @@ const herstellerDaten = {
     'SJ3 3226 (Schere)': {}
   },
 
-  Holland Lift': {
+  'Holland Lift': {
   'Monostar (Schere)': {
     '📄 Bedienungsanleitung':
       'pdf/Holland Lift/Monostar/Bedienungsanleitung.pdf',
