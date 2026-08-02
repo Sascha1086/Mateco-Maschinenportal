@@ -195,6 +195,23 @@ const herstellerDaten = {
         'pdf/Genie/GS5390RT/Ersatzteilliste.pdf'
   },
 
+  'Z40/23NRJ (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
+        'pdf/Genie/Z40/23NRJ/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/Genie/Z40/23NRJ/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/Genie/Z40/23NRJ/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/Genie/Z40/23NRJ/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/Genie/Z40/23NRJ/Ersatzteilliste.pdf'
+  },
+
   'Z60/34 (Gelenk-Teleskop)': {
     '📄 Bedienungsanleitung':
         'pdf/Genie/Z60_34/Bedienungsanleitung.pdf',
