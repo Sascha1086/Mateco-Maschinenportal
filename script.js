@@ -142,6 +142,57 @@ const herstellerDaten = {
   },
 
   'PB Lift': {
+  'S131-19E (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/PB Lift/S131-19E/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/PB Lift/S131-19E/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/PB Lift/S131-19E/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/PB Lift/S131-19E/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/PB Lift/S131-19E/Ersatzteilliste.pdf'
+  },
+
+  'S151-12 ES (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/PB Lift/S151-12 ES/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/PB Lift/S151-12 ES/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/PB Lift/S151-12 ES/Fehlercodeliste.pdf',
+ 
+    '⚡ Schaltplan':
+      'pdf/PB Lift/S151-12 ES/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/PB Lift/S151-12 ES/Ersatzteilliste.pdf'
+  },
+
+  'S151-12E (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/PB Lift/S151-12E/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/PB Lift/S151-12E/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/PB Lift/S151-12E/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/PB Lift/S151-12E/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/PB Lift/S151-12E/Ersatzteilliste.pdf'
+  },
+
   'S151-16E (Schere)': {
     '📄 Bedienungsanleitung':
       'pdf/PB Lift/S151-16E/Bedienungsanleitung.pdf',
