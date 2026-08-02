@@ -335,6 +335,23 @@ const herstellerDaten = {
       'pdf/Teupen/LEO15GT/Ersatzteilliste.pdf'
   },
 
+  'LEO18GT Plus (Kette)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Teupen/LEO18GT Plus/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Teupen/LEO18GT Plus/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Teupen/LEO18GT Plus/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Teupen/LEO18GT Plus/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Teupen/LEO18GT Plus/Ersatzteilliste.pdf'
+  },
+
   'LEO21GT (Gelenk-Kette)': {
     '📄 Bedienungsanleitung':
       'pdf/Teupen/LEO21GT/Bedienungsanleitung.pdf',
@@ -350,6 +367,23 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
       'pdf/Teupen/LEO21GT/Ersatzteilliste.pdf'
+  },
+
+  'LEO23T (Kette)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Teupen/LEO23T/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Teupen/LEO23T/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Teupen/LEO23/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Teupen/LEO23T/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Teupen/LEO23T/Ersatzteilliste.pdf'
   },
 
   'LEO23GT (Gelenk-Kette)': {
@@ -384,6 +418,23 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
       'pdf/Teupen/LEO24GT/Ersatzteilliste.pdf'
+  },
+
+  'LEO25T Plus (Kette)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Teupen/LEO25T Plus/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Teupen/LEO25T Plus/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Teupen/LEO25T Plus/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Teupen/LEO25T Plus/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Teupen/LEO25T Plus/Ersatzteilliste.pdf'
   },
 
   'LEO30T (Kette)': {
