@@ -1257,53 +1257,53 @@ const herstellerDaten = {
   Haulotte: {
   'Star 10 (Teleskopmast)': {
     '📄 Bedienungsanleitung':
-      'pdf/Zoomlion/Star 10/Bedienungsanleitung.pdf',
+      'pdf/Haulotte/Star 10/Bedienungsanleitung.pdf',
 
     '📘 Serviceanleitung':
-      'pdf/Zoomlion/Star 10/Serviceanleitung.pdf',
+      'pdf/Haulotte/Star 10/Serviceanleitung.pdf',
 
     '⚠️ Fehlercodes':
-      'pdf/Zoomlion/Star 10/Fehlercodeliste.pdf',
+      'pdf/Haulotte/Star 10/Fehlercodeliste.pdf',
 
     '⚡ Schaltplan':
-      'pdf/Zoomlion/Star 10/Schaltplan.pdf',
+      'pdf/Haulotte/Star 10/Schaltplan.pdf',
 
     '🔧 Ersatzteilliste':
-      'pdf/Zoomlion/Star 10/Ersatzteilliste.pdf'  
+      'pdf/Haulotte/Star 10/Ersatzteilliste.pdf'  
   },
 
   'HA12CJ+ (Gelenk-Teleskop)': {
     '📄 Bedienungsanleitung':
-      'pdf/Zoomlion/HA12CJ+/Bedienungsanleitung.pdf',
+      'pdf/Haulotte/HA12CJ+/Bedienungsanleitung.pdf',
 
     '📘 Serviceanleitung':
-      'pdf/Zoomlion/HA12CJ+/Serviceanleitung.pdf',
+      'pdf/Haulotte/HA12CJ+/Serviceanleitung.pdf',
 
     '⚠️ Fehlercodes':
-      'pdf/Zoomlion/HA12CJ+/Fehlercodeliste.pdf',
+      'pdf/Haulotte/HA12CJ+/Fehlercodeliste.pdf',
 
     '⚡ Schaltplan':
-      'pdf/Zoomlion/HA12CJ+/Schaltplan.pdf',
+      'pdf/Haulotte/HA12CJ+/Schaltplan.pdf',
 
     '🔧 Ersatzteilliste':
-      'pdf/Zoomlion/HA12CJ+/Ersatzteilliste.pdf'  
+      'pdf/Haulotte/HA12CJ+/Ersatzteilliste.pdf'  
   },
 
   'HA15IP (Gelenk-Teleskop)': {
     '📄 Bedienungsanleitung':
-      'pdf/Zoomlion/HA15IP/Bedienungsanleitung.pdf',
+      'pdf/Haulotte/HA15IP/Bedienungsanleitung.pdf',
 
     '📘 Serviceanleitung':
-      'pdf/Zoomlion/HA15IP/Serviceanleitung.pdf',
+      'pdf/Haulotte/HA15IP/Serviceanleitung.pdf',
 
     '⚠️ Fehlercodes':
-      'pdf/Zoomlion/HA15IP/Fehlercodeliste.pdf',
+      'pdf/Haulotte/HA15IP/Fehlercodeliste.pdf',
 
     '⚡ Schaltplan':
-      'pdf/Zoomlion/HA15IP/Schaltplan.pdf',
+      'pdf/Haulotte/HA15IP/Schaltplan.pdf',
 
     '🔧 Ersatzteilliste':
-      'pdf/Zoomlion/HA15IP/Ersatzteilliste.pdf'
+      'pdf/Haulotte/HA15IP/Ersatzteilliste.pdf'
     }  
   },
 
@@ -1312,9 +1312,73 @@ const herstellerDaten = {
   },
 
   Skyjack: {
-    'SJ12 (Roll-Lift)': {},
-    'SJ3 3219 (Schere)': {},
-    'SJ3 3226 (Schere)': {}
+  'SJ12 (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Skyjack/SJ12/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Skyjack/SJ12/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Skyjack/SJ12/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Skyjack/SJ12/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Skyjack/SJ12/Ersatzteilliste.pdf'  
+  },
+
+  'SJIII 3219 (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Skyjack/SJIII 3219/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Skyjack/SJIII 3219/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Skyjack/SJIII 3219/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Skyjack/SJIII 3219/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Skyjack/SJIII 3219/Ersatzteilliste.pdf'  
+  },
+
+  'SJIII 4632 (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Skyjack/SJIII 4632/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Skyjack/SJIII 4632/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Skyjack/SJIII 4632/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Skyjack/SJIII 4632/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Skyjack/SJIII 4632/Ersatzteilliste.pdf'    
+  },
+
+  'SJ6832 RTE (Schere)': {
+    '📄 Bedienungsanleitung':
+      'pdf/Skyjack/SJ6832_RTE/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+      'pdf/Skyjack/SJ6832_RTE/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+      'pdf/Skyjack/SJ6832_RTE/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+      'pdf/Skyjack/SJ6832_RTE/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+      'pdf/Skyjack/SJ6832_RTE/Ersatzteilliste.pdf'  
+    }  
   },
 
   'Holland Lift': {
