@@ -637,6 +637,125 @@ const herstellerDaten = {
 
     '🔧 Ersatzteilliste':
         'pdf/JLG/GS1930ES/Ersatzteilliste.pdf'
+  },
+
+  'GS2632ES (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/JLG/GS2632ES/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/JLG/GS2632ES/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/JLG/GS2632ES/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/JLG/GS2632ES/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/JLG/GS2632ES/Ersatzteilliste.pdf'
+  },
+
+  'M3369 (Schere)': {
+    '📄 Bedienungsanleitung':
+        'pdf/JLG/M3369/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/JLG/M3369/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/JLG/M3369/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/JLG/M3369/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/JLG/M3369/Ersatzteilliste.pdf'
+  },
+
+  'E400AJPN (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
+        'pdf/JLG/E400AJPN/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/JLG/E400AJPN/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/JLG/E400AJPN/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/JLG/E400AJPN/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/JLG/E400AJPN/Ersatzteilliste.pdf'
+  },
+
+  '450AJ (Gelenk-Teleskop)': {
+    '📄 Bedienungsanleitung':
+        'pdf/JLG/450AJ/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/JLG/450AJ/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/JLG/450AJ/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/JLG/450AJ/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/JLG/450AJ/Ersatzteilliste.pdf'
+  },
+
+  '660SJ (Teleskop)': {
+    '📄 Bedienungsanleitung':
+        'pdf/JLG/660SJ/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/JLG/660SJ/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/JLG/660SJ/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/JLG/660SJ/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/JLG/660SJ/Ersatzteilliste.pdf'
+  },
+
+  'Toucan 12E Plus (Teleskop)': {
+    '📄 Bedienungsanleitung':
+        'pdf/JLG/Toucan12E_Plus/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/JLG/Toucan12E_Plus/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/JLG/Toucan12E_Plus/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/JLG/Toucan12E_Plus/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/JLG/Toucan12E_Plus/Ersatzteilliste.pdf'
+  },
+
+  'X15J Plus (Teleskop)': {
+    '📄 Bedienungsanleitung':
+        'pdf/JLG/X15J_Plus/Bedienungsanleitung.pdf',
+
+    '📘 Serviceanleitung':
+        'pdf/X15J_Plus/Serviceanleitung.pdf',
+
+    '⚠️ Fehlercodes':
+        'pdf/X15J_Plus/Fehlercodeliste.pdf',
+
+    '⚡ Schaltplan':
+        'pdf/X15J_Plus/Schaltplan.pdf',
+
+    '🔧 Ersatzteilliste':
+        'pdf/X15J_Plus/Ersatzteilliste.pdf'
     }
   },
 
